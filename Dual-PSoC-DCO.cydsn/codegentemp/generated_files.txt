@@ -26,6 +26,9 @@
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Square_Out_aliases.h" value="NONE;OSC1_Square_Out" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Square_Out.c" value="ARM_C_FILE;OSC1_Square_Out" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Square_Out.h" value="NONE;OSC1_Square_Out" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\Soft_Sync_aliases.h" value="NONE;Soft_Sync" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\Soft_Sync.c" value="ARM_C_FILE;Soft_Sync" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\Soft_Sync.h" value="NONE;Soft_Sync" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Freq_Timer.c" value="ARM_C_FILE;OSC1_Freq_Timer" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Freq_Timer.h" value="NONE;OSC1_Freq_Timer" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Freq_Timer_PM.c" value="ARM_C_FILE;OSC1_Freq_Timer" />
@@ -39,9 +42,9 @@
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\ADC_DelSig_1.h" value="NONE;ADC_DelSig_1" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\ADC_DelSig_1_PM.c" value="ARM_C_FILE;ADC_DelSig_1" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\ADC_DelSig_1_INT.c" value="ARM_C_FILE;ADC_DelSig_1" />
-  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Follower.c" value="ARM_C_FILE;OSC1_Follower" />
-  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Follower.h" value="NONE;OSC1_Follower" />
-  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Follower_PM.c" value="ARM_C_FILE;OSC1_Follower" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Triangle_Follower.c" value="ARM_C_FILE;OSC1_Triangle_Follower" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Triangle_Follower.h" value="NONE;OSC1_Triangle_Follower" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Triangle_Follower_PM.c" value="ARM_C_FILE;OSC1_Triangle_Follower" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_ISR_3.c" value="ARM_C_FILE;OSC1_ISR_3" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_ISR_3.h" value="NONE;OSC1_ISR_3" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Tri_Cap_3_aliases.h" value="NONE;OSC1_Tri_Cap_3" />
@@ -97,9 +100,9 @@
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\MIDI1_UART_PM.c" value="ARM_C_FILE;MIDI1_UART" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\MIDI1_UART_INT.c" value="ARM_C_FILE;MIDI1_UART" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\MIDI1_UART_BOOT.c" value="ARM_C_FILE;MIDI1_UART" />
-  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Saw_Out_aliases.h" value="NONE;OSC1_Saw_Out" />
-  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Saw_Out.c" value="ARM_C_FILE;OSC1_Saw_Out" />
-  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Saw_Out.h" value="NONE;OSC1_Saw_Out" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Saw_Out_Cap_aliases.h" value="NONE;OSC1_Saw_Out_Cap" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Saw_Out_Cap.c" value="ARM_C_FILE;OSC1_Saw_Out_Cap" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Saw_Out_Cap.h" value="NONE;OSC1_Saw_Out_Cap" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Square_Out_3_aliases.h" value="NONE;OSC1_Square_Out_3" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Square_Out_3.c" value="ARM_C_FILE;OSC1_Square_Out_3" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Square_Out_3.h" value="NONE;OSC1_Square_Out_3" />
@@ -136,17 +139,6 @@
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_IDAC8_2.c" value="ARM_C_FILE;OSC1_IDAC8_2" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_IDAC8_2.h" value="NONE;OSC1_IDAC8_2" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_IDAC8_2_PM.c" value="ARM_C_FILE;OSC1_IDAC8_2" />
-  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\Pin_3_aliases.h" value="NONE;Pin_3" />
-  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\Pin_3.c" value="ARM_C_FILE;Pin_3" />
-  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\Pin_3.h" value="NONE;Pin_3" />
-  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Freq_Timer_1.c" value="ARM_C_FILE;OSC1_Freq_Timer_1" />
-  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Freq_Timer_1.h" value="NONE;OSC1_Freq_Timer_1" />
-  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Freq_Timer_1_PM.c" value="ARM_C_FILE;OSC1_Freq_Timer_1" />
-  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\Pin_2_aliases.h" value="NONE;Pin_2" />
-  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\Pin_2.c" value="ARM_C_FILE;Pin_2" />
-  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\Pin_2.h" value="NONE;Pin_2" />
-  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_ISR.c" value="ARM_C_FILE;OSC1_ISR" />
-  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_ISR.h" value="NONE;OSC1_ISR" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\USBMIDI_1.c" value="ARM_C_FILE;USBMIDI_1" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\USBMIDI_1.h" value="NONE;USBMIDI_1" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\USBMIDI_1_audio.c" value="ARM_C_FILE;USBMIDI_1" />
@@ -176,6 +168,20 @@
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_IDAC8_SAW.c" value="ARM_C_FILE;OSC1_IDAC8_SAW" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_IDAC8_SAW.h" value="NONE;OSC1_IDAC8_SAW" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_IDAC8_SAW_PM.c" value="ARM_C_FILE;OSC1_IDAC8_SAW" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\Pin_4_aliases.h" value="NONE;Pin_4" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\Pin_4.c" value="ARM_C_FILE;Pin_4" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\Pin_4.h" value="NONE;Pin_4" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\Clock_1.c" value="ARM_C_FILE;Clock_1" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\Clock_1.h" value="NONE;Clock_1" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Saw_Follower.c" value="ARM_C_FILE;OSC1_Saw_Follower" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Saw_Follower.h" value="NONE;OSC1_Saw_Follower" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Saw_Follower_PM.c" value="ARM_C_FILE;OSC1_Saw_Follower" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Saw_Out_aliases.h" value="NONE;OSC1_Saw_Out" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Saw_Out.c" value="ARM_C_FILE;OSC1_Saw_Out" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_Saw_Out.h" value="NONE;OSC1_Saw_Out" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\Hard_Sync_aliases.h" value="NONE;Hard_Sync" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\Hard_Sync.c" value="ARM_C_FILE;Hard_Sync" />
+  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\Hard_Sync.h" value="NONE;Hard_Sync" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\ADC_DelSig_1_AMux.c" value="ARM_C_FILE;ADC_DelSig_1_AMux" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\ADC_DelSig_1_AMux.h" value="NONE;ADC_DelSig_1_AMux" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\ADC_DelSig_1_Ext_CP_Clk.c" value="ARM_C_FILE;ADC_DelSig_1_Ext_CP_Clk" />

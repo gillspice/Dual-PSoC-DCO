@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: OSC1_Follower_PM.c
+* File Name: OSC_Saw_Follower_PM.c
 * Version 1.90
 *
 * Description:
@@ -15,13 +15,13 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#include "OSC1_Follower.h"
+#include "OSC_Saw_Follower.h"
 
-static OSC1_Follower_BACKUP_STRUCT  OSC1_Follower_backup;
+static OSC_Saw_Follower_BACKUP_STRUCT  OSC_Saw_Follower_backup;
 
 
 /*******************************************************************************  
-* Function Name: OSC1_Follower_SaveConfig
+* Function Name: OSC_Saw_Follower_SaveConfig
 ********************************************************************************
 *
 * Summary:
@@ -34,14 +34,14 @@ static OSC1_Follower_BACKUP_STRUCT  OSC1_Follower_backup;
 *  void
 *
 *******************************************************************************/
-void OSC1_Follower_SaveConfig(void) 
+void OSC_Saw_Follower_SaveConfig(void) 
 {
     /* Nothing to save as registers are System reset on retention flops */
 }
 
 
 /*******************************************************************************  
-* Function Name: OSC1_Follower_RestoreConfig
+* Function Name: OSC_Saw_Follower_RestoreConfig
 ********************************************************************************
 *
 * Summary:
@@ -54,14 +54,14 @@ void OSC1_Follower_SaveConfig(void)
 *  void
 *
 *******************************************************************************/
-void OSC1_Follower_RestoreConfig(void) 
+void OSC_Saw_Follower_RestoreConfig(void) 
 {
     /* Nothing to restore */
 }
 
 
 /*******************************************************************************   
-* Function Name: OSC1_Follower_Sleep
+* Function Name: OSC_Saw_Follower_Sleep
 ********************************************************************************
 *
 * Summary:
@@ -75,32 +75,32 @@ void OSC1_Follower_RestoreConfig(void)
 *  void
 *
 * Global variables:
-*  OSC1_Follower_backup: The structure field 'enableState' is modified 
+*  OSC_Saw_Follower_backup: The structure field 'enableState' is modified 
 *  depending on the enable state of the block before entering to sleep mode.
 *
 *******************************************************************************/
-void OSC1_Follower_Sleep(void) 
+void OSC_Saw_Follower_Sleep(void) 
 {
     /* Save OpAmp enable state */
-    if((OSC1_Follower_PM_ACT_CFG_REG & OSC1_Follower_ACT_PWR_EN) != 0u)
+    if((OSC_Saw_Follower_PM_ACT_CFG_REG & OSC_Saw_Follower_ACT_PWR_EN) != 0u)
     {
         /* Component is enabled */
-        OSC1_Follower_backup.enableState = 1u;
+        OSC_Saw_Follower_backup.enableState = 1u;
          /* Stops the component */
-         OSC1_Follower_Stop();
+         OSC_Saw_Follower_Stop();
     }
     else
     {
         /* Component is disabled */
-        OSC1_Follower_backup.enableState = 0u;
+        OSC_Saw_Follower_backup.enableState = 0u;
     }
     /* Saves the configuration */
-    OSC1_Follower_SaveConfig();
+    OSC_Saw_Follower_SaveConfig();
 }
 
 
 /*******************************************************************************  
-* Function Name: OSC1_Follower_Wakeup
+* Function Name: OSC_Saw_Follower_Wakeup
 ********************************************************************************
 *
 * Summary:
@@ -114,19 +114,19 @@ void OSC1_Follower_Sleep(void)
 *  void
 *
 * Global variables:
-*  OSC1_Follower_backup: The structure field 'enableState' is used to 
+*  OSC_Saw_Follower_backup: The structure field 'enableState' is used to 
 *  restore the enable state of block after wakeup from sleep mode.
 *
 *******************************************************************************/
-void OSC1_Follower_Wakeup(void) 
+void OSC_Saw_Follower_Wakeup(void) 
 {
     /* Restore the user configuration */
-    OSC1_Follower_RestoreConfig();
+    OSC_Saw_Follower_RestoreConfig();
 
     /* Enables the component operation */
-    if(OSC1_Follower_backup.enableState == 1u)
+    if(OSC_Saw_Follower_backup.enableState == 1u)
     {
-        OSC1_Follower_Enable();
+        OSC_Saw_Follower_Enable();
     } /* Do nothing if component was disable before */
 }
 

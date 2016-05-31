@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: OSC1_Follower.c
+* File Name: OSC1_Triangle_Follower.c
 * Version 1.90
 *
 * Description:
@@ -15,19 +15,19 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#include "OSC1_Follower.h"
+#include "OSC1_Triangle_Follower.h"
 
-uint8 OSC1_Follower_initVar = 0u;
+uint8 OSC1_Triangle_Follower_initVar = 0u;
 
 
 /*******************************************************************************   
-* Function Name: OSC1_Follower_Init
+* Function Name: OSC1_Triangle_Follower_Init
 ********************************************************************************
 *
 * Summary:
 *  Initialize component's parameters to the parameters set by user in the 
 *  customizer of the component placed onto schematic. Usually called in 
-*  OSC1_Follower_Start().
+*  OSC1_Triangle_Follower_Start().
 *
 * Parameters:
 *  void
@@ -36,14 +36,14 @@ uint8 OSC1_Follower_initVar = 0u;
 *  void
 *
 *******************************************************************************/
-void OSC1_Follower_Init(void) 
+void OSC1_Triangle_Follower_Init(void) 
 {
-    OSC1_Follower_SetPower(OSC1_Follower_DEFAULT_POWER);
+    OSC1_Triangle_Follower_SetPower(OSC1_Triangle_Follower_DEFAULT_POWER);
 }
 
 
 /*******************************************************************************   
-* Function Name: OSC1_Follower_Enable
+* Function Name: OSC1_Triangle_Follower_Enable
 ********************************************************************************
 *
 * Summary:
@@ -56,21 +56,21 @@ void OSC1_Follower_Init(void)
 *  void
 *
 *******************************************************************************/
-void OSC1_Follower_Enable(void) 
+void OSC1_Triangle_Follower_Enable(void) 
 {
     /* Enable negative charge pumps in ANIF */
-    OSC1_Follower_PUMP_CR1_REG  |= (OSC1_Follower_PUMP_CR1_CLKSEL | OSC1_Follower_PUMP_CR1_FORCE);
+    OSC1_Triangle_Follower_PUMP_CR1_REG  |= (OSC1_Triangle_Follower_PUMP_CR1_CLKSEL | OSC1_Triangle_Follower_PUMP_CR1_FORCE);
 
     /* Enable power to buffer in active mode */
-    OSC1_Follower_PM_ACT_CFG_REG |= OSC1_Follower_ACT_PWR_EN;
+    OSC1_Triangle_Follower_PM_ACT_CFG_REG |= OSC1_Triangle_Follower_ACT_PWR_EN;
 
     /* Enable power to buffer in alternative active mode */
-    OSC1_Follower_PM_STBY_CFG_REG |= OSC1_Follower_STBY_PWR_EN;
+    OSC1_Triangle_Follower_PM_STBY_CFG_REG |= OSC1_Triangle_Follower_STBY_PWR_EN;
 }
 
 
 /*******************************************************************************
-* Function Name:   OSC1_Follower_Start
+* Function Name:   OSC1_Triangle_Follower_Start
 ********************************************************************************
 *
 * Summary:
@@ -85,24 +85,24 @@ void OSC1_Follower_Enable(void)
 *  void
 *
 * Global variables:
-*  OSC1_Follower_initVar: Used to check the initial configuration, modified 
+*  OSC1_Triangle_Follower_initVar: Used to check the initial configuration, modified 
 *  when this function is called for the first time.
 *
 *******************************************************************************/
-void OSC1_Follower_Start(void) 
+void OSC1_Triangle_Follower_Start(void) 
 {
-    if(OSC1_Follower_initVar == 0u)
+    if(OSC1_Triangle_Follower_initVar == 0u)
     {
-        OSC1_Follower_initVar = 1u;
-        OSC1_Follower_Init();
+        OSC1_Triangle_Follower_initVar = 1u;
+        OSC1_Triangle_Follower_Init();
     }
 
-    OSC1_Follower_Enable();
+    OSC1_Triangle_Follower_Enable();
 }
 
 
 /*******************************************************************************
-* Function Name: OSC1_Follower_Stop
+* Function Name: OSC1_Triangle_Follower_Stop
 ********************************************************************************
 *
 * Summary:
@@ -115,24 +115,24 @@ void OSC1_Follower_Start(void)
 *  void
 *
 *******************************************************************************/
-void OSC1_Follower_Stop(void) 
+void OSC1_Triangle_Follower_Stop(void) 
 {
     /* Disable power to buffer in active mode template */
-    OSC1_Follower_PM_ACT_CFG_REG &= (uint8)(~OSC1_Follower_ACT_PWR_EN);
+    OSC1_Triangle_Follower_PM_ACT_CFG_REG &= (uint8)(~OSC1_Triangle_Follower_ACT_PWR_EN);
 
     /* Disable power to buffer in alternative active mode template */
-    OSC1_Follower_PM_STBY_CFG_REG &= (uint8)(~OSC1_Follower_STBY_PWR_EN);
+    OSC1_Triangle_Follower_PM_STBY_CFG_REG &= (uint8)(~OSC1_Triangle_Follower_STBY_PWR_EN);
     
     /* Disable negative charge pumps for ANIF only if all ABuf is turned OFF */
-    if(OSC1_Follower_PM_ACT_CFG_REG == 0u)
+    if(OSC1_Triangle_Follower_PM_ACT_CFG_REG == 0u)
     {
-        OSC1_Follower_PUMP_CR1_REG &= (uint8)(~(OSC1_Follower_PUMP_CR1_CLKSEL | OSC1_Follower_PUMP_CR1_FORCE));
+        OSC1_Triangle_Follower_PUMP_CR1_REG &= (uint8)(~(OSC1_Triangle_Follower_PUMP_CR1_CLKSEL | OSC1_Triangle_Follower_PUMP_CR1_FORCE));
     }
 }
 
 
 /*******************************************************************************
-* Function Name: OSC1_Follower_SetPower
+* Function Name: OSC1_Triangle_Follower_SetPower
 ********************************************************************************
 *
 * Summary:
@@ -146,13 +146,13 @@ void OSC1_Follower_Stop(void)
 *  void
 *
 **********************************************************************************/
-void OSC1_Follower_SetPower(uint8 power) 
+void OSC1_Triangle_Follower_SetPower(uint8 power) 
 {
     #if (CY_PSOC3 || CY_PSOC5LP)
-        OSC1_Follower_CR_REG &= (uint8)(~OSC1_Follower_PWR_MASK);
-        OSC1_Follower_CR_REG |= power & OSC1_Follower_PWR_MASK;      /* Set device power */
+        OSC1_Triangle_Follower_CR_REG &= (uint8)(~OSC1_Triangle_Follower_PWR_MASK);
+        OSC1_Triangle_Follower_CR_REG |= power & OSC1_Triangle_Follower_PWR_MASK;      /* Set device power */
     #else
-        CYASSERT(OSC1_Follower_HIGHPOWER == power);
+        CYASSERT(OSC1_Triangle_Follower_HIGHPOWER == power);
     #endif /* CY_PSOC3 || CY_PSOC5LP */
 }
 

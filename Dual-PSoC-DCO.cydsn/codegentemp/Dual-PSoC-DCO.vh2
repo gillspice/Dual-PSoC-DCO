@@ -2,7 +2,7 @@
 --	Conversion of Dual-PSoC-DCO.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Tue May 17 17:00:16 2016
+--	Tue May 31 14:51:55 2016
 --
 
 USE cypress.cypress.all;
@@ -20,7 +20,7 @@ TERMINAL \OSC1_IDAC8:Net_124\ : bit;
 TERMINAL Net_1333 : bit;
 SIGNAL \OSC1_IDAC8:Net_157\ : bit;
 SIGNAL Net_1306 : bit;
-SIGNAL Net_133 : bit;
+SIGNAL Net_2728 : bit;
 SIGNAL \OSC1_IDAC8:Net_194\ : bit;
 SIGNAL \OSC1_IDAC8:Net_195\ : bit;
 SIGNAL tmpOE__OSC1_Square_Out_net_0 : bit;
@@ -30,7 +30,11 @@ TERMINAL tmpSIOVREF__OSC1_Square_Out_net_0 : bit;
 SIGNAL one : bit;
 SIGNAL tmpINTERRUPT_0__OSC1_Square_Out_net_0 : bit;
 SIGNAL Net_191 : bit;
-SIGNAL Net_12 : bit;
+SIGNAL tmpOE__Soft_Sync_net_0 : bit;
+SIGNAL Net_1538 : bit;
+SIGNAL tmpIO_0__Soft_Sync_net_0 : bit;
+TERMINAL tmpSIOVREF__Soft_Sync_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__Soft_Sync_net_0 : bit;
 SIGNAL \OSC1_Freq_Timer:Net_260\ : bit;
 SIGNAL Net_2702 : bit;
 SIGNAL \OSC1_Freq_Timer:Net_55\ : bit;
@@ -57,6 +61,7 @@ SIGNAL \OSC1_Freq_Timer:TimerUDB:ctrl_ic_0\ : bit;
 SIGNAL \OSC1_Freq_Timer:TimerUDB:fifo_load_polarized\ : bit;
 SIGNAL \OSC1_Freq_Timer:TimerUDB:capture_last\ : bit;
 SIGNAL \OSC1_Freq_Timer:TimerUDB:capt_fifo_load\ : bit;
+ATTRIBUTE soft of \OSC1_Freq_Timer:TimerUDB:capt_fifo_load\:SIGNAL IS '1';
 SIGNAL \OSC1_Freq_Timer:TimerUDB:timer_enable\ : bit;
 SIGNAL \OSC1_Freq_Timer:TimerUDB:run_mode\ : bit;
 SIGNAL \OSC1_Freq_Timer:TimerUDB:hwEnable\ : bit;
@@ -69,7 +74,74 @@ SIGNAL \OSC1_Freq_Timer:TimerUDB:hwEnable_reg\ : bit;
 SIGNAL Net_132 : bit;
 SIGNAL \OSC1_Freq_Timer:TimerUDB:capture_out_reg_i\ : bit;
 SIGNAL Net_1539 : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:int_capt_count_1\ : bit;
+SIGNAL Net_12 : bit;
+SIGNAL cmp_vv_vv_MODGEN_1 : bit;
+SIGNAL add_vv_vv_MODGEN_2_1 : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:int_capt_count_0\ : bit;
+SIGNAL add_vv_vv_MODGEN_2_0 : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:capt_int_temp\ : bit;
 SIGNAL \OSC1_Freq_Timer:TimerUDB:capt_fifo_load_int\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:newa_1\ : bit;
+SIGNAL MODIN1_1 : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:newa_0\ : bit;
+SIGNAL MODIN1_0 : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:newb_1\ : bit;
+SIGNAL MODIN2_1 : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:newb_0\ : bit;
+SIGNAL MODIN2_0 : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:dataa_1\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:dataa_0\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:datab_1\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:datab_0\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:a_1\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:a_0\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:b_1\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:b_0\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:xnor_array_1\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:xnor_array_0\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:aeqb_0\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:eq_0\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:eq_1\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:eqi_0\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:aeqb_1\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:albi_1\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:agbi_1\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:lt_0\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:gt_0\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:lt_1\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:gt_1\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:lti_0\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:gti_0\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:albi_0\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:agbi_0\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:xeq\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:xneq\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:xlt\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:xlte\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:xgt\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:xgte\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:lt\ : bit;
+ATTRIBUTE port_state_att of \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:lt\:SIGNAL IS 2;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:gt\ : bit;
+ATTRIBUTE port_state_att of \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:gt\:SIGNAL IS 2;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:gte\ : bit;
+ATTRIBUTE port_state_att of \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:gte\:SIGNAL IS 2;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:lte\ : bit;
+ATTRIBUTE port_state_att of \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:lte\:SIGNAL IS 2;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:neq\ : bit;
+ATTRIBUTE port_state_att of \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_1:neq\:SIGNAL IS 2;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:a_1\ : bit;
+SIGNAL MODIN3_1 : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:a_0\ : bit;
+SIGNAL MODIN3_0 : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:b_1\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:b_0\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:s_1\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:s_0\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_1\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_0\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_0\ : bit;
 SIGNAL \OSC1_Freq_Timer:TimerUDB:runmode_enable\ : bit;
 SIGNAL \OSC1_Freq_Timer:TimerUDB:trig_reg\ : bit;
 SIGNAL \OSC1_Freq_Timer:TimerUDB:status_6\ : bit;
@@ -347,7 +419,7 @@ SIGNAL \ADC_DelSig_1:Net_252\ : bit;
 SIGNAL \ADC_DelSig_1:soc\ : bit;
 SIGNAL \ADC_DelSig_1:Net_268\ : bit;
 SIGNAL \ADC_DelSig_1:Net_270\ : bit;
-TERMINAL \OSC1_Follower:Net_29\ : bit;
+TERMINAL \OSC1_Triangle_Follower:Net_29\ : bit;
 SIGNAL Net_1595 : bit;
 SIGNAL Net_1590 : bit;
 SIGNAL tmpOE__OSC1_Tri_Cap_3_net_0 : bit;
@@ -634,50 +706,50 @@ SIGNAL \MIDI1_UART:BUART:rx_poll_bit1\ : bit;
 SIGNAL \MIDI1_UART:BUART:rx_poll_bit2\ : bit;
 SIGNAL \MIDI1_UART:BUART:pollingrange\ : bit;
 SIGNAL \MIDI1_UART:BUART:pollcount_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:add_vv_vv_MODGEN_1_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:add_vv_vv_MODGEN_3_1\ : bit;
 SIGNAL \MIDI1_UART:BUART:pollcount_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:add_vv_vv_MODGEN_1_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:cmp_vv_vv_MODGEN_2\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:cmp_vv_vv_MODGEN_3\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:a_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODIN1_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:a_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODIN1_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:b_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:b_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:s_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:s_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:g1:z1:s0:g1:u0:b_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:newa_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODIN2_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:newa_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODIN2_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:newb_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:newb_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:dataa_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:dataa_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:datab_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:datab_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:lta_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:gta_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:lta_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:gta_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:newa_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODIN3_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:newa_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODIN3_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:newb_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:newb_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:dataa_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:dataa_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:datab_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:datab_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:lta_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:gta_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:lta_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:gta_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:add_vv_vv_MODGEN_3_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:cmp_vv_vv_MODGEN_4\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:cmp_vv_vv_MODGEN_5\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:a_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODIN4_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:a_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODIN4_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:b_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:b_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:s_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:s_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:g1:z1:s0:g1:u0:c_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:g1:z1:s0:g1:u0:c_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:g1:z1:s0:g1:u0:b_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_4:g2:a0:newa_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODIN5_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_4:g2:a0:newa_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODIN5_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_4:g2:a0:newb_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_4:g2:a0:newb_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_4:g2:a0:dataa_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_4:g2:a0:dataa_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_4:g2:a0:datab_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_4:g2:a0:datab_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_4:g2:a0:lta_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_4:g2:a0:gta_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_4:g2:a0:lta_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_4:g2:a0:gta_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_5:g2:a0:newa_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODIN6_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_5:g2:a0:newa_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODIN6_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_5:g2:a0:newb_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_5:g2:a0:newb_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_5:g2:a0:dataa_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_5:g2:a0:dataa_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_5:g2:a0:datab_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_5:g2:a0:datab_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_5:g2:a0:lta_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_5:g2:a0:gta_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_5:g2:a0:lta_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:s23Poll:MODULE_5:g2:a0:gta_0\ : bit;
 SIGNAL \MIDI1_UART:BUART:rx_status_0\ : bit;
 SIGNAL \MIDI1_UART:BUART:rx_markspace_status\ : bit;
 SIGNAL \MIDI1_UART:BUART:rx_status_1\ : bit;
@@ -693,98 +765,98 @@ SIGNAL Net_1632 : bit;
 SIGNAL \MIDI1_UART:BUART:rx_markspace_pre\ : bit;
 SIGNAL \MIDI1_UART:BUART:rx_parity_error_pre\ : bit;
 SIGNAL \MIDI1_UART:BUART:rx_break_status\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:cmp_vv_vv_MODGEN_4\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:cmp_vv_vv_MODGEN_6\ : bit;
 SIGNAL \MIDI1_UART:BUART:rx_address_detected\ : bit;
 SIGNAL \MIDI1_UART:BUART:rx_last\ : bit;
 SIGNAL \MIDI1_UART:BUART:rx_parity_bit\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:cmp_vv_vv_MODGEN_5\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:newa_6\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:newa_5\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:newa_4\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:newa_3\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODIN4_6\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:newa_2\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODIN4_5\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:newa_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODIN4_4\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:newa_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODIN4_3\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:newb_6\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:newb_5\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:newb_4\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:newb_3\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:newb_2\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:newb_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:newb_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:dataa_6\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:dataa_5\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:dataa_4\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:dataa_3\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:dataa_2\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:dataa_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:dataa_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:datab_6\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:datab_5\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:datab_4\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:datab_3\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:datab_2\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:datab_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:datab_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:lta_6\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:gta_6\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:lta_5\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:gta_5\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:lta_4\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:gta_4\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:lta_3\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:gta_3\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:lta_2\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:gta_2\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:lta_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:gta_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:lta_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_4:g2:a0:gta_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:newa_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:newb_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:dataa_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:datab_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:a_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:b_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:xnor_array_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:aeqb_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:eq_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:eqi_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:aeqb_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:albi_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:agbi_1\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:lt_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:gt_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:lti_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:gti_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:albi_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:agbi_0\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:xeq\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:xneq\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:xlt\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:xlte\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:xgt\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:g1:a0:xgte\ : bit;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:lt\ : bit;
-ATTRIBUTE port_state_att of \MIDI1_UART:BUART:sRX:MODULE_5:lt\:SIGNAL IS 2;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:eq\ : bit;
-ATTRIBUTE port_state_att of \MIDI1_UART:BUART:sRX:MODULE_5:eq\:SIGNAL IS 2;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:gt\ : bit;
-ATTRIBUTE port_state_att of \MIDI1_UART:BUART:sRX:MODULE_5:gt\:SIGNAL IS 2;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:gte\ : bit;
-ATTRIBUTE port_state_att of \MIDI1_UART:BUART:sRX:MODULE_5:gte\:SIGNAL IS 2;
-SIGNAL \MIDI1_UART:BUART:sRX:MODULE_5:lte\ : bit;
-ATTRIBUTE port_state_att of \MIDI1_UART:BUART:sRX:MODULE_5:lte\:SIGNAL IS 2;
-SIGNAL tmpOE__OSC1_Saw_Out_net_0 : bit;
-SIGNAL tmpFB_0__OSC1_Saw_Out_net_0 : bit;
-TERMINAL Net_1346 : bit;
-SIGNAL tmpIO_0__OSC1_Saw_Out_net_0 : bit;
-TERMINAL tmpSIOVREF__OSC1_Saw_Out_net_0 : bit;
-SIGNAL tmpINTERRUPT_0__OSC1_Saw_Out_net_0 : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:cmp_vv_vv_MODGEN_7\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:newa_6\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:newa_5\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:newa_4\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:newa_3\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODIN7_6\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:newa_2\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODIN7_5\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:newa_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODIN7_4\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:newa_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODIN7_3\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:newb_6\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:newb_5\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:newb_4\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:newb_3\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:newb_2\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:newb_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:newb_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:dataa_6\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:dataa_5\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:dataa_4\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:dataa_3\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:dataa_2\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:dataa_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:dataa_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:datab_6\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:datab_5\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:datab_4\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:datab_3\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:datab_2\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:datab_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:datab_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:lta_6\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:gta_6\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:lta_5\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:gta_5\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:lta_4\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:gta_4\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:lta_3\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:gta_3\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:lta_2\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:gta_2\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:lta_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:gta_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:lta_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_6:g2:a0:gta_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:newa_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:newb_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:dataa_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:datab_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:gx:u0:a_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:gx:u0:b_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:gx:u0:xnor_array_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:gx:u0:aeqb_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:gx:u0:eq_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:gx:u0:eqi_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:gx:u0:aeqb_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:gx:u0:albi_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:gx:u0:agbi_1\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:gx:u0:lt_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:gx:u0:gt_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:gx:u0:lti_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:gx:u0:gti_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:gx:u0:albi_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:gx:u0:agbi_0\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:xeq\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:xneq\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:xlt\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:xlte\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:xgt\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:g1:a0:xgte\ : bit;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:lt\ : bit;
+ATTRIBUTE port_state_att of \MIDI1_UART:BUART:sRX:MODULE_7:lt\:SIGNAL IS 2;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:eq\ : bit;
+ATTRIBUTE port_state_att of \MIDI1_UART:BUART:sRX:MODULE_7:eq\:SIGNAL IS 2;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:gt\ : bit;
+ATTRIBUTE port_state_att of \MIDI1_UART:BUART:sRX:MODULE_7:gt\:SIGNAL IS 2;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:gte\ : bit;
+ATTRIBUTE port_state_att of \MIDI1_UART:BUART:sRX:MODULE_7:gte\:SIGNAL IS 2;
+SIGNAL \MIDI1_UART:BUART:sRX:MODULE_7:lte\ : bit;
+ATTRIBUTE port_state_att of \MIDI1_UART:BUART:sRX:MODULE_7:lte\:SIGNAL IS 2;
+SIGNAL tmpOE__OSC1_Saw_Out_Cap_net_0 : bit;
+SIGNAL tmpFB_0__OSC1_Saw_Out_Cap_net_0 : bit;
+TERMINAL Net_2753 : bit;
+SIGNAL tmpIO_0__OSC1_Saw_Out_Cap_net_0 : bit;
+TERMINAL tmpSIOVREF__OSC1_Saw_Out_Cap_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__OSC1_Saw_Out_Cap_net_0 : bit;
 SIGNAL tmpOE__OSC1_Square_Out_3_net_0 : bit;
 SIGNAL tmpFB_0__OSC1_Square_Out_3_net_0 : bit;
 SIGNAL tmpIO_0__OSC1_Square_Out_3_net_0 : bit;
@@ -1364,285 +1436,7 @@ TERMINAL \OSC1_IDAC8_2:Net_124\ : bit;
 SIGNAL \OSC1_IDAC8_2:Net_157\ : bit;
 SIGNAL \OSC1_IDAC8_2:Net_194\ : bit;
 SIGNAL \OSC1_IDAC8_2:Net_195\ : bit;
-SIGNAL tmpOE__Pin_3_net_0 : bit;
-SIGNAL tmpFB_0__Pin_3_net_0 : bit;
-TERMINAL Net_2652 : bit;
-SIGNAL tmpIO_0__Pin_3_net_0 : bit;
-TERMINAL tmpSIOVREF__Pin_3_net_0 : bit;
-SIGNAL tmpINTERRUPT_0__Pin_3_net_0 : bit;
 SIGNAL Net_2678 : bit;
-SIGNAL \OSC1_Freq_Timer_1:Net_260\ : bit;
-SIGNAL Net_1133 : bit;
-SIGNAL \OSC1_Freq_Timer_1:Net_55\ : bit;
-SIGNAL Net_2696 : bit;
-SIGNAL \OSC1_Freq_Timer_1:Net_53\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:ClockOutFromEnBlock\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:Clk_Ctl_i\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:control_7\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:control_6\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:control_5\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:control_4\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:control_3\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:control_2\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:control_1\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:control_0\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:ctrl_enable\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:ctrl_ten\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:ctrl_cmode_1\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:ctrl_cmode_0\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:ctrl_tmode_1\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:ctrl_tmode_0\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:ctrl_ic_1\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:ctrl_ic_0\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:fifo_load_polarized\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:capture_last\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:capt_fifo_load\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:timer_enable\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:run_mode\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:hwEnable\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:status_tc\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:trigger_enable\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:per_zero\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:tc_i\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:tc_reg_i\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:hwEnable_reg\ : bit;
-SIGNAL Net_2692 : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:capture_out_reg_i\ : bit;
-SIGNAL Net_2695 : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:capt_fifo_load_int\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:runmode_enable\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:trig_reg\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:status_6\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:status_5\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:status_4\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:status_0\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:status_1\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:status_2\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:fifo_full\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:status_3\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:fifo_nempty\ : bit;
-SIGNAL Net_2690 : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:cs_addr_2\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:cs_addr_1\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:cs_addr_0\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:zeros_3\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce0_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce0_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl0_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl0_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:nc0\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff0_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff0_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce1_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce1_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl1_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl1_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:z1_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:z1_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff1_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff1_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ov_msb_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ov_msb_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:co_msb_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:co_msb_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmsb_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmsb_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:so_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:so_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:nc6\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:nc8\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_bus_stat_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_bus_stat_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_blk_stat_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_blk_stat_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce0_reg_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce0_reg_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl0_reg_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl0_reg_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:z0_reg_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:z0_reg_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff0_reg_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff0_reg_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce1_reg_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce1_reg_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl1_reg_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl1_reg_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:z1_reg_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:z1_reg_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff1_reg_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff1_reg_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ov_msb_reg_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ov_msb_reg_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:co_msb_reg_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:co_msb_reg_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmsb_reg_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmsb_reg_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:so_reg_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:so_reg_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f0_bus_stat_reg_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f0_bus_stat_reg_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f0_blk_stat_reg_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f0_blk_stat_reg_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_bus_stat_reg_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_bus_stat_reg_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_blk_stat_reg_0\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_blk_stat_reg_0\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:carry0\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:sh_right0\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:sh_left0\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:msb0\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_eq0_1\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_eq0_0\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_lt0_1\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_lt0_0\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_zero0_1\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_zero0_0\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_ff0_1\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_ff0_0\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cap0_1\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cap0_0\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cfb0\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce0_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce0_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl0_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl0_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:nc1\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff0_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff0_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce1_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce1_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl1_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl1_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:z1_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:z1_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff1_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff1_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ov_msb_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ov_msb_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:co_msb_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:co_msb_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmsb_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmsb_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:so_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:so_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:nc5\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:nc7\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_bus_stat_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_bus_stat_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_blk_stat_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_blk_stat_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce0_reg_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce0_reg_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl0_reg_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl0_reg_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:z0_reg_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:z0_reg_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff0_reg_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff0_reg_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce1_reg_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce1_reg_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl1_reg_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl1_reg_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:z1_reg_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:z1_reg_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff1_reg_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff1_reg_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ov_msb_reg_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ov_msb_reg_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:co_msb_reg_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:co_msb_reg_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmsb_reg_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmsb_reg_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:so_reg_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:so_reg_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f0_bus_stat_reg_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f0_bus_stat_reg_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f0_blk_stat_reg_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f0_blk_stat_reg_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_bus_stat_reg_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_bus_stat_reg_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_blk_stat_reg_1\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_blk_stat_reg_1\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:carry1\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:sh_right1\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:sh_left1\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:msb1\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_eq1_1\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_eq1_0\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_lt1_1\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_lt1_0\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_zero1_1\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_zero1_0\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_ff1_1\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_ff1_0\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cap1_1\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cap1_0\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cfb1\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce0_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce0_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl0_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl0_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff0_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff0_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce1_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce1_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl1_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl1_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:z1_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:z1_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff1_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff1_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ov_msb_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ov_msb_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:co_msb_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:co_msb_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmsb_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmsb_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:so_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:so_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_bus_stat_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_bus_stat_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_blk_stat_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_blk_stat_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce0_reg_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce0_reg_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl0_reg_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl0_reg_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:z0_reg_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:z0_reg_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff0_reg_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff0_reg_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce1_reg_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ce1_reg_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl1_reg_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cl1_reg_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:z1_reg_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:z1_reg_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff1_reg_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ff1_reg_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ov_msb_reg_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:ov_msb_reg_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:co_msb_reg_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:co_msb_reg_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmsb_reg_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmsb_reg_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:so_reg_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:so_reg_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f0_bus_stat_reg_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f0_bus_stat_reg_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f0_blk_stat_reg_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f0_blk_stat_reg_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_bus_stat_reg_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_bus_stat_reg_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_blk_stat_reg_2\ : bit;
-ATTRIBUTE port_state_att of \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:f1_blk_stat_reg_2\:SIGNAL IS 2;
-SIGNAL \OSC1_Freq_Timer_1:Net_102\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:Net_266\ : bit;
-SIGNAL tmpOE__Pin_2_net_0 : bit;
-SIGNAL tmpFB_0__Pin_2_net_0 : bit;
-SIGNAL tmpIO_0__Pin_2_net_0 : bit;
-TERMINAL tmpSIOVREF__Pin_2_net_0 : bit;
-SIGNAL tmpINTERRUPT_0__Pin_2_net_0 : bit;
 SIGNAL tmpOE__MIDI_OUT1_net_0 : bit;
 SIGNAL Net_1643 : bit;
 SIGNAL tmpFB_0__MIDI_OUT1_net_0 : bit;
@@ -1711,10 +1505,35 @@ TERMINAL \OSC1_IDAC8_SAW:Net_124\ : bit;
 SIGNAL \OSC1_IDAC8_SAW:Net_157\ : bit;
 SIGNAL \OSC1_IDAC8_SAW:Net_195\ : bit;
 SIGNAL \OSC1_IDAC8_SAW:Net_194\ : bit;
+SIGNAL tmpOE__Pin_4_net_0 : bit;
+SIGNAL Net_2742 : bit;
+SIGNAL tmpFB_0__Pin_4_net_0 : bit;
+SIGNAL tmpIO_0__Pin_4_net_0 : bit;
+TERMINAL tmpSIOVREF__Pin_4_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__Pin_4_net_0 : bit;
+SIGNAL \PulseConvert_1:out_pulse\ : bit;
+SIGNAL \PulseConvert_1:in_sample\ : bit;
+SIGNAL Net_2744 : bit;
+SIGNAL \PulseConvert_1:out_sample\ : bit;
+SIGNAL Net_2732 : bit;
+TERMINAL \OSC1_Saw_Follower:Net_29\ : bit;
+TERMINAL Net_2747 : bit;
+SIGNAL tmpOE__OSC1_Saw_Out_net_0 : bit;
+SIGNAL tmpFB_0__OSC1_Saw_Out_net_0 : bit;
+SIGNAL tmpIO_0__OSC1_Saw_Out_net_0 : bit;
+TERMINAL tmpSIOVREF__OSC1_Saw_Out_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__OSC1_Saw_Out_net_0 : bit;
+SIGNAL tmpOE__Hard_Sync_net_0 : bit;
+SIGNAL tmpIO_0__Hard_Sync_net_0 : bit;
+TERMINAL tmpSIOVREF__Hard_Sync_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__Hard_Sync_net_0 : bit;
 SIGNAL \OSC1_Freq_Timer:TimerUDB:capture_last\\D\ : bit;
 SIGNAL \OSC1_Freq_Timer:TimerUDB:tc_reg_i\\D\ : bit;
 SIGNAL \OSC1_Freq_Timer:TimerUDB:hwEnable_reg\\D\ : bit;
 SIGNAL \OSC1_Freq_Timer:TimerUDB:capture_out_reg_i\\D\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:int_capt_count_1\\D\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:int_capt_count_0\\D\ : bit;
+SIGNAL \OSC1_Freq_Timer:TimerUDB:capt_int_temp\\D\ : bit;
 SIGNAL cy_tff_1D : bit;
 SIGNAL cy_tff_4D : bit;
 SIGNAL \MIDI1_UART:BUART:reset_reg\\D\ : bit;
@@ -1755,18 +1574,35 @@ SIGNAL \OSC1_Freq_Timer_2:TimerUDB:capture_last\\D\ : bit;
 SIGNAL \OSC1_Freq_Timer_2:TimerUDB:tc_reg_i\\D\ : bit;
 SIGNAL \OSC1_Freq_Timer_2:TimerUDB:hwEnable_reg\\D\ : bit;
 SIGNAL \OSC1_Freq_Timer_2:TimerUDB:capture_out_reg_i\\D\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:capture_last\\D\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:tc_reg_i\\D\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:hwEnable_reg\\D\ : bit;
-SIGNAL \OSC1_Freq_Timer_1:TimerUDB:capture_out_reg_i\\D\ : bit;
+SIGNAL \PulseConvert_1:out_pulse\\D\ : bit;
+SIGNAL \PulseConvert_1:in_sample\\D\ : bit;
+SIGNAL \PulseConvert_1:out_sample\\D\ : bit;
 BEGIN
 
 zero <=  ('0') ;
 
+\OSC1_Freq_Timer:TimerUDB:capt_fifo_load\ <= ((not \OSC1_Freq_Timer:TimerUDB:capture_last\ and Net_1538 and \OSC1_Freq_Timer:TimerUDB:control_7\));
+
 \OSC1_Freq_Timer:TimerUDB:status_tc\ <= ((\OSC1_Freq_Timer:TimerUDB:control_7\ and \OSC1_Freq_Timer:TimerUDB:per_zero\));
 
-cy_tff_1D <= ((not Net_138 and Net_133)
-	OR (not Net_133 and Net_138));
+\OSC1_Freq_Timer:TimerUDB:int_capt_count_1\\D\ <= ((not Net_12 and not MODIN1_1 and not MODIN2_0 and \OSC1_Freq_Timer:TimerUDB:capt_fifo_load\ and MODIN1_0)
+	OR (not Net_12 and not MODIN1_1 and \OSC1_Freq_Timer:TimerUDB:capt_fifo_load\ and MODIN1_0 and MODIN2_1)
+	OR (not Net_12 and not MODIN1_0 and MODIN1_1 and MODIN2_0)
+	OR (not Net_12 and not MODIN1_0 and not MODIN2_1 and MODIN1_1)
+	OR (not \OSC1_Freq_Timer:TimerUDB:capt_fifo_load\ and not Net_12 and MODIN1_1));
+
+\OSC1_Freq_Timer:TimerUDB:int_capt_count_0\\D\ <= ((not Net_12 and not MODIN1_0 and not MODIN2_1 and \OSC1_Freq_Timer:TimerUDB:capt_fifo_load\ and MODIN1_1)
+	OR (not Net_12 and not MODIN1_1 and not MODIN1_0 and \OSC1_Freq_Timer:TimerUDB:capt_fifo_load\ and MODIN2_1)
+	OR (not \OSC1_Freq_Timer:TimerUDB:capt_fifo_load\ and not Net_12 and MODIN1_0)
+	OR (not Net_12 and not MODIN1_0 and \OSC1_Freq_Timer:TimerUDB:capt_fifo_load\ and MODIN2_0));
+
+\OSC1_Freq_Timer:TimerUDB:capt_int_temp\\D\ <= ((not Net_12 and not MODIN1_1 and not MODIN1_0 and not MODIN2_1 and not MODIN2_0 and \OSC1_Freq_Timer:TimerUDB:capt_fifo_load\)
+	OR (not Net_12 and not MODIN1_0 and not MODIN2_0 and \OSC1_Freq_Timer:TimerUDB:capt_fifo_load\ and MODIN1_1 and MODIN2_1)
+	OR (not Net_12 and not MODIN1_1 and not MODIN2_1 and \OSC1_Freq_Timer:TimerUDB:capt_fifo_load\ and MODIN1_0 and MODIN2_0)
+	OR (not Net_12 and \OSC1_Freq_Timer:TimerUDB:capt_fifo_load\ and MODIN1_1 and MODIN1_0 and MODIN2_1 and MODIN2_0));
+
+cy_tff_1D <= ((not Net_138 and Net_2728)
+	OR (not Net_2728 and Net_138));
 
 Net_1306 <=  ('1') ;
 
@@ -1881,14 +1717,21 @@ cy_tff_3D <= ((not Net_1576 and Net_1567)
 
 \OSC1_Freq_Timer_2:TimerUDB:status_tc\ <= ((\OSC1_Freq_Timer_2:TimerUDB:control_7\ and \OSC1_Freq_Timer_2:TimerUDB:per_zero\));
 
-\OSC1_Freq_Timer_1:TimerUDB:status_tc\ <= ((\OSC1_Freq_Timer_1:TimerUDB:control_7\ and \OSC1_Freq_Timer_1:TimerUDB:per_zero\));
+\PulseConvert_1:in_sample\\D\ <= ((not \PulseConvert_1:out_sample\ and \PulseConvert_1:in_sample\)
+	OR (Net_2728 and Net_138));
+
+\PulseConvert_1:out_sample\\D\ <= ((not Net_2742 and not \PulseConvert_1:out_sample\ and \PulseConvert_1:in_sample\)
+	OR (Net_2728 and Net_138));
+
+\PulseConvert_1:out_pulse\\D\ <= ((not \PulseConvert_1:out_sample\ and Net_2728 and Net_138)
+	OR (not \PulseConvert_1:out_sample\ and \PulseConvert_1:in_sample\));
 
 \OSC1_IDAC8:viDAC8\:cy_psoc3_vidac8_v1_0
 	GENERIC MAP(cy_registers=>"",
 		reg_data=>'0',
 		is_all_if_any=>'0')
 	PORT MAP(reset=>zero,
-		idir=>Net_133,
+		idir=>Net_2728,
 		ioff=>zero,
 		data=>(zero, zero, zero, zero,
 			zero, zero, zero, zero),
@@ -1955,7 +1798,7 @@ OSC1_Square_Out:cy_psoc3_pins_v1_10
 		ovt_hyst_trim=>"0",
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(Net_1306),
-		y=>Net_133,
+		y=>Net_2728,
 		fb=>(tmpFB_0__OSC1_Square_Out_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__OSC1_Square_Out_net_0),
@@ -1978,6 +1821,76 @@ timer_clock:cy_clock_v1_0
 		is_digital=>'1')
 	PORT MAP(clock_out=>Net_191,
 		dig_domain_out=>open);
+Soft_Sync:cy_psoc3_pins_v1_10
+	GENERIC MAP(id=>"89e82d9e-8bbf-495b-954f-bcf42144900f",
+		drive_mode=>"011",
+		ibuf_enabled=>"1",
+		init_dr_st=>"0",
+		input_sync=>"0",
+		input_clk_en=>'0',
+		input_sync_mode=>"0",
+		intr_mode=>"00",
+		invert_in_clock=>'0',
+		invert_in_clock_en=>'0',
+		invert_in_reset=>'0',
+		invert_out_clock=>'0',
+		invert_out_clock_en=>'0',
+		invert_out_reset=>'0',
+		io_voltage=>"",
+		layout_mode=>"CONTIGUOUS",
+		output_conn=>"0",
+		output_sync=>"0",
+		output_clk_en=>'0',
+		output_mode=>"0",
+		output_reset=>'0',
+		output_clock_mode=>"0",
+		oe_sync=>"0",
+		oe_conn=>"0",
+		oe_reset=>'0',
+		pin_aliases=>"",
+		pin_mode=>"I",
+		por_state=>4,
+		sio_group_cnt=>0,
+		sio_hifreq=>"00000000",
+		sio_hyst=>"1",
+		sio_ibuf=>"00000000",
+		sio_info=>"00",
+		sio_obuf=>"00000000",
+		sio_refsel=>"00000000",
+		sio_vtrip=>"00000000",
+		sio_vohsel=>"00000000",
+		slew_rate=>"0",
+		spanning=>'0',
+		sw_only=>'0',
+		vtrip=>"00",
+		width=>1,
+		port_alias_required=>'0',
+		port_alias_group=>"",
+		use_annotation=>"0",
+		pa_in_clock=>-1,
+		pa_in_clock_en=>-1,
+		pa_in_reset=>-1,
+		pa_out_clock=>-1,
+		pa_out_clock_en=>-1,
+		pa_out_reset=>-1,
+		ovt_needed=>"0",
+		ovt_slew_control=>"00",
+		ovt_hyst_trim=>"0",
+		input_buffer_sel=>"00")
+	PORT MAP(oe=>(Net_1306),
+		y=>(zero),
+		fb=>Net_1538,
+		analog=>(open),
+		io=>(tmpIO_0__Soft_Sync_net_0),
+		siovref=>(tmpSIOVREF__Soft_Sync_net_0),
+		annotation=>(open),
+		in_clock=>zero,
+		in_clock_en=>Net_1306,
+		in_reset=>zero,
+		out_clock=>zero,
+		out_clock_en=>Net_1306,
+		out_reset=>zero,
+		interrupt=>tmpINTERRUPT_0__Soft_Sync_net_0);
 \OSC1_Freq_Timer:TimerUDB:clock_enable_block\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
 	PORT MAP(clock_in=>Net_191,
@@ -1997,15 +1910,15 @@ timer_clock:cy_clock_v1_0
 	PORT MAP(reset=>zero,
 		clock=>\OSC1_Freq_Timer:TimerUDB:Clk_Ctl_i\,
 		control=>(\OSC1_Freq_Timer:TimerUDB:control_7\, \OSC1_Freq_Timer:TimerUDB:control_6\, \OSC1_Freq_Timer:TimerUDB:control_5\, \OSC1_Freq_Timer:TimerUDB:control_4\,
-			\OSC1_Freq_Timer:TimerUDB:control_3\, \OSC1_Freq_Timer:TimerUDB:control_2\, \OSC1_Freq_Timer:TimerUDB:control_1\, \OSC1_Freq_Timer:TimerUDB:control_0\));
+			\OSC1_Freq_Timer:TimerUDB:control_3\, \OSC1_Freq_Timer:TimerUDB:control_2\, MODIN2_1, MODIN2_0));
 \OSC1_Freq_Timer:TimerUDB:rstSts:stsreg\:cy_psoc3_statusi
 	GENERIC MAP(cy_force_order=>'1',
 		cy_md_select=>"0000011",
 		cy_int_mask=>"1111111")
-	PORT MAP(reset=>zero,
+	PORT MAP(reset=>Net_12,
 		clock=>\OSC1_Freq_Timer:TimerUDB:ClockOutFromEnBlock\,
 		status=>(zero, zero, zero, \OSC1_Freq_Timer:TimerUDB:status_3\,
-			\OSC1_Freq_Timer:TimerUDB:status_2\, zero, \OSC1_Freq_Timer:TimerUDB:status_tc\),
+			\OSC1_Freq_Timer:TimerUDB:status_2\, \OSC1_Freq_Timer:TimerUDB:capt_int_temp\, \OSC1_Freq_Timer:TimerUDB:status_tc\),
 		interrupt=>\OSC1_Freq_Timer:Net_55\);
 \OSC1_Freq_Timer:TimerUDB:sT24:timerdp:u0\:cy_psoc3_dp
 	GENERIC MAP(cy_dpconfig=>"0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000",
@@ -2031,10 +1944,10 @@ timer_clock:cy_clock_v1_0
 		f1_blk_sync=>'1')
 	PORT MAP(reset=>zero,
 		clk=>\OSC1_Freq_Timer:TimerUDB:ClockOutFromEnBlock\,
-		cs_addr=>(zero, \OSC1_Freq_Timer:TimerUDB:control_7\, \OSC1_Freq_Timer:TimerUDB:per_zero\),
+		cs_addr=>(Net_12, \OSC1_Freq_Timer:TimerUDB:control_7\, \OSC1_Freq_Timer:TimerUDB:per_zero\),
 		route_si=>zero,
 		route_ci=>zero,
-		f0_load=>zero,
+		f0_load=>\OSC1_Freq_Timer:TimerUDB:capt_fifo_load\,
 		f1_load=>zero,
 		d0_load=>zero,
 		d1_load=>zero,
@@ -2117,10 +2030,10 @@ timer_clock:cy_clock_v1_0
 		f1_blk_sync=>'1')
 	PORT MAP(reset=>zero,
 		clk=>\OSC1_Freq_Timer:TimerUDB:ClockOutFromEnBlock\,
-		cs_addr=>(zero, \OSC1_Freq_Timer:TimerUDB:control_7\, \OSC1_Freq_Timer:TimerUDB:per_zero\),
+		cs_addr=>(Net_12, \OSC1_Freq_Timer:TimerUDB:control_7\, \OSC1_Freq_Timer:TimerUDB:per_zero\),
 		route_si=>zero,
 		route_ci=>zero,
-		f0_load=>zero,
+		f0_load=>\OSC1_Freq_Timer:TimerUDB:capt_fifo_load\,
 		f1_load=>zero,
 		d0_load=>zero,
 		d1_load=>zero,
@@ -2203,10 +2116,10 @@ timer_clock:cy_clock_v1_0
 		f1_blk_sync=>'1')
 	PORT MAP(reset=>zero,
 		clk=>\OSC1_Freq_Timer:TimerUDB:ClockOutFromEnBlock\,
-		cs_addr=>(zero, \OSC1_Freq_Timer:TimerUDB:control_7\, \OSC1_Freq_Timer:TimerUDB:per_zero\),
+		cs_addr=>(Net_12, \OSC1_Freq_Timer:TimerUDB:control_7\, \OSC1_Freq_Timer:TimerUDB:per_zero\),
 		route_si=>zero,
 		route_ci=>zero,
-		f0_load=>zero,
+		f0_load=>\OSC1_Freq_Timer:TimerUDB:capt_fifo_load\,
 		f1_load=>zero,
 		d0_load=>zero,
 		d1_load=>zero,
@@ -2509,15 +2422,15 @@ CV_IN:cy_psoc3_pins_v1_10
 		ext_start=>Net_1306,
 		mod_reset=>\ADC_DelSig_1:mod_reset\,
 		interrupt=>Net_1270);
-\OSC1_Follower:ABuf\:cy_psoc3_abuf_v1_0
+\OSC1_Triangle_Follower:ABuf\:cy_psoc3_abuf_v1_0
 	GENERIC MAP(cy_registers=>"")
 	PORT MAP(vplus=>Net_1333,
-		vminus=>\OSC1_Follower:Net_29\,
+		vminus=>\OSC1_Triangle_Follower:Net_29\,
 		vout=>Net_2680);
-\OSC1_Follower:abuf_negInput_mux_connect\:cy_connect_v1_0
+\OSC1_Triangle_Follower:abuf_negInput_mux_connect\:cy_connect_v1_0
 	GENERIC MAP(sig_width=>1,
 		is_net_join=>'0')
-	PORT MAP(signal1=>\OSC1_Follower:Net_29\,
+	PORT MAP(signal1=>\OSC1_Triangle_Follower:Net_29\,
 		signal2=>Net_2680);
 OSC1_ISR_3:cy_isr_v1_0
 	GENERIC MAP(int_type=>"10")
@@ -3674,7 +3587,7 @@ OSC1_Tri_Cap:cy_psoc3_pins_v1_10
 		status=>(zero, \MIDI1_UART:BUART:rx_status_5\, \MIDI1_UART:BUART:rx_status_4\, \MIDI1_UART:BUART:rx_status_3\,
 			\MIDI1_UART:BUART:rx_status_2\, zero, zero),
 		interrupt=>Net_1638);
-OSC1_Saw_Out:cy_psoc3_pins_v1_10
+OSC1_Saw_Out_Cap:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"2e04aa2d-9b00-41ea-b059-6e859d947641",
 		drive_mode=>"000",
 		ibuf_enabled=>"0",
@@ -3732,10 +3645,10 @@ OSC1_Saw_Out:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(Net_1306),
 		y=>(zero),
-		fb=>(tmpFB_0__OSC1_Saw_Out_net_0),
-		analog=>Net_1346,
-		io=>(tmpIO_0__OSC1_Saw_Out_net_0),
-		siovref=>(tmpSIOVREF__OSC1_Saw_Out_net_0),
+		fb=>(tmpFB_0__OSC1_Saw_Out_Cap_net_0),
+		analog=>Net_2753,
+		io=>(tmpIO_0__OSC1_Saw_Out_Cap_net_0),
+		siovref=>(tmpSIOVREF__OSC1_Saw_Out_Cap_net_0),
 		annotation=>(open),
 		in_clock=>zero,
 		in_clock_en=>Net_1306,
@@ -3743,7 +3656,7 @@ OSC1_Saw_Out:cy_psoc3_pins_v1_10
 		out_clock=>zero,
 		out_clock_en=>Net_1306,
 		out_reset=>zero,
-		interrupt=>tmpINTERRUPT_0__OSC1_Saw_Out_net_0);
+		interrupt=>tmpINTERRUPT_0__OSC1_Saw_Out_Cap_net_0);
 OSC1_Square_Out_3:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"4dad03f9-5579-40ab-81a0-0ca8efb55f10",
 		drive_mode=>"110",
@@ -4745,442 +4658,6 @@ timer_clock_2:cy_clock_v1_0
 		iout=>Net_1565);
 \OSC1_IDAC8_2:cy_analog_noconnect_1\:cy_analog_noconnect_v1_0
 	PORT MAP(noconnect=>\OSC1_IDAC8_2:Net_124\);
-Pin_3:cy_psoc3_pins_v1_10
-	GENERIC MAP(id=>"11a5047d-5add-4abd-b97a-84fb5b93bd59",
-		drive_mode=>"000",
-		ibuf_enabled=>"0",
-		init_dr_st=>"0",
-		input_sync=>"1",
-		input_clk_en=>'0',
-		input_sync_mode=>"0",
-		intr_mode=>"00",
-		invert_in_clock=>'0',
-		invert_in_clock_en=>'0',
-		invert_in_reset=>'0',
-		invert_out_clock=>'0',
-		invert_out_clock_en=>'0',
-		invert_out_reset=>'0',
-		io_voltage=>"",
-		layout_mode=>"CONTIGUOUS",
-		output_conn=>"0",
-		output_sync=>"0",
-		output_clk_en=>'0',
-		output_mode=>"0",
-		output_reset=>'0',
-		output_clock_mode=>"0",
-		oe_sync=>"0",
-		oe_conn=>"0",
-		oe_reset=>'0',
-		pin_aliases=>"",
-		pin_mode=>"A",
-		por_state=>4,
-		sio_group_cnt=>0,
-		sio_hifreq=>"00000000",
-		sio_hyst=>"1",
-		sio_ibuf=>"00000000",
-		sio_info=>"00",
-		sio_obuf=>"00000000",
-		sio_refsel=>"00000000",
-		sio_vtrip=>"00000000",
-		sio_vohsel=>"00000000",
-		slew_rate=>"0",
-		spanning=>'0',
-		sw_only=>'0',
-		vtrip=>"10",
-		width=>1,
-		port_alias_required=>'0',
-		port_alias_group=>"",
-		use_annotation=>"0",
-		pa_in_clock=>-1,
-		pa_in_clock_en=>-1,
-		pa_in_reset=>-1,
-		pa_out_clock=>-1,
-		pa_out_clock_en=>-1,
-		pa_out_reset=>-1,
-		ovt_needed=>"0",
-		ovt_slew_control=>"00",
-		ovt_hyst_trim=>"0",
-		input_buffer_sel=>"00")
-	PORT MAP(oe=>(Net_1306),
-		y=>(zero),
-		fb=>(tmpFB_0__Pin_3_net_0),
-		analog=>Net_2652,
-		io=>(tmpIO_0__Pin_3_net_0),
-		siovref=>(tmpSIOVREF__Pin_3_net_0),
-		annotation=>(open),
-		in_clock=>zero,
-		in_clock_en=>Net_1306,
-		in_reset=>zero,
-		out_clock=>zero,
-		out_clock_en=>Net_1306,
-		out_reset=>zero,
-		interrupt=>tmpINTERRUPT_0__Pin_3_net_0);
-vRef_1:cy_vref_v1_0
-	GENERIC MAP(guid=>"4720866E-BC14-478d-B8A0-3E44F38CADAC",
-		name=>"Vdda/2",
-		autoenable=>'1',
-		ignoresleep=>'0')
-	PORT MAP(vout=>Net_2652);
-\OSC1_Freq_Timer_1:TimerUDB:clock_enable_block\:cy_psoc3_udb_clock_enable_v1_0
-	GENERIC MAP(sync_mode=>'1')
-	PORT MAP(clock_in=>Net_191,
-		enable=>Net_1306,
-		clock_out=>\OSC1_Freq_Timer_1:TimerUDB:ClockOutFromEnBlock\);
-\OSC1_Freq_Timer_1:TimerUDB:sCTRLReg:SyncCtl:cy_psoc3_udb_Ctl_Clk_Sync\:cy_psoc3_udb_clock_enable_v1_0
-	GENERIC MAP(sync_mode=>'1')
-	PORT MAP(clock_in=>Net_191,
-		enable=>Net_1306,
-		clock_out=>\OSC1_Freq_Timer_1:TimerUDB:Clk_Ctl_i\);
-\OSC1_Freq_Timer_1:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\:cy_psoc3_control
-	GENERIC MAP(cy_init_value=>"00000000",
-		cy_force_order=>'1',
-		cy_ctrl_mode_1=>"00000000",
-		cy_ctrl_mode_0=>"11111111",
-		cy_ext_reset=>'0')
-	PORT MAP(reset=>zero,
-		clock=>\OSC1_Freq_Timer_1:TimerUDB:Clk_Ctl_i\,
-		control=>(\OSC1_Freq_Timer_1:TimerUDB:control_7\, \OSC1_Freq_Timer_1:TimerUDB:control_6\, \OSC1_Freq_Timer_1:TimerUDB:control_5\, \OSC1_Freq_Timer_1:TimerUDB:control_4\,
-			\OSC1_Freq_Timer_1:TimerUDB:control_3\, \OSC1_Freq_Timer_1:TimerUDB:control_2\, \OSC1_Freq_Timer_1:TimerUDB:control_1\, \OSC1_Freq_Timer_1:TimerUDB:control_0\));
-\OSC1_Freq_Timer_1:TimerUDB:rstSts:stsreg\:cy_psoc3_statusi
-	GENERIC MAP(cy_force_order=>'1',
-		cy_md_select=>"0000011",
-		cy_int_mask=>"1111111")
-	PORT MAP(reset=>zero,
-		clock=>\OSC1_Freq_Timer_1:TimerUDB:ClockOutFromEnBlock\,
-		status=>(zero, zero, zero, \OSC1_Freq_Timer_1:TimerUDB:status_3\,
-			\OSC1_Freq_Timer_1:TimerUDB:status_2\, zero, \OSC1_Freq_Timer_1:TimerUDB:status_tc\),
-		interrupt=>Net_1133);
-\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:u0\:cy_psoc3_dp
-	GENERIC MAP(cy_dpconfig=>"0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000",
-		d0_init=>"00000000",
-		d1_init=>"00000000",
-		a0_init=>"00000000",
-		a1_init=>"00000000",
-		ce0_sync=>'1',
-		cl0_sync=>'1',
-		z0_sync=>'1',
-		ff0_sync=>'1',
-		ce1_sync=>'1',
-		cl1_sync=>'1',
-		z1_sync=>'1',
-		ff1_sync=>'1',
-		ov_msb_sync=>'1',
-		co_msb_sync=>'1',
-		cmsb_sync=>'1',
-		so_sync=>'1',
-		f0_bus_sync=>'1',
-		f0_blk_sync=>'1',
-		f1_bus_sync=>'1',
-		f1_blk_sync=>'1')
-	PORT MAP(reset=>zero,
-		clk=>\OSC1_Freq_Timer_1:TimerUDB:ClockOutFromEnBlock\,
-		cs_addr=>(zero, \OSC1_Freq_Timer_1:TimerUDB:control_7\, \OSC1_Freq_Timer_1:TimerUDB:per_zero\),
-		route_si=>zero,
-		route_ci=>zero,
-		f0_load=>zero,
-		f1_load=>zero,
-		d0_load=>zero,
-		d1_load=>zero,
-		ce0=>open,
-		cl0=>open,
-		z0=>\OSC1_Freq_Timer_1:TimerUDB:nc0\,
-		ff0=>open,
-		ce1=>open,
-		cl1=>open,
-		z1=>open,
-		ff1=>open,
-		ov_msb=>open,
-		co_msb=>open,
-		cmsb=>open,
-		so=>open,
-		f0_bus_stat=>\OSC1_Freq_Timer_1:TimerUDB:nc6\,
-		f0_blk_stat=>\OSC1_Freq_Timer_1:TimerUDB:nc8\,
-		f1_bus_stat=>open,
-		f1_blk_stat=>open,
-		ce0_reg=>open,
-		cl0_reg=>open,
-		z0_reg=>open,
-		ff0_reg=>open,
-		ce1_reg=>open,
-		cl1_reg=>open,
-		z1_reg=>open,
-		ff1_reg=>open,
-		ov_msb_reg=>open,
-		co_msb_reg=>open,
-		cmsb_reg=>open,
-		so_reg=>open,
-		f0_bus_stat_reg=>open,
-		f0_blk_stat_reg=>open,
-		f1_bus_stat_reg=>open,
-		f1_blk_stat_reg=>open,
-		ci=>zero,
-		co=>\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:carry0\,
-		sir=>zero,
-		sor=>open,
-		sil=>\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:sh_right0\,
-		sol=>\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:sh_left0\,
-		msbi=>\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:msb0\,
-		msbo=>open,
-		cei=>(zero, zero),
-		ceo=>(\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_eq0_1\, \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_eq0_0\),
-		cli=>(zero, zero),
-		clo=>(\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_lt0_1\, \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_lt0_0\),
-		zi=>(zero, zero),
-		zo=>(\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_zero0_1\, \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_zero0_0\),
-		fi=>(zero, zero),
-		fo=>(\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_ff0_1\, \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_ff0_0\),
-		capi=>(zero, zero),
-		capo=>(\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cap0_1\, \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cap0_0\),
-		cfbi=>zero,
-		cfbo=>\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cfb0\,
-		pi=>(zero, zero, zero, zero,
-			zero, zero, zero, zero),
-		po=>open);
-\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:u1\:cy_psoc3_dp
-	GENERIC MAP(cy_dpconfig=>"0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000",
-		d0_init=>"00000000",
-		d1_init=>"00000000",
-		a0_init=>"00000000",
-		a1_init=>"00000000",
-		ce0_sync=>'1',
-		cl0_sync=>'1',
-		z0_sync=>'1',
-		ff0_sync=>'1',
-		ce1_sync=>'1',
-		cl1_sync=>'1',
-		z1_sync=>'1',
-		ff1_sync=>'1',
-		ov_msb_sync=>'1',
-		co_msb_sync=>'1',
-		cmsb_sync=>'1',
-		so_sync=>'1',
-		f0_bus_sync=>'1',
-		f0_blk_sync=>'1',
-		f1_bus_sync=>'1',
-		f1_blk_sync=>'1')
-	PORT MAP(reset=>zero,
-		clk=>\OSC1_Freq_Timer_1:TimerUDB:ClockOutFromEnBlock\,
-		cs_addr=>(zero, \OSC1_Freq_Timer_1:TimerUDB:control_7\, \OSC1_Freq_Timer_1:TimerUDB:per_zero\),
-		route_si=>zero,
-		route_ci=>zero,
-		f0_load=>zero,
-		f1_load=>zero,
-		d0_load=>zero,
-		d1_load=>zero,
-		ce0=>open,
-		cl0=>open,
-		z0=>\OSC1_Freq_Timer_1:TimerUDB:nc1\,
-		ff0=>open,
-		ce1=>open,
-		cl1=>open,
-		z1=>open,
-		ff1=>open,
-		ov_msb=>open,
-		co_msb=>open,
-		cmsb=>open,
-		so=>open,
-		f0_bus_stat=>\OSC1_Freq_Timer_1:TimerUDB:nc5\,
-		f0_blk_stat=>\OSC1_Freq_Timer_1:TimerUDB:nc7\,
-		f1_bus_stat=>open,
-		f1_blk_stat=>open,
-		ce0_reg=>open,
-		cl0_reg=>open,
-		z0_reg=>open,
-		ff0_reg=>open,
-		ce1_reg=>open,
-		cl1_reg=>open,
-		z1_reg=>open,
-		ff1_reg=>open,
-		ov_msb_reg=>open,
-		co_msb_reg=>open,
-		cmsb_reg=>open,
-		so_reg=>open,
-		f0_bus_stat_reg=>open,
-		f0_blk_stat_reg=>open,
-		f1_bus_stat_reg=>open,
-		f1_blk_stat_reg=>open,
-		ci=>\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:carry0\,
-		co=>\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:carry1\,
-		sir=>\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:sh_left0\,
-		sor=>\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:sh_right0\,
-		sil=>\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:sh_right1\,
-		sol=>\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:sh_left1\,
-		msbi=>\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:msb1\,
-		msbo=>\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:msb0\,
-		cei=>(\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_eq0_1\, \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_eq0_0\),
-		ceo=>(\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_eq1_1\, \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_eq1_0\),
-		cli=>(\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_lt0_1\, \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_lt0_0\),
-		clo=>(\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_lt1_1\, \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_lt1_0\),
-		zi=>(\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_zero0_1\, \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_zero0_0\),
-		zo=>(\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_zero1_1\, \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_zero1_0\),
-		fi=>(\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_ff0_1\, \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_ff0_0\),
-		fo=>(\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_ff1_1\, \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_ff1_0\),
-		capi=>(\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cap0_1\, \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cap0_0\),
-		capo=>(\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cap1_1\, \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cap1_0\),
-		cfbi=>\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cfb0\,
-		cfbo=>\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cfb1\,
-		pi=>(zero, zero, zero, zero,
-			zero, zero, zero, zero),
-		po=>open);
-\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:u2\:cy_psoc3_dp
-	GENERIC MAP(cy_dpconfig=>"0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000",
-		d0_init=>"00000000",
-		d1_init=>"00000000",
-		a0_init=>"00000000",
-		a1_init=>"00000000",
-		ce0_sync=>'1',
-		cl0_sync=>'1',
-		z0_sync=>'1',
-		ff0_sync=>'1',
-		ce1_sync=>'1',
-		cl1_sync=>'1',
-		z1_sync=>'1',
-		ff1_sync=>'1',
-		ov_msb_sync=>'1',
-		co_msb_sync=>'1',
-		cmsb_sync=>'1',
-		so_sync=>'1',
-		f0_bus_sync=>'1',
-		f0_blk_sync=>'1',
-		f1_bus_sync=>'1',
-		f1_blk_sync=>'1')
-	PORT MAP(reset=>zero,
-		clk=>\OSC1_Freq_Timer_1:TimerUDB:ClockOutFromEnBlock\,
-		cs_addr=>(zero, \OSC1_Freq_Timer_1:TimerUDB:control_7\, \OSC1_Freq_Timer_1:TimerUDB:per_zero\),
-		route_si=>zero,
-		route_ci=>zero,
-		f0_load=>zero,
-		f1_load=>zero,
-		d0_load=>zero,
-		d1_load=>zero,
-		ce0=>open,
-		cl0=>open,
-		z0=>\OSC1_Freq_Timer_1:TimerUDB:per_zero\,
-		ff0=>open,
-		ce1=>open,
-		cl1=>open,
-		z1=>open,
-		ff1=>open,
-		ov_msb=>open,
-		co_msb=>open,
-		cmsb=>open,
-		so=>open,
-		f0_bus_stat=>\OSC1_Freq_Timer_1:TimerUDB:status_3\,
-		f0_blk_stat=>\OSC1_Freq_Timer_1:TimerUDB:status_2\,
-		f1_bus_stat=>open,
-		f1_blk_stat=>open,
-		ce0_reg=>open,
-		cl0_reg=>open,
-		z0_reg=>open,
-		ff0_reg=>open,
-		ce1_reg=>open,
-		cl1_reg=>open,
-		z1_reg=>open,
-		ff1_reg=>open,
-		ov_msb_reg=>open,
-		co_msb_reg=>open,
-		cmsb_reg=>open,
-		so_reg=>open,
-		f0_bus_stat_reg=>open,
-		f0_blk_stat_reg=>open,
-		f1_bus_stat_reg=>open,
-		f1_blk_stat_reg=>open,
-		ci=>\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:carry1\,
-		co=>open,
-		sir=>\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:sh_left1\,
-		sor=>\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:sh_right1\,
-		sil=>zero,
-		sol=>open,
-		msbi=>zero,
-		msbo=>\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:msb1\,
-		cei=>(\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_eq1_1\, \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_eq1_0\),
-		ceo=>open,
-		cli=>(\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_lt1_1\, \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_lt1_0\),
-		clo=>open,
-		zi=>(\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_zero1_1\, \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_zero1_0\),
-		zo=>open,
-		fi=>(\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_ff1_1\, \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cmp_ff1_0\),
-		fo=>open,
-		capi=>(\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cap1_1\, \OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cap1_0\),
-		capo=>open,
-		cfbi=>\OSC1_Freq_Timer_1:TimerUDB:sT24:timerdp:cfb1\,
-		cfbo=>open,
-		pi=>(zero, zero, zero, zero,
-			zero, zero, zero, zero),
-		po=>open);
-Pin_2:cy_psoc3_pins_v1_10
-	GENERIC MAP(id=>"f1063957-e1c4-48d4-bae4-52bc6c025f33",
-		drive_mode=>"110",
-		ibuf_enabled=>"1",
-		init_dr_st=>"0",
-		input_sync=>"1",
-		input_clk_en=>'0',
-		input_sync_mode=>"0",
-		intr_mode=>"00",
-		invert_in_clock=>'0',
-		invert_in_clock_en=>'0',
-		invert_in_reset=>'0',
-		invert_out_clock=>'0',
-		invert_out_clock_en=>'0',
-		invert_out_reset=>'0',
-		io_voltage=>"",
-		layout_mode=>"CONTIGUOUS",
-		output_conn=>"0",
-		output_sync=>"0",
-		output_clk_en=>'0',
-		output_mode=>"0",
-		output_reset=>'0',
-		output_clock_mode=>"0",
-		oe_sync=>"0",
-		oe_conn=>"0",
-		oe_reset=>'0',
-		pin_aliases=>"",
-		pin_mode=>"O",
-		por_state=>4,
-		sio_group_cnt=>0,
-		sio_hifreq=>"00000000",
-		sio_hyst=>"1",
-		sio_ibuf=>"00000000",
-		sio_info=>"00",
-		sio_obuf=>"00000000",
-		sio_refsel=>"00000000",
-		sio_vtrip=>"00000000",
-		sio_vohsel=>"00000000",
-		slew_rate=>"0",
-		spanning=>'0',
-		sw_only=>'0',
-		vtrip=>"10",
-		width=>1,
-		port_alias_required=>'0',
-		port_alias_group=>"",
-		use_annotation=>"0",
-		pa_in_clock=>-1,
-		pa_in_clock_en=>-1,
-		pa_in_reset=>-1,
-		pa_out_clock=>-1,
-		pa_out_clock_en=>-1,
-		pa_out_reset=>-1,
-		ovt_needed=>"0",
-		ovt_slew_control=>"00",
-		ovt_hyst_trim=>"0",
-		input_buffer_sel=>"00")
-	PORT MAP(oe=>(Net_1306),
-		y=>(zero),
-		fb=>(tmpFB_0__Pin_2_net_0),
-		analog=>(open),
-		io=>(tmpIO_0__Pin_2_net_0),
-		siovref=>(tmpSIOVREF__Pin_2_net_0),
-		annotation=>(open),
-		in_clock=>zero,
-		in_clock_en=>Net_1306,
-		in_reset=>zero,
-		out_clock=>zero,
-		out_clock_en=>Net_1306,
-		out_reset=>zero,
-		interrupt=>tmpINTERRUPT_0__Pin_2_net_0);
-OSC1_ISR:cy_isr_v1_0
-	GENERIC MAP(int_type=>"10")
-	PORT MAP(int_signal=>Net_1133);
 MIDI_OUT1:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"ed092b9b-d398-4703-be89-cebf998501f6",
 		drive_mode=>"110",
@@ -5508,11 +4985,241 @@ Pin_1:cy_psoc3_pins_v1_10
 		strobe=>zero,
 		strobe_udb=>zero,
 		vout=>\OSC1_IDAC8_SAW:Net_124\,
-		iout=>Net_1346);
+		iout=>Net_2753);
 \OSC1_IDAC8_SAW:cy_analog_noconnect_1\:cy_analog_noconnect_v1_0
 	PORT MAP(noconnect=>\OSC1_IDAC8_SAW:Net_124\);
+Pin_4:cy_psoc3_pins_v1_10
+	GENERIC MAP(id=>"12111f7e-f0a0-4c05-a065-9731da1fa997",
+		drive_mode=>"110",
+		ibuf_enabled=>"1",
+		init_dr_st=>"0",
+		input_sync=>"1",
+		input_clk_en=>'0',
+		input_sync_mode=>"0",
+		intr_mode=>"00",
+		invert_in_clock=>'0',
+		invert_in_clock_en=>'0',
+		invert_in_reset=>'0',
+		invert_out_clock=>'0',
+		invert_out_clock_en=>'0',
+		invert_out_reset=>'0',
+		io_voltage=>"",
+		layout_mode=>"CONTIGUOUS",
+		output_conn=>"1",
+		output_sync=>"0",
+		output_clk_en=>'0',
+		output_mode=>"0",
+		output_reset=>'0',
+		output_clock_mode=>"0",
+		oe_sync=>"0",
+		oe_conn=>"0",
+		oe_reset=>'0',
+		pin_aliases=>"",
+		pin_mode=>"O",
+		por_state=>4,
+		sio_group_cnt=>0,
+		sio_hifreq=>"00000000",
+		sio_hyst=>"1",
+		sio_ibuf=>"00000000",
+		sio_info=>"00",
+		sio_obuf=>"00000000",
+		sio_refsel=>"00000000",
+		sio_vtrip=>"00000000",
+		sio_vohsel=>"00000000",
+		slew_rate=>"0",
+		spanning=>'0',
+		sw_only=>'0',
+		vtrip=>"10",
+		width=>1,
+		port_alias_required=>'0',
+		port_alias_group=>"",
+		use_annotation=>"0",
+		pa_in_clock=>-1,
+		pa_in_clock_en=>-1,
+		pa_in_reset=>-1,
+		pa_out_clock=>-1,
+		pa_out_clock_en=>-1,
+		pa_out_reset=>-1,
+		ovt_needed=>"0",
+		ovt_slew_control=>"00",
+		ovt_hyst_trim=>"0",
+		input_buffer_sel=>"00")
+	PORT MAP(oe=>(Net_1306),
+		y=>Net_2742,
+		fb=>(tmpFB_0__Pin_4_net_0),
+		analog=>(open),
+		io=>(tmpIO_0__Pin_4_net_0),
+		siovref=>(tmpSIOVREF__Pin_4_net_0),
+		annotation=>(open),
+		in_clock=>zero,
+		in_clock_en=>Net_1306,
+		in_reset=>zero,
+		out_clock=>zero,
+		out_clock_en=>Net_1306,
+		out_reset=>zero,
+		interrupt=>tmpINTERRUPT_0__Pin_4_net_0);
+Clock_1:cy_clock_v1_0
+	GENERIC MAP(cy_registers=>"",
+		id=>"1ea32aa4-5092-46b1-b277-e9b930be1ae1",
+		source_clock_id=>"",
+		divisor=>0,
+		period=>"8000000000",
+		is_direct=>'0',
+		is_digital=>'1')
+	PORT MAP(clock_out=>Net_2732,
+		dig_domain_out=>open);
+\OSC1_Saw_Follower:ABuf\:cy_psoc3_abuf_v1_0
+	GENERIC MAP(cy_registers=>"")
+	PORT MAP(vplus=>Net_2753,
+		vminus=>\OSC1_Saw_Follower:Net_29\,
+		vout=>Net_2747);
+\OSC1_Saw_Follower:abuf_negInput_mux_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\OSC1_Saw_Follower:Net_29\,
+		signal2=>Net_2747);
+OSC1_Saw_Out:cy_psoc3_pins_v1_10
+	GENERIC MAP(id=>"cc3bcd7e-5dc0-48ea-9bf6-6aa082be1ada",
+		drive_mode=>"000",
+		ibuf_enabled=>"0",
+		init_dr_st=>"0",
+		input_sync=>"1",
+		input_clk_en=>'0',
+		input_sync_mode=>"0",
+		intr_mode=>"00",
+		invert_in_clock=>'0',
+		invert_in_clock_en=>'0',
+		invert_in_reset=>'0',
+		invert_out_clock=>'0',
+		invert_out_clock_en=>'0',
+		invert_out_reset=>'0',
+		io_voltage=>"",
+		layout_mode=>"NONCONTIGUOUS",
+		output_conn=>"0",
+		output_sync=>"0",
+		output_clk_en=>'0',
+		output_mode=>"0",
+		output_reset=>'0',
+		output_clock_mode=>"0",
+		oe_sync=>"0",
+		oe_conn=>"0",
+		oe_reset=>'0',
+		pin_aliases=>"",
+		pin_mode=>"A",
+		por_state=>4,
+		sio_group_cnt=>0,
+		sio_hifreq=>"00000000",
+		sio_hyst=>"1",
+		sio_ibuf=>"00000000",
+		sio_info=>"00",
+		sio_obuf=>"00000000",
+		sio_refsel=>"00000000",
+		sio_vtrip=>"00000000",
+		sio_vohsel=>"00000000",
+		slew_rate=>"0",
+		spanning=>'1',
+		sw_only=>'0',
+		vtrip=>"10",
+		width=>1,
+		port_alias_required=>'0',
+		port_alias_group=>"",
+		use_annotation=>"0",
+		pa_in_clock=>-1,
+		pa_in_clock_en=>-1,
+		pa_in_reset=>-1,
+		pa_out_clock=>-1,
+		pa_out_clock_en=>-1,
+		pa_out_reset=>-1,
+		ovt_needed=>"0",
+		ovt_slew_control=>"00",
+		ovt_hyst_trim=>"0",
+		input_buffer_sel=>"00")
+	PORT MAP(oe=>(Net_1306),
+		y=>(zero),
+		fb=>(tmpFB_0__OSC1_Saw_Out_net_0),
+		analog=>Net_2747,
+		io=>(tmpIO_0__OSC1_Saw_Out_net_0),
+		siovref=>(tmpSIOVREF__OSC1_Saw_Out_net_0),
+		annotation=>(open),
+		in_clock=>zero,
+		in_clock_en=>Net_1306,
+		in_reset=>zero,
+		out_clock=>zero,
+		out_clock_en=>Net_1306,
+		out_reset=>zero,
+		interrupt=>tmpINTERRUPT_0__OSC1_Saw_Out_net_0);
+Hard_Sync:cy_psoc3_pins_v1_10
+	GENERIC MAP(id=>"8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba",
+		drive_mode=>"011",
+		ibuf_enabled=>"1",
+		init_dr_st=>"0",
+		input_sync=>"0",
+		input_clk_en=>'0',
+		input_sync_mode=>"0",
+		intr_mode=>"00",
+		invert_in_clock=>'0',
+		invert_in_clock_en=>'0',
+		invert_in_reset=>'0',
+		invert_out_clock=>'0',
+		invert_out_clock_en=>'0',
+		invert_out_reset=>'0',
+		io_voltage=>"",
+		layout_mode=>"CONTIGUOUS",
+		output_conn=>"0",
+		output_sync=>"0",
+		output_clk_en=>'0',
+		output_mode=>"0",
+		output_reset=>'0',
+		output_clock_mode=>"0",
+		oe_sync=>"0",
+		oe_conn=>"0",
+		oe_reset=>'0',
+		pin_aliases=>"",
+		pin_mode=>"I",
+		por_state=>4,
+		sio_group_cnt=>0,
+		sio_hifreq=>"00000000",
+		sio_hyst=>"1",
+		sio_ibuf=>"00000000",
+		sio_info=>"00",
+		sio_obuf=>"00000000",
+		sio_refsel=>"00000000",
+		sio_vtrip=>"00000000",
+		sio_vohsel=>"00000000",
+		slew_rate=>"0",
+		spanning=>'0',
+		sw_only=>'0',
+		vtrip=>"00",
+		width=>1,
+		port_alias_required=>'0',
+		port_alias_group=>"",
+		use_annotation=>"0",
+		pa_in_clock=>-1,
+		pa_in_clock_en=>-1,
+		pa_in_reset=>-1,
+		pa_out_clock=>-1,
+		pa_out_clock_en=>-1,
+		pa_out_reset=>-1,
+		ovt_needed=>"0",
+		ovt_slew_control=>"00",
+		ovt_hyst_trim=>"0",
+		input_buffer_sel=>"00")
+	PORT MAP(oe=>(Net_1306),
+		y=>(zero),
+		fb=>Net_12,
+		analog=>(open),
+		io=>(tmpIO_0__Hard_Sync_net_0),
+		siovref=>(tmpSIOVREF__Hard_Sync_net_0),
+		annotation=>(open),
+		in_clock=>zero,
+		in_clock_en=>Net_1306,
+		in_reset=>zero,
+		out_clock=>zero,
+		out_clock_en=>Net_1306,
+		out_reset=>zero,
+		interrupt=>tmpINTERRUPT_0__Hard_Sync_net_0);
 \OSC1_Freq_Timer:TimerUDB:capture_last\:cy_dff
-	PORT MAP(d=>zero,
+	PORT MAP(d=>Net_1538,
 		clk=>\OSC1_Freq_Timer:TimerUDB:ClockOutFromEnBlock\,
 		q=>\OSC1_Freq_Timer:TimerUDB:capture_last\);
 \OSC1_Freq_Timer:TimerUDB:tc_reg_i\:cy_dff
@@ -5524,13 +5231,25 @@ Pin_1:cy_psoc3_pins_v1_10
 		clk=>\OSC1_Freq_Timer:TimerUDB:ClockOutFromEnBlock\,
 		q=>\OSC1_Freq_Timer:TimerUDB:hwEnable_reg\);
 \OSC1_Freq_Timer:TimerUDB:capture_out_reg_i\:cy_dff
-	PORT MAP(d=>zero,
+	PORT MAP(d=>\OSC1_Freq_Timer:TimerUDB:capt_fifo_load\,
 		clk=>\OSC1_Freq_Timer:TimerUDB:ClockOutFromEnBlock\,
 		q=>\OSC1_Freq_Timer:TimerUDB:capture_out_reg_i\);
+\OSC1_Freq_Timer:TimerUDB:int_capt_count_1\:cy_dff
+	PORT MAP(d=>\OSC1_Freq_Timer:TimerUDB:int_capt_count_1\\D\,
+		clk=>\OSC1_Freq_Timer:TimerUDB:ClockOutFromEnBlock\,
+		q=>MODIN1_1);
+\OSC1_Freq_Timer:TimerUDB:int_capt_count_0\:cy_dff
+	PORT MAP(d=>\OSC1_Freq_Timer:TimerUDB:int_capt_count_0\\D\,
+		clk=>\OSC1_Freq_Timer:TimerUDB:ClockOutFromEnBlock\,
+		q=>MODIN1_0);
+\OSC1_Freq_Timer:TimerUDB:capt_int_temp\:cy_dff
+	PORT MAP(d=>\OSC1_Freq_Timer:TimerUDB:capt_int_temp\\D\,
+		clk=>\OSC1_Freq_Timer:TimerUDB:ClockOutFromEnBlock\,
+		q=>\OSC1_Freq_Timer:TimerUDB:capt_int_temp\);
 cy_tff_1:cy_dff
 	PORT MAP(d=>cy_tff_1D,
 		clk=>Net_191,
-		q=>Net_133);
+		q=>Net_2728);
 cy_tff_4:cy_dff
 	PORT MAP(d=>cy_tff_4D,
 		clk=>Net_1592,
@@ -5687,21 +5406,17 @@ cy_tff_3:cy_dff
 	PORT MAP(d=>zero,
 		clk=>\OSC1_Freq_Timer_2:TimerUDB:ClockOutFromEnBlock\,
 		q=>\OSC1_Freq_Timer_2:TimerUDB:capture_out_reg_i\);
-\OSC1_Freq_Timer_1:TimerUDB:capture_last\:cy_dff
-	PORT MAP(d=>zero,
-		clk=>\OSC1_Freq_Timer_1:TimerUDB:ClockOutFromEnBlock\,
-		q=>\OSC1_Freq_Timer_1:TimerUDB:capture_last\);
-\OSC1_Freq_Timer_1:TimerUDB:tc_reg_i\:cy_dff
-	PORT MAP(d=>\OSC1_Freq_Timer_1:TimerUDB:status_tc\,
-		clk=>\OSC1_Freq_Timer_1:TimerUDB:ClockOutFromEnBlock\,
-		q=>\OSC1_Freq_Timer_1:TimerUDB:tc_reg_i\);
-\OSC1_Freq_Timer_1:TimerUDB:hwEnable_reg\:cy_dff
-	PORT MAP(d=>\OSC1_Freq_Timer_1:TimerUDB:control_7\,
-		clk=>\OSC1_Freq_Timer_1:TimerUDB:ClockOutFromEnBlock\,
-		q=>\OSC1_Freq_Timer_1:TimerUDB:hwEnable_reg\);
-\OSC1_Freq_Timer_1:TimerUDB:capture_out_reg_i\:cy_dff
-	PORT MAP(d=>zero,
-		clk=>\OSC1_Freq_Timer_1:TimerUDB:ClockOutFromEnBlock\,
-		q=>\OSC1_Freq_Timer_1:TimerUDB:capture_out_reg_i\);
+\PulseConvert_1:out_pulse\:cy_dff
+	PORT MAP(d=>\PulseConvert_1:out_pulse\\D\,
+		clk=>Net_2732,
+		q=>Net_2742);
+\PulseConvert_1:in_sample\:cy_dff
+	PORT MAP(d=>\PulseConvert_1:in_sample\\D\,
+		clk=>Net_191,
+		q=>\PulseConvert_1:in_sample\);
+\PulseConvert_1:out_sample\:cy_dff
+	PORT MAP(d=>\PulseConvert_1:out_sample\\D\,
+		clk=>Net_2732,
+		q=>\PulseConvert_1:out_sample\);
 
 END R_T_L;

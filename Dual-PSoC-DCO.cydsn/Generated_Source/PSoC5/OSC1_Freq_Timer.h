@@ -43,7 +43,7 @@ extern uint8 OSC1_Freq_Timer_initVar;
 #define OSC1_Freq_Timer_SoftwareTriggerMode        0u
 #define OSC1_Freq_Timer_UsingHWEnable              1u
 #define OSC1_Freq_Timer_EnableTriggerMode          0u
-#define OSC1_Freq_Timer_InterruptOnCaptureCount    0u
+#define OSC1_Freq_Timer_InterruptOnCaptureCount    1u
 #define OSC1_Freq_Timer_RunModeUsed                0u
 #define OSC1_Freq_Timer_ControlRegRemoved          0u
 
@@ -169,14 +169,14 @@ void OSC1_Freq_Timer_Wakeup(void)        ;
 ***************************************/
 
 #define OSC1_Freq_Timer_INIT_PERIOD             35999u
-#define OSC1_Freq_Timer_INIT_CAPTURE_MODE       ((uint8)((uint8)0u << OSC1_Freq_Timer_CTRL_CAP_MODE_SHIFT))
+#define OSC1_Freq_Timer_INIT_CAPTURE_MODE       ((uint8)((uint8)1u << OSC1_Freq_Timer_CTRL_CAP_MODE_SHIFT))
 #define OSC1_Freq_Timer_INIT_TRIGGER_MODE       ((uint8)((uint8)0u << OSC1_Freq_Timer_CTRL_TRIG_MODE_SHIFT))
 #if (OSC1_Freq_Timer_UsingFixedFunction)
-    #define OSC1_Freq_Timer_INIT_INTERRUPT_MODE (((uint8)((uint8)1u << OSC1_Freq_Timer_STATUS_TC_INT_MASK_SHIFT)) | \
-                                                  ((uint8)((uint8)0 << OSC1_Freq_Timer_STATUS_CAPTURE_INT_MASK_SHIFT)))
+    #define OSC1_Freq_Timer_INIT_INTERRUPT_MODE (((uint8)((uint8)0u << OSC1_Freq_Timer_STATUS_TC_INT_MASK_SHIFT)) | \
+                                                  ((uint8)((uint8)1 << OSC1_Freq_Timer_STATUS_CAPTURE_INT_MASK_SHIFT)))
 #else
-    #define OSC1_Freq_Timer_INIT_INTERRUPT_MODE (((uint8)((uint8)1u << OSC1_Freq_Timer_STATUS_TC_INT_MASK_SHIFT)) | \
-                                                 ((uint8)((uint8)0 << OSC1_Freq_Timer_STATUS_CAPTURE_INT_MASK_SHIFT)) | \
+    #define OSC1_Freq_Timer_INIT_INTERRUPT_MODE (((uint8)((uint8)0u << OSC1_Freq_Timer_STATUS_TC_INT_MASK_SHIFT)) | \
+                                                 ((uint8)((uint8)1 << OSC1_Freq_Timer_STATUS_CAPTURE_INT_MASK_SHIFT)) | \
                                                  ((uint8)((uint8)0 << OSC1_Freq_Timer_STATUS_FIFOFULL_INT_MASK_SHIFT)))
 #endif /* (OSC1_Freq_Timer_UsingFixedFunction) */
 #define OSC1_Freq_Timer_INIT_CAPTURE_COUNT      (2u)

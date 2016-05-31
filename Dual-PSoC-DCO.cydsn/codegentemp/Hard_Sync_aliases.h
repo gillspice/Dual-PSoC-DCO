@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Pin_3.h  
+* File Name: Hard_Sync.h  
 * Version 2.20
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_Pin_3_ALIASES_H) /* Pins Pin_3_ALIASES_H */
-#define CY_PINS_Pin_3_ALIASES_H
+#if !defined(CY_PINS_Hard_Sync_ALIASES_H) /* Pins Hard_Sync_ALIASES_H */
+#define CY_PINS_Hard_Sync_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -25,12 +25,12 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define Pin_3_0			(Pin_3__0__PC)
-#define Pin_3_0_INTR	((uint16)((uint16)0x0001u << Pin_3__0__SHIFT))
+#define Hard_Sync_0			(Hard_Sync__0__PC)
+#define Hard_Sync_0_INTR	((uint16)((uint16)0x0001u << Hard_Sync__0__SHIFT))
 
-#define Pin_3_INTR_ALL	 ((uint16)(Pin_3_0_INTR))
+#define Hard_Sync_INTR_ALL	 ((uint16)(Hard_Sync_0_INTR))
 
-#endif /* End Pins Pin_3_ALIASES_H */
+#endif /* End Pins Hard_Sync_ALIASES_H */
 
 
 /* [] END OF FILE */
