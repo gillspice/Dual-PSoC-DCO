@@ -89,9 +89,6 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Cm3Iar.icf</File>
           <File BuildType="BUILD" Toolchain="ARM IAR Generic">.\Generated_Source\PSoC5\CyBootAsmIar.s</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\project.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_4_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_4.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_4.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_DelSig_1.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_DelSig_1.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_DelSig_1_PM.c</File>
@@ -107,6 +104,9 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CV_IN_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CV_IN.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CV_IN.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Comp_1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Comp_1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Comp_1_PM.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_IDAC8.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_IDAC8.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_IDAC8_PM.c</File>
@@ -119,95 +119,21 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Tri_Out_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Tri_Out.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Tri_Out.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_ISR_3.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_ISR_3.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Tri_Cap_3_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Tri_Cap_3.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Tri_Cap_3.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_PW_In_3_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_PW_In_3.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_PW_In_3.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Mux_2.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Mux_2.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_ISR_2.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_ISR_2.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Saw_Out_3_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Saw_Out_3.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Saw_Out_3.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_PW_In_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_PW_In.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_PW_In.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Mux_3.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Mux_3.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Saw_Out_2_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Saw_Out_2.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Saw_Out_2.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Pulse_Out_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Pulse_Out.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Pulse_Out.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Inverter_3.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Inverter_3.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Inverter_3_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Inverter_2.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Inverter_2.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Inverter_2_PM.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Comp.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Comp.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Comp_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Pulse_Out_2_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Pulse_Out_2.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Pulse_Out_2.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Comp_3.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Comp_3.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Comp_3_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_PW_In_2_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_PW_In_2.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_PW_In_2.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Pulse_Out_3_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Pulse_Out_3.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Pulse_Out_3.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Tri_Cap_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Tri_Cap.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Tri_Cap.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Saw_Out_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Saw_Out.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Saw_Out.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Square_Out_3_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Square_Out_3.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Square_Out_3.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Tri_Out_3_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Tri_Out_3.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Tri_Out_3.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Follower_3.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Follower_3.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Follower_3_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Comp_2.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Comp_2.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Comp_2_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Follower_2.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Follower_2.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Follower_2_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Tri_Out_2_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Tri_Out_2.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Tri_Out_2.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Square_Out_2_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Square_Out_2.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Square_Out_2.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Freq_Timer_3.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Freq_Timer_3.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Freq_Timer_3_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_IDAC8_3.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_IDAC8_3.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_IDAC8_3_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Tri_Cap_2_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Tri_Cap_2.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Tri_Cap_2.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Freq_Timer_2.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Freq_Timer_2.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Freq_Timer_2_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_IDAC8_2.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_IDAC8_2.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_IDAC8_2_PM.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\MIDI1_UART.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\MIDI1_UART.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\MIDI1_UART_PM.c</File>
@@ -257,12 +183,34 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Saw_Follower.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Saw_Follower.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Saw_Follower_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Soft_Sync_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Soft_Sync.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Soft_Sync.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Hard_Sync_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Hard_Sync.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Hard_Sync.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Soft_Sync_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Soft_Sync.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Soft_Sync.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_SAR_1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_SAR_1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_SAR_1_INT.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_SAR_1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Hard_Sync_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Hard_Sync.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Hard_Sync.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_SAR_1_IRQ.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_SAR_1_IRQ.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_SAR_1_theACLK.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_SAR_1_theACLK.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_SAR_1_Bypass_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_SAR_1_Bypass.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_SAR_1_Bypass.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Saw_Reset_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Saw_Reset.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Saw_Reset.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Saw_Preset_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Saw_Preset.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Saw_Preset.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_FM_Sign_Isr.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_FM_Sign_Isr.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\FM_Input_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\FM_Input.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\FM_Input.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\Export\ARM_GCC_Generic">

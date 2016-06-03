@@ -12,6 +12,11 @@
 #include <project.h>
 #include <math.h>
 
+#define CAP_VALUE 0.027;
+#define VPP_VALUE 2.5;
+
+int dac_value;
+
 int main()
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
@@ -44,12 +49,27 @@ int main()
     for(;;)
     {
         int result = ADC_DelSig_1_GetResult32();
-        int frequency = (110*(pow(1.059463094,(12*ADC_DelSig_1_CountsTo_Volts(result)))));
+        int frequency = (220*(pow(1.059463094,(12*ADC_DelSig_1_CountsTo_Volts(result)))));
         int count = 12000000/frequency;
        OSC1_Freq_Timer_WritePeriod(count);
 //       OSC1_Freq_Timer_1_WritePeriod(count*2);
-       int dac_value=(frequency/8);
-    OSC1_IDAC8_SetValue(dac_value);
+    if (frequency > 3950){
+        OSC1_IDAC8_SetRange(OSC1_IDAC8_RANGE_2mA);
+        OSC1_IDAC8_SAW_SetRange(OSC1_IDAC8_SAW_RANGE_2mA);
+        dac_value = frequency / 32 ;
+    }
+    else if (frequency > 493){
+        OSC1_IDAC8_SetRange(OSC1_IDAC8_RANGE_255uA);
+        OSC1_IDAC8_SAW_SetRange(OSC1_IDAC8_SAW_RANGE_255uA);
+        dac_value = frequency /4 ;}
+    else {
+        OSC1_IDAC8_SetRange(OSC1_IDAC8_RANGE_32uA);
+        OSC1_IDAC8_SAW_SetRange(OSC1_IDAC8_SAW_RANGE_32uA);
+        dac_value = frequency * 2;
+     }   
+        
+   //    dac_value=(frequency/8);
+    OSC1_IDAC8_SetValue(dac_value/4);
     OSC1_IDAC8_SAW_SetValue(dac_value/4);
   //      CyDelay(1000); /* Place your application code here. */
     //   Freq_Timer_WritePeriod(36000);

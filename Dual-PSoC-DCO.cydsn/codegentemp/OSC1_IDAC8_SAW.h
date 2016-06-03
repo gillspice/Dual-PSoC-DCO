@@ -83,7 +83,7 @@ void OSC1_IDAC8_SAW_Wakeup(void)                   ;
 #define OSC1_IDAC8_SAW_DEFAULT_CNTL      0x00u                                            /* Default Control */
 #define OSC1_IDAC8_SAW_DEFAULT_STRB     0u                                   /* Default Strobe mode */
 #define OSC1_IDAC8_SAW_DEFAULT_DATA     120u                                 /* Initial DAC value */
-#define OSC1_IDAC8_SAW_DEFAULT_POLARITY 0u                                      /* Default Sink or Source */
+#define OSC1_IDAC8_SAW_DEFAULT_POLARITY 2u                                      /* Default Sink or Source */
 #define OSC1_IDAC8_SAW_DEFAULT_DATA_SRC 0u                                   /* Default Data Source */   
 #define OSC1_IDAC8_SAW_HARDWARE_ENABLE  1u                               /*Hardware Enable */
 

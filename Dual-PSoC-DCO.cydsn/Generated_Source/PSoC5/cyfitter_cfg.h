@@ -33,12 +33,6 @@ extern uint8 CYXDATA * const CYCODE ADC_DelSig_1_AMux__addrTable[2];
    Code that depends on it may be incompatible with other versions
    of PSoC Creator. */
 extern const uint8 CYCODE ADC_DelSig_1_AMux__maskTable[2];
-extern void OSC1_Mux_2_DisconnectAll(void);
-extern void OSC1_Mux_2_Next(void);
-extern int8 OSC1_Mux_2_curChannel;
-extern void OSC1_Mux_3_DisconnectAll(void);
-extern void OSC1_Mux_3_Next(void);
-extern int8 OSC1_Mux_3_curChannel;
 
 
 #endif /* CYFITTER_CFG_H */
