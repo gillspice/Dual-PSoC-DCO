@@ -29,7 +29,7 @@
 ***************************************/
 
 #define MIDI1_UART_RX_ENABLED                     (1u)
-#define MIDI1_UART_TX_ENABLED                     (1u)
+#define MIDI1_UART_TX_ENABLED                     (0u)
 #define MIDI1_UART_HD_ENABLED                     (0u)
 #define MIDI1_UART_RX_INTERRUPT_ENABLED           (1u)
 #define MIDI1_UART_TX_INTERRUPT_ENABLED           (1u)
@@ -369,7 +369,7 @@ extern uint8 MIDI1_UART_initVar;
 
 #define MIDI1_UART_INIT_TX_INTERRUPTS_MASK \
                                   (uint8)((0 << MIDI1_UART_TX_STS_COMPLETE_SHIFT) \
-                                        | (1 << MIDI1_UART_TX_STS_FIFO_EMPTY_SHIFT) \
+                                        | (0 << MIDI1_UART_TX_STS_FIFO_EMPTY_SHIFT) \
                                         | (0 << MIDI1_UART_TX_STS_FIFO_FULL_SHIFT) \
                                         | (0 << MIDI1_UART_TX_STS_FIFO_NOT_FULL_SHIFT))
 

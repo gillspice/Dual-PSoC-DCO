@@ -19,7 +19,9 @@ int dac_value;
 
 int main()
 {
+    int pinState = 0;
     CyGlobalIntEnable; /* Enable global interrupts. */
+    volatile int myFixedValue = 1;
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     OSC1_Freq_Timer_Start();
@@ -48,8 +50,20 @@ int main()
     
     for(;;)
     {
+        if (pinState == 0)
+        {
+            pinState = 1;
+            test_pin_Write(00);
+        }
+        else
+        {
+            pinState = 0;
+            test_pin_Write(0xff);
+        }
         int result = ADC_DelSig_1_GetResult32();
-        int frequency = (220*(pow(1.059463094,(12*ADC_DelSig_1_CountsTo_Volts(result)))));
+//        int frequency = (220*(pow(1.059463094,(12*ADC_DelSig_1_CountsTo_Volts(result)))));
+//        int frequency = (220*(pow(1.059463094,(12*myFixedValue))));
+        int frequency = (110*(pow(2, 5*result/65535)));
         int count = 12000000/frequency;
        OSC1_Freq_Timer_WritePeriod(count);
 //       OSC1_Freq_Timer_1_WritePeriod(count*2);

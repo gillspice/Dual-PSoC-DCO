@@ -36,14 +36,14 @@ extern uint8 OSC1_Freq_Timer_initVar;
 *           Parameter Defaults
 **************************************/
 
-#define OSC1_Freq_Timer_Resolution                 24u
+#define OSC1_Freq_Timer_Resolution                 32u
 #define OSC1_Freq_Timer_UsingFixedFunction         0u
 #define OSC1_Freq_Timer_UsingHWCaptureCounter      0u
 #define OSC1_Freq_Timer_SoftwareCaptureMode        0u
 #define OSC1_Freq_Timer_SoftwareTriggerMode        0u
-#define OSC1_Freq_Timer_UsingHWEnable              1u
+#define OSC1_Freq_Timer_UsingHWEnable              0u
 #define OSC1_Freq_Timer_EnableTriggerMode          0u
-#define OSC1_Freq_Timer_InterruptOnCaptureCount    1u
+#define OSC1_Freq_Timer_InterruptOnCaptureCount    0u
 #define OSC1_Freq_Timer_RunModeUsed                0u
 #define OSC1_Freq_Timer_ControlRegRemoved          0u
 
@@ -173,10 +173,10 @@ void OSC1_Freq_Timer_Wakeup(void)        ;
 #define OSC1_Freq_Timer_INIT_TRIGGER_MODE       ((uint8)((uint8)0u << OSC1_Freq_Timer_CTRL_TRIG_MODE_SHIFT))
 #if (OSC1_Freq_Timer_UsingFixedFunction)
     #define OSC1_Freq_Timer_INIT_INTERRUPT_MODE (((uint8)((uint8)0u << OSC1_Freq_Timer_STATUS_TC_INT_MASK_SHIFT)) | \
-                                                  ((uint8)((uint8)1 << OSC1_Freq_Timer_STATUS_CAPTURE_INT_MASK_SHIFT)))
+                                                  ((uint8)((uint8)0 << OSC1_Freq_Timer_STATUS_CAPTURE_INT_MASK_SHIFT)))
 #else
     #define OSC1_Freq_Timer_INIT_INTERRUPT_MODE (((uint8)((uint8)0u << OSC1_Freq_Timer_STATUS_TC_INT_MASK_SHIFT)) | \
-                                                 ((uint8)((uint8)1 << OSC1_Freq_Timer_STATUS_CAPTURE_INT_MASK_SHIFT)) | \
+                                                 ((uint8)((uint8)0 << OSC1_Freq_Timer_STATUS_CAPTURE_INT_MASK_SHIFT)) | \
                                                  ((uint8)((uint8)0 << OSC1_Freq_Timer_STATUS_FIFOFULL_INT_MASK_SHIFT)))
 #endif /* (OSC1_Freq_Timer_UsingFixedFunction) */
 #define OSC1_Freq_Timer_INIT_CAPTURE_COUNT      (2u)
@@ -313,54 +313,54 @@ void OSC1_Freq_Timer_Wakeup(void)        ;
     #define OSC1_Freq_Timer_CONTROL             (* (reg8 *) OSC1_Freq_Timer_TimerUDB_sCTRLReg_SyncCtl_ctrlreg__CONTROL_REG )
     
     #if(OSC1_Freq_Timer_Resolution <= 8u) /* 8-bit Timer */
-        #define OSC1_Freq_Timer_CAPTURE_LSB         (* (reg8 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__F0_REG )
-        #define OSC1_Freq_Timer_CAPTURE_LSB_PTR       ((reg8 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__F0_REG )
-        #define OSC1_Freq_Timer_PERIOD_LSB          (* (reg8 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__D0_REG )
-        #define OSC1_Freq_Timer_PERIOD_LSB_PTR        ((reg8 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__D0_REG )
-        #define OSC1_Freq_Timer_COUNTER_LSB         (* (reg8 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__A0_REG )
-        #define OSC1_Freq_Timer_COUNTER_LSB_PTR       ((reg8 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__A0_REG )
+        #define OSC1_Freq_Timer_CAPTURE_LSB         (* (reg8 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__F0_REG )
+        #define OSC1_Freq_Timer_CAPTURE_LSB_PTR       ((reg8 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__F0_REG )
+        #define OSC1_Freq_Timer_PERIOD_LSB          (* (reg8 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__D0_REG )
+        #define OSC1_Freq_Timer_PERIOD_LSB_PTR        ((reg8 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__D0_REG )
+        #define OSC1_Freq_Timer_COUNTER_LSB         (* (reg8 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__A0_REG )
+        #define OSC1_Freq_Timer_COUNTER_LSB_PTR       ((reg8 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__A0_REG )
     #elif(OSC1_Freq_Timer_Resolution <= 16u) /* 8-bit Timer */
         #if(CY_PSOC3) /* 8-bit addres space */
-            #define OSC1_Freq_Timer_CAPTURE_LSB         (* (reg16 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__F0_REG )
-            #define OSC1_Freq_Timer_CAPTURE_LSB_PTR       ((reg16 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__F0_REG )
-            #define OSC1_Freq_Timer_PERIOD_LSB          (* (reg16 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__D0_REG )
-            #define OSC1_Freq_Timer_PERIOD_LSB_PTR        ((reg16 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__D0_REG )
-            #define OSC1_Freq_Timer_COUNTER_LSB         (* (reg16 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__A0_REG )
-            #define OSC1_Freq_Timer_COUNTER_LSB_PTR       ((reg16 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__A0_REG )
+            #define OSC1_Freq_Timer_CAPTURE_LSB         (* (reg16 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__F0_REG )
+            #define OSC1_Freq_Timer_CAPTURE_LSB_PTR       ((reg16 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__F0_REG )
+            #define OSC1_Freq_Timer_PERIOD_LSB          (* (reg16 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__D0_REG )
+            #define OSC1_Freq_Timer_PERIOD_LSB_PTR        ((reg16 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__D0_REG )
+            #define OSC1_Freq_Timer_COUNTER_LSB         (* (reg16 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__A0_REG )
+            #define OSC1_Freq_Timer_COUNTER_LSB_PTR       ((reg16 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__A0_REG )
         #else /* 16-bit address space */
-            #define OSC1_Freq_Timer_CAPTURE_LSB         (* (reg16 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__16BIT_F0_REG )
-            #define OSC1_Freq_Timer_CAPTURE_LSB_PTR       ((reg16 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__16BIT_F0_REG )
-            #define OSC1_Freq_Timer_PERIOD_LSB          (* (reg16 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__16BIT_D0_REG )
-            #define OSC1_Freq_Timer_PERIOD_LSB_PTR        ((reg16 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__16BIT_D0_REG )
-            #define OSC1_Freq_Timer_COUNTER_LSB         (* (reg16 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__16BIT_A0_REG )
-            #define OSC1_Freq_Timer_COUNTER_LSB_PTR       ((reg16 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__16BIT_A0_REG )
+            #define OSC1_Freq_Timer_CAPTURE_LSB         (* (reg16 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__16BIT_F0_REG )
+            #define OSC1_Freq_Timer_CAPTURE_LSB_PTR       ((reg16 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__16BIT_F0_REG )
+            #define OSC1_Freq_Timer_PERIOD_LSB          (* (reg16 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__16BIT_D0_REG )
+            #define OSC1_Freq_Timer_PERIOD_LSB_PTR        ((reg16 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__16BIT_D0_REG )
+            #define OSC1_Freq_Timer_COUNTER_LSB         (* (reg16 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__16BIT_A0_REG )
+            #define OSC1_Freq_Timer_COUNTER_LSB_PTR       ((reg16 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__16BIT_A0_REG )
         #endif /* CY_PSOC3 */
     #elif(OSC1_Freq_Timer_Resolution <= 24u)/* 24-bit Timer */
-        #define OSC1_Freq_Timer_CAPTURE_LSB         (* (reg32 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__F0_REG )
-        #define OSC1_Freq_Timer_CAPTURE_LSB_PTR       ((reg32 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__F0_REG )
-        #define OSC1_Freq_Timer_PERIOD_LSB          (* (reg32 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__D0_REG )
-        #define OSC1_Freq_Timer_PERIOD_LSB_PTR        ((reg32 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__D0_REG )
-        #define OSC1_Freq_Timer_COUNTER_LSB         (* (reg32 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__A0_REG )
-        #define OSC1_Freq_Timer_COUNTER_LSB_PTR       ((reg32 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__A0_REG )
+        #define OSC1_Freq_Timer_CAPTURE_LSB         (* (reg32 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__F0_REG )
+        #define OSC1_Freq_Timer_CAPTURE_LSB_PTR       ((reg32 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__F0_REG )
+        #define OSC1_Freq_Timer_PERIOD_LSB          (* (reg32 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__D0_REG )
+        #define OSC1_Freq_Timer_PERIOD_LSB_PTR        ((reg32 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__D0_REG )
+        #define OSC1_Freq_Timer_COUNTER_LSB         (* (reg32 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__A0_REG )
+        #define OSC1_Freq_Timer_COUNTER_LSB_PTR       ((reg32 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__A0_REG )
     #else /* 32-bit Timer */
         #if(CY_PSOC3 || CY_PSOC5) /* 8-bit address space */
-            #define OSC1_Freq_Timer_CAPTURE_LSB         (* (reg32 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__F0_REG )
-            #define OSC1_Freq_Timer_CAPTURE_LSB_PTR       ((reg32 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__F0_REG )
-            #define OSC1_Freq_Timer_PERIOD_LSB          (* (reg32 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__D0_REG )
-            #define OSC1_Freq_Timer_PERIOD_LSB_PTR        ((reg32 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__D0_REG )
-            #define OSC1_Freq_Timer_COUNTER_LSB         (* (reg32 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__A0_REG )
-            #define OSC1_Freq_Timer_COUNTER_LSB_PTR       ((reg32 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__A0_REG )
+            #define OSC1_Freq_Timer_CAPTURE_LSB         (* (reg32 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__F0_REG )
+            #define OSC1_Freq_Timer_CAPTURE_LSB_PTR       ((reg32 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__F0_REG )
+            #define OSC1_Freq_Timer_PERIOD_LSB          (* (reg32 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__D0_REG )
+            #define OSC1_Freq_Timer_PERIOD_LSB_PTR        ((reg32 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__D0_REG )
+            #define OSC1_Freq_Timer_COUNTER_LSB         (* (reg32 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__A0_REG )
+            #define OSC1_Freq_Timer_COUNTER_LSB_PTR       ((reg32 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__A0_REG )
         #else /* 32-bit address space */
-            #define OSC1_Freq_Timer_CAPTURE_LSB         (* (reg32 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__32BIT_F0_REG )
-            #define OSC1_Freq_Timer_CAPTURE_LSB_PTR       ((reg32 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__32BIT_F0_REG )
-            #define OSC1_Freq_Timer_PERIOD_LSB          (* (reg32 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__32BIT_D0_REG )
-            #define OSC1_Freq_Timer_PERIOD_LSB_PTR        ((reg32 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__32BIT_D0_REG )
-            #define OSC1_Freq_Timer_COUNTER_LSB         (* (reg32 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__32BIT_A0_REG )
-            #define OSC1_Freq_Timer_COUNTER_LSB_PTR       ((reg32 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__32BIT_A0_REG )
+            #define OSC1_Freq_Timer_CAPTURE_LSB         (* (reg32 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__32BIT_F0_REG )
+            #define OSC1_Freq_Timer_CAPTURE_LSB_PTR       ((reg32 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__32BIT_F0_REG )
+            #define OSC1_Freq_Timer_PERIOD_LSB          (* (reg32 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__32BIT_D0_REG )
+            #define OSC1_Freq_Timer_PERIOD_LSB_PTR        ((reg32 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__32BIT_D0_REG )
+            #define OSC1_Freq_Timer_COUNTER_LSB         (* (reg32 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__32BIT_A0_REG )
+            #define OSC1_Freq_Timer_COUNTER_LSB_PTR       ((reg32 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__32BIT_A0_REG )
         #endif /* CY_PSOC3 || CY_PSOC5 */ 
     #endif
 
-    #define OSC1_Freq_Timer_COUNTER_LSB_PTR_8BIT       ((reg8 *) OSC1_Freq_Timer_TimerUDB_sT24_timerdp_u0__A0_REG )
+    #define OSC1_Freq_Timer_COUNTER_LSB_PTR_8BIT       ((reg8 *) OSC1_Freq_Timer_TimerUDB_sT32_timerdp_u0__A0_REG )
     
     #if (OSC1_Freq_Timer_UsingHWCaptureCounter)
         #define OSC1_Freq_Timer_CAP_COUNT              (*(reg8 *) OSC1_Freq_Timer_TimerUDB_sCapCount_counter__PERIOD_REG )
