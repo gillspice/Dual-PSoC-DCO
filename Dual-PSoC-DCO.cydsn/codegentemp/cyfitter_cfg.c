@@ -124,7 +124,7 @@ static void CyClockStartupError(uint8 errorCode)
 }
 #endif
 
-#define CY_CFG_BASE_ADDR_COUNT 43u
+#define CY_CFG_BASE_ADDR_COUNT 41u
 CYPACKED typedef struct
 {
 	uint8 offset;
@@ -132,40 +132,34 @@ CYPACKED typedef struct
 } CYPACKED_ATTR cy_cfg_addrvalue_t;
 
 #define cy_cfg_addr_table ((const uint32 CYFAR *)0x48000000u)
-#define cy_cfg_data_table ((const cy_cfg_addrvalue_t CYFAR *)0x480000ACu)
+#define cy_cfg_data_table ((const cy_cfg_addrvalue_t CYFAR *)0x480000A4u)
 
 /* UCFG_BCTL0 Address: CYREG_BCTL0_MDCLK_EN Size (bytes): 16 */
-#define BS_UCFG_BCTL0_VAL ((const uint8 CYFAR *)0x48000D40u)
+#define BS_UCFG_BCTL0_VAL ((const uint8 CYFAR *)0x48000B50u)
 
 /* IOPINS0_0 Address: CYREG_PRT0_DM0 Size (bytes): 8 */
-#define BS_IOPINS0_0_VAL ((const uint8 CYFAR *)0x48000D50u)
+#define BS_IOPINS0_0_VAL ((const uint8 CYFAR *)0x48000B60u)
 
 /* IOPINS0_7 Address: CYREG_PRT12_DM0 Size (bytes): 8 */
-#define BS_IOPINS0_7_VAL ((const uint8 CYFAR *)0x48000D58u)
+#define BS_IOPINS0_7_VAL ((const uint8 CYFAR *)0x48000B68u)
 
 /* IOPINS0_8 Address: CYREG_PRT15_DR Size (bytes): 10 */
-#define BS_IOPINS0_8_VAL ((const uint8 CYFAR *)0x48000D60u)
+#define BS_IOPINS0_8_VAL ((const uint8 CYFAR *)0x48000B70u)
 
 /* IOPINS0_1 Address: CYREG_PRT1_DM0 Size (bytes): 8 */
-#define BS_IOPINS0_1_VAL ((const uint8 CYFAR *)0x48000D6Cu)
+#define BS_IOPINS0_1_VAL ((const uint8 CYFAR *)0x48000B7Cu)
 
 /* IOPINS0_2 Address: CYREG_PRT2_DM0 Size (bytes): 8 */
-#define BS_IOPINS0_2_VAL ((const uint8 CYFAR *)0x48000D74u)
+#define BS_IOPINS0_2_VAL ((const uint8 CYFAR *)0x48000B84u)
 
 /* IOPINS0_3 Address: CYREG_PRT3_DM0 Size (bytes): 8 */
-#define BS_IOPINS0_3_VAL ((const uint8 CYFAR *)0x48000D7Cu)
+#define BS_IOPINS0_3_VAL ((const uint8 CYFAR *)0x48000B8Cu)
 
 /* CYDEV_CLKDIST_ACFG0_CFG0 Address: CYREG_CLKDIST_ACFG0_CFG0 Size (bytes): 4 */
-#define BS_CYDEV_CLKDIST_ACFG0_CFG0_VAL ((const uint8 CYFAR *)0x48000D84u)
+#define BS_CYDEV_CLKDIST_ACFG0_CFG0_VAL ((const uint8 CYFAR *)0x48000B94u)
 
 /* PHUB_CFGMEM1 Address: CYREG_PHUB_CFGMEM1_CFG0 Size (bytes): 4 */
-#define BS_PHUB_CFGMEM1_VAL ((const uint8 CYFAR *)0x48000D88u)
-
-/* PHUB_CFGMEM2 Address: CYREG_PHUB_CFGMEM2_CFG0 Size (bytes): 4 */
-#define BS_PHUB_CFGMEM2_VAL ((const uint8 CYFAR *)0x48000D8Cu)
-
-/* PHUB_CFGMEM3 Address: CYREG_PHUB_CFGMEM3_CFG0 Size (bytes): 4 */
-#define BS_PHUB_CFGMEM3_VAL ((const uint8 CYFAR *)0x48000D90u)
+#define BS_PHUB_CFGMEM1_VAL ((const uint8 CYFAR *)0x48000B98u)
 
 
 /*******************************************************************************
@@ -229,8 +223,8 @@ static void ClockSetup(void)
 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_CLKDIST_DCFG0_CFG0 + 0x2u), 0x18u);
 	CY_SET_XTND_REG16((void CYFAR *)(CYREG_CLKDIST_DCFG1_CFG0), 0x0000u);
 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_CLKDIST_DCFG1_CFG0 + 0x2u), 0x50u);
-	CY_SET_XTND_REG16((void CYFAR *)(CYREG_CLKDIST_DCFG2_CFG0), 0x002Eu);
-	CY_SET_XTND_REG8((void CYFAR *)(CYREG_CLKDIST_DCFG2_CFG0 + 0x2u), 0x18u);
+	CY_SET_XTND_REG16((void CYFAR *)(CYREG_CLKDIST_DCFG2_CFG0), 0x0000u);
+	CY_SET_XTND_REG8((void CYFAR *)(CYREG_CLKDIST_DCFG2_CFG0 + 0x2u), 0x19u);
 	CY_SET_XTND_REG16((void CYFAR *)(CYREG_CLKDIST_DCFG3_CFG0), 0x002Eu);
 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_CLKDIST_DCFG3_CFG0 + 0x2u), 0x18u);
 	CY_SET_XTND_REG16((void CYFAR *)(CYREG_CLKDIST_DCFG4_CFG0), 0x0257u);
@@ -311,37 +305,40 @@ static void AnalogSetDefault(void)
 	/* Disable PRES while setting up SAR voltage reference */
 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_RESET_CR4), (cr4 | 0x03u));
 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_RESET_CR5), (cr5 | 0x03u));
-	CY_SET_XTND_REG16((void CYFAR *)CYREG_PRT0_AMUX, 0x5A01u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_PRT1_AG, 0x50u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_PRT2_AG, 0x95u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_PRT3_AG, 0x0Du);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_PRT15_AG, 0x1Cu);
+	CY_SET_XTND_REG16((void CYFAR *)CYREG_PRT0_AMUX, 0x8210u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_PRT1_AG, 0xB4u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_PRT2_AG, 0x29u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_PRT3_AG, 0x41u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_PRT15_AG, 0x20u);
 	CY_SET_XTND_REG8((void CYFAR *)CYREG_BG_CR0, 0x0Cu);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_SAR0_CSR1, 0x40u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_SAR0_CSR3, 0x40u);
 	CY_SET_XTND_REG8((void CYFAR *)CYREG_SAR1_CSR1, 0x40u);
 	CY_SET_XTND_REG8((void CYFAR *)CYREG_SAR1_CSR3, 0x40u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_DAC0_SW3, 0x80u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_DAC1_SW3, 0x80u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_DAC2_SW4, 0x10u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_SC0_SW0, 0x11u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_SC2_SW0, 0x20u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_SC2_SW2, 0x04u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_DAC0_SW4, 0x01u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_DAC1_SW3, 0x10u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_DAC2_SW3, 0x80u);
 	CY_SET_XTND_REG8((void CYFAR *)CYREG_DAC3_SW3, 0x80u);
 	CY_SET_XTND_REG8((void CYFAR *)CYREG_DAC3_SW4, 0x20u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_CMP0_SW2, 0x01u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_CMP0_SW2, 0x02u);
 	CY_SET_XTND_REG8((void CYFAR *)CYREG_CMP0_SW4, 0x04u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_CMP1_SW2, 0x01u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_CMP1_SW4, 0x01u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_CMP2_SW0, 0x80u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_CMP2_SW4, 0x20u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_CMP3_SW0, 0x04u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_CMP3_SW3, 0x10u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_CMP1_SW0, 0x08u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_CMP1_SW4, 0x40u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_CMP2_SW2, 0x02u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_CMP2_SW4, 0x08u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_CMP3_SW0, 0x10u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_CMP3_SW6, 0x04u);
 	CY_SET_XTND_REG8((void CYFAR *)CYREG_DSM0_SW0, 0x04u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_SAR0_SW0, 0x09u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_SAR0_SW3, 0x20u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_SAR1_SW0, 0xC0u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_DSM0_SW6, 0x02u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_SAR1_SW0, 0x03u);
 	CY_SET_XTND_REG8((void CYFAR *)CYREG_SAR1_SW3, 0x20u);
 	CY_SET_XTND_REG32((void CYFAR *)CYREG_OPAMP0_MX, 0x01020101u);
-	CY_SET_XTND_REG32((void CYFAR *)CYREG_OPAMP2_MX, 0x01010103u);
-	CY_SET_XTND_REG16((void CYFAR *)CYREG_BUS_SW2, 0x0101u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_OPAMP2_SW, 0x05u);
+	CY_SET_XTND_REG16((void CYFAR *)CYREG_OPAMP3_MX, 0x0104u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_LCDDAC_SW1, 0x06u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_BUS_SW0, 0x86u);
+	CY_SET_XTND_REG16((void CYFAR *)CYREG_BUS_SW2, 0x0104u);
 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_RESET_CR5), (cr5));
 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_RESET_CR4), (cr4));
 	CY_SET_XTND_REG8((void CYFAR *)CYREG_PUMP_CR0, 0x44u);
@@ -380,63 +377,6 @@ void SetAnalogRoutingPumps(uint8 enabled)
 }
 
 #define CY_AMUX_UNUSED CYREG_BOOST_SR
-/* This is an implementation detail of the AMux. Code that depends on it may be
-   incompatible with other versions of PSoC Creator. */
-uint8 CYXDATA * const CYCODE ADC_DelSig_1_AMux__addrTable[2] = {
-	(uint8 CYXDATA *)CYREG_DSM0_SW3, 
-	(uint8 CYXDATA *)CY_AMUX_UNUSED, 
-};
-
-/* This is an implementation detail of the AMux. Code that depends on it may be
-   incompatible with other versions of PSoC Creator. */
-const uint8 CYCODE ADC_DelSig_1_AMux__maskTable[2] = {
-	0x40u, 
-	0x00u, 
-};
-
-/*******************************************************************************
-* Function Name: ADC_DelSig_1_AMux_Set
-********************************************************************************
-* Summary:
-*  This function is used to set a particular channel as active on the AMux.
-*
-* Parameters:  
-*   channel - The mux channel input to set as active
-*
-* Return:
-*   void
-*
-*******************************************************************************/
-void ADC_DelSig_1_AMux_Set(uint8 channel)
-{
-	if (channel < 2)
-	{
-		*ADC_DelSig_1_AMux__addrTable[channel] |= ADC_DelSig_1_AMux__maskTable[channel];
-	}
-}
-
-/*******************************************************************************
-* Function Name: ADC_DelSig_1_AMux_Unset
-********************************************************************************
-* Summary:
-*  This function is used to clear a particular channel from being active on the
-*  AMux.
-*
-* Parameters:  
-*   channel - The mux channel input to mark inactive
-*
-* Return:
-*   void
-*
-*******************************************************************************/
-void ADC_DelSig_1_AMux_Unset(uint8 channel)
-{
-	if (channel < 2)
-	{
-		*ADC_DelSig_1_AMux__addrTable[channel] &= (uint8)~ADC_DelSig_1_AMux__maskTable[channel];
-	}
-}
-
 
 
 /*******************************************************************************
@@ -529,8 +469,6 @@ void cyfitter_cfg(void)
 		CY_SET_XTND_REG16((void CYFAR *)(CYREG_LUT3_CR), 0x0303u);
 		CYMEMZERO((void CYFAR *)(CYREG_PHUB_CFGMEM0_CFG0), 4u);
 		CYCONFIGCPY((void CYFAR *)(CYREG_PHUB_CFGMEM1_CFG0), (const void CYFAR *)(BS_PHUB_CFGMEM1_VAL), 4u);
-		CYCONFIGCPY((void CYFAR *)(CYREG_PHUB_CFGMEM2_CFG0), (const void CYFAR *)(BS_PHUB_CFGMEM2_VAL), 4u);
-		CYCONFIGCPY((void CYFAR *)(CYREG_PHUB_CFGMEM3_CFG0), (const void CYFAR *)(BS_PHUB_CFGMEM3_VAL), 4u);
 
 		/* Enable digital routing */
 		CY_SET_XTND_REG8((void CYFAR *)CYREG_BCTL0_BANK_CTL, CY_GET_XTND_REG8((void CYFAR *)CYREG_BCTL0_BANK_CTL) | 0x02u);
@@ -549,10 +487,10 @@ void cyfitter_cfg(void)
 	CYCONFIGCPY((void CYFAR *)(CYREG_PRT1_DM0), (const void CYFAR *)(BS_IOPINS0_1_VAL), 8u);
 	CYCONFIGCPY((void CYFAR *)(CYREG_PRT2_DM0), (const void CYFAR *)(BS_IOPINS0_2_VAL), 8u);
 	CYCONFIGCPY((void CYFAR *)(CYREG_PRT3_DM0), (const void CYFAR *)(BS_IOPINS0_3_VAL), 8u);
-	CY_SET_XTND_REG8((void CYFAR *)(CYREG_B0_P2_U1_CFG27), 0x44u);
-	CY_SET_XTND_REG8((void CYFAR *)(CYREG_B0_P3_U0_CFG24), 0x44u);
-	CY_SET_XTND_REG8((void CYFAR *)(CYREG_B1_P4_U1_CFG24), 0xC4u);
-	CY_SET_XTND_REG8((void CYFAR *)(CYREG_B1_P4_U1_CFG27), 0xC8u);
+	CY_SET_XTND_REG8((void CYFAR *)(CYREG_B0_P1_U1_CFG24), 0x44u);
+	CY_SET_XTND_REG8((void CYFAR *)(CYREG_B0_P1_U1_CFG27), 0x44u);
+	CY_SET_XTND_REG8((void CYFAR *)(CYREG_B1_P2_U0_CFG27), 0x8Bu);
+	CY_SET_XTND_REG8((void CYFAR *)(CYREG_B1_P3_U1_CFG24), 0x44u);
 	/* Switch Boost to the precision bandgap reference from its internal reference */
 	CY_SET_REG8((void CYXDATA *)CYREG_BOOST_CR2, (CY_GET_REG8((void CYXDATA *)CYREG_BOOST_CR2) | 0x08u));
 

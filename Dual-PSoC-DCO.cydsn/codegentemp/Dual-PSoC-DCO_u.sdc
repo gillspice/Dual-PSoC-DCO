@@ -1,3 +1,3 @@
 # Component constraints for C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\TopDesign\TopDesign.cysch
 # Project: C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\Dual-PSoC-DCO.cyprj
-# Date: Thu, 23 Jun 2016 18:22:11 GMT
+# Date: Tue, 28 Jun 2016 19:35:11 GMT

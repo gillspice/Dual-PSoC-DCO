@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1\ADC_DelSig_1_INT.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_SIGNCHANGE_PositiveISR\OSC1_SIGNCHANGE_PositiveISR.c">
 <ExpandedNodeIds>
 <v>Dual-PSoC-DCO</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO</v>
@@ -30,9 +30,6 @@
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1\ADC_DelSig_1.h</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1\ADC_DelSig_1_INT.c</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1\ADC_DelSig_1_PM.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1_AMux</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1_AMux\ADC_DelSig_1_AMux.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1_AMux\ADC_DelSig_1_AMux.h</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1_Ext_CP_Clk</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1_Ext_CP_Clk\ADC_DelSig_1_Ext_CP_Clk.c</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1_Ext_CP_Clk\ADC_DelSig_1_Ext_CP_Clk.h</v>
@@ -177,6 +174,12 @@
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Reset\OSC1_Saw_Reset.c</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Reset\OSC1_Saw_Reset.h</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Reset\OSC1_Saw_Reset_aliases.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_SIGNCHANGE_NegativeISR</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_SIGNCHANGE_NegativeISR\OSC1_SIGNCHANGE_NegativeISR.c</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_SIGNCHANGE_NegativeISR\OSC1_SIGNCHANGE_NegativeISR.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_SIGNCHANGE_PositiveISR</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_SIGNCHANGE_PositiveISR\OSC1_SIGNCHANGE_PositiveISR.c</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_SIGNCHANGE_PositiveISR\OSC1_SIGNCHANGE_PositiveISR.h</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Soft_Sync</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Soft_Sync\OSC1_Soft_Sync.c</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Soft_Sync\OSC1_Soft_Sync.h</v>
@@ -193,48 +196,22 @@
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Tri_Out\OSC1_Tri_Out.c</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Tri_Out\OSC1_Tri_Out.h</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Tri_Out\OSC1_Tri_Out_aliases.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Tri_Preset</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Tri_Preset\OSC1_Tri_Preset.c</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Tri_Preset\OSC1_Tri_Preset.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Tri_Preset\OSC1_Tri_Preset_aliases.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Tri_Reset</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Tri_Reset\OSC1_Tri_Reset.c</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Tri_Reset\OSC1_Tri_Reset.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Tri_Reset\OSC1_Tri_Reset_aliases.h</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Triangle_Follower</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Triangle_Follower\OSC1_Triangle_Follower.c</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Triangle_Follower\OSC1_Triangle_Follower.h</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Triangle_Follower\OSC1_Triangle_Follower_PM.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_ADC_SAR</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_ADC_SAR\OSC2_ADC_SAR.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_ADC_SAR\OSC2_ADC_SAR.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_ADC_SAR\OSC2_ADC_SAR_INT.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_ADC_SAR\OSC2_ADC_SAR_PM.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_ADC_SAR_FinalBuf</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_ADC_SAR_FinalBuf\OSC2_ADC_SAR_FinalBuf_dma.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_ADC_SAR_FinalBuf\OSC2_ADC_SAR_FinalBuf_dma.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_ADC_SAR_IntClock</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_ADC_SAR_IntClock\OSC2_ADC_SAR_IntClock.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_ADC_SAR_IntClock\OSC2_ADC_SAR_IntClock.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_ADC_SAR_IRQ</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_ADC_SAR_IRQ\OSC2_ADC_SAR_IRQ.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_ADC_SAR_IRQ\OSC2_ADC_SAR_IRQ.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_ADC_SAR_SAR</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_ADC_SAR_SAR\OSC2_ADC_SAR_SAR.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_ADC_SAR_SAR\OSC2_ADC_SAR_SAR.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_ADC_SAR_SAR\OSC2_ADC_SAR_SAR_INT.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_ADC_SAR_SAR\OSC2_ADC_SAR_SAR_PM.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_ADC_SAR_TempBuf</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_ADC_SAR_TempBuf\OSC2_ADC_SAR_TempBuf_dma.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_ADC_SAR_TempBuf\OSC2_ADC_SAR_TempBuf_dma.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_Coarse</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_Coarse\OSC2_Coarse.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_Coarse\OSC2_Coarse.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_Coarse\OSC2_Coarse_aliases.h</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_Comp_1</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_Comp_1\OSC2_Comp_1.c</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_Comp_1\OSC2_Comp_1.h</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_Comp_1\OSC2_Comp_1_PM.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_CV_IN</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_CV_IN\OSC2_CV_IN.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_CV_IN\OSC2_CV_IN.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_CV_IN\OSC2_CV_IN_aliases.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_Fine</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_Fine\OSC2_Fine.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_Fine\OSC2_Fine.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_Fine\OSC2_Fine_aliases.h</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_FM_Input</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_FM_Input\OSC2_FM_Input.c</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_FM_Input\OSC2_FM_Input.h</v>
@@ -263,10 +240,6 @@
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_PW_In_1\OSC2_PW_In_1.c</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_PW_In_1\OSC2_PW_In_1.h</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_PW_In_1\OSC2_PW_In_1_aliases.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_RANGE</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_RANGE\OSC2_RANGE.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_RANGE\OSC2_RANGE.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_RANGE\OSC2_RANGE_aliases.h</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_Saw_Follower_1</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_Saw_Follower_1\OSC2_Saw_Follower_1.c</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_Saw_Follower_1\OSC2_Saw_Follower_1.h</v>
@@ -307,10 +280,17 @@
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_Triangle_Follower_1\OSC2_Triangle_Follower_1.c</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_Triangle_Follower_1\OSC2_Triangle_Follower_1.h</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC2_Triangle_Follower_1\OSC2_Triangle_Follower_1_PM.c</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\Pin_1</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\Pin_1\Pin_1.c</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\Pin_1\Pin_1.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\Pin_1\Pin_1_aliases.h</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\test_pin</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\test_pin\test_pin.c</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\test_pin\test_pin.h</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\test_pin\test_pin_aliases.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\timer_clock</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\timer_clock\timer_clock.c</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\timer_clock\timer_clock.h</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\USBMIDI_1</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1.c</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1.h</v>
@@ -365,54 +345,55 @@
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\project.h</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
-<v>Dual-PSoC-DCO</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\TopDesign</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Dual-PSoC-DCO.cydwr</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Header Files</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Header Files\cyapicallbacks.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Source Files</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Source Files\main.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1\ADC_DelSig_1.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1\ADC_DelSig_1.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1\ADC_DelSig_1_INT.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1\ADC_DelSig_1_PM.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1_AMux</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1_AMux\ADC_DelSig_1_AMux.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1_AMux\ADC_DelSig_1_AMux.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1_Ext_CP_Clk</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1_Ext_CP_Clk\ADC_DelSig_1_Ext_CP_Clk.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1_Ext_CP_Clk\ADC_DelSig_1_Ext_CP_Clk.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1_IRQ</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1_IRQ\ADC_DelSig_1_IRQ.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1_IRQ\ADC_DelSig_1_IRQ.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1_theACLK</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1_theACLK\ADC_DelSig_1_theACLK.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\ADC_DelSig_1_theACLK\ADC_DelSig_1_theACLK.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\Clock_1</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\Clock_1\Clock_1.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\Clock_1\Clock_1.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\Clock_2</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\Clock_2\Clock_2.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\Clock_2\Clock_2.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\Clock_3</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\Clock_3\Clock_3.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\Clock_3\Clock_3.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\Comp_1</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\Comp_1\Comp_1.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\Comp_1\Comp_1.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\Comp_1\Comp_1_PM.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\Comp_2</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\Comp_2\Comp_2.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\Comp_2\Comp_2.h</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\Comp_2\Comp_2_PM.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\cy_boot</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_ADC_SAR</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_ADC_SAR\OSC1_ADC_SAR.c</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_ADC_SAR\OSC1_ADC_SAR.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_RANGE</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_RANGE\OSC1_RANGE.c</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_RANGE\OSC1_RANGE.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_RANGE\OSC1_RANGE_aliases.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Follower</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Follower\OSC1_Saw_Follower.c</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Follower\OSC1_Saw_Follower.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Follower\OSC1_Saw_Follower_PM.c</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Out</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Out\OSC1_Saw_Out.c</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Out\OSC1_Saw_Out.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Out\OSC1_Saw_Out_aliases.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Out_Cap</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Out_Cap\OSC1_Saw_Out_Cap.c</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Out_Cap\OSC1_Saw_Out_Cap.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Out_Cap\OSC1_Saw_Out_Cap_aliases.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Preset</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Preset\OSC1_Saw_Preset.c</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Preset\OSC1_Saw_Preset.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Preset\OSC1_Saw_Preset_aliases.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Reset</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Reset\OSC1_Saw_Reset.c</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Reset\OSC1_Saw_Reset.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Saw_Reset\OSC1_Saw_Reset_aliases.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_SIGNCHANGE_NegativeISR</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_SIGNCHANGE_NegativeISR\OSC1_SIGNCHANGE_NegativeISR.c</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_SIGNCHANGE_NegativeISR\OSC1_SIGNCHANGE_NegativeISR.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_SIGNCHANGE_PositiveISR</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_SIGNCHANGE_PositiveISR\OSC1_SIGNCHANGE_PositiveISR.c</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_SIGNCHANGE_PositiveISR\OSC1_SIGNCHANGE_PositiveISR.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Soft_Sync</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Soft_Sync\OSC1_Soft_Sync.c</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Soft_Sync\OSC1_Soft_Sync.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Soft_Sync\OSC1_Soft_Sync_aliases.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Square_Out</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Square_Out\OSC1_Square_Out.c</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Square_Out\OSC1_Square_Out.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Square_Out\OSC1_Square_Out_aliases.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Tri_Cap</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Tri_Cap\OSC1_Tri_Cap.c</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Tri_Cap\OSC1_Tri_Cap.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Tri_Cap\OSC1_Tri_Cap_aliases.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Tri_Out</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Tri_Out\OSC1_Tri_Out.c</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Tri_Out\OSC1_Tri_Out.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Tri_Out\OSC1_Tri_Out_aliases.h</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Tri_Preset</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Tri_Preset\OSC1_Tri_Preset.c</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\Generated_Source\PSoC5\OSC1_Tri_Preset\OSC1_Tri_Preset.h</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -438,7 +419,6 @@
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_AMux.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_Ext_CP_Clk.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_INT.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_IRQ.lst</v>
@@ -495,27 +475,18 @@
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_Saw_Out_Cap.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_Saw_Preset.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_Saw_Reset.lst</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_SIGNCHANGE_NegativeISR.lst</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_SIGNCHANGE_PositiveISR.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_Soft_Sync.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_Square_Out.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_Tri_Cap.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_Tri_Out.lst</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_Tri_Preset.lst</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_Tri_Reset.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_Triangle_Follower.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_Triangle_Follower_PM.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_ADC_SAR.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_ADC_SAR_FinalBuf_dma.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_ADC_SAR_INT.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_ADC_SAR_IntClock.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_ADC_SAR_IRQ.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_ADC_SAR_PM.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_ADC_SAR_SAR.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_ADC_SAR_SAR_INT.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_ADC_SAR_SAR_PM.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_ADC_SAR_TempBuf_dma.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_Coarse.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_Comp_1.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_Comp_1_PM.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_CV_IN.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_Fine.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_FM_Input.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_Freq_Timer_1.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_Freq_Timer_1_PM.lst</v>
@@ -526,7 +497,6 @@
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_IDAC8_SAW_1_PM.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_Pulse_Out_1.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_PW_In_1.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_RANGE.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_Saw_Follower_1.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_Saw_Follower_1_PM.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_Saw_Out_1.lst</v>
@@ -539,7 +509,9 @@
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_Tri_Out_1.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_Triangle_Follower_1.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC2_Triangle_Follower_1_PM.lst</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_1.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\test_pin.lst</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\timer_clock.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\USBMIDI_1.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\USBMIDI_1_audio.lst</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\USBMIDI_1_boot.lst</v>
@@ -566,52 +538,6 @@
 <VisibleNodeIds>
 <v>Dual-PSoC-DCO</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_AMux.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_Ext_CP_Clk.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_INT.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_IRQ.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_PM.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_theACLK.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\Clock_1.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\Clock_2.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\Clock_3.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\Comp_1.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\Comp_1_PM.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\Comp_2.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\Comp_2_PM.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_ADC_SAR.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_ADC_SAR_FinalBuf_dma.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_ADC_SAR_INT.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_ADC_SAR_IntClock.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_ADC_SAR_IRQ.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_ADC_SAR_PM.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_ADC_SAR_SAR.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_ADC_SAR_SAR_INT.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_ADC_SAR_SAR_PM.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_ADC_SAR_TempBuf_dma.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_Coarse.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_Comp.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_Comp_PM.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_CV_IN.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_Fine.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_FM_Input.lst</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\CortexM3\ARM_GCC_493\Debug\Listing Files\OSC1_Freq_Timer.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -628,8 +554,7 @@
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\System Reference Guides</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\System Reference Guides\cy_boot_v5_30</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\ADC_DelSig_v3_20.pdf</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\ADC_SAR_SEQ_v2_0</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\ADC_SAR_SEQ_v2_0\ADC_SAR_SEQ_v2_0.pdf</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\ADC_SAR_SEQ_v2_0.pdf</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\and_v1_0</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\and_v1_0\and_v1_0.pdf</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Comp_v2_0</v>
@@ -638,6 +563,8 @@
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\cy_constant_v1_0</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\cy_isr_v1_70</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\cy_pins_v2_20</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\cy_vref_v1_60</v>
@@ -656,6 +583,7 @@
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\not_v1_0\not_v1_0.pdf</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\OpAmp_v1_90</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\OpAmp_v1_90\OpAmp_v1_90.pdf</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\or_v1_0.pdf</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\PulseConvert_v1_0</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\PulseConvert_v1_0\PulseConvert_v1_0.pdf</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Timer_v2_70</v>
@@ -672,8 +600,7 @@
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\System Reference Guides</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\System Reference Guides\cy_boot_v5_30</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\ADC_DelSig_v3_20.pdf</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\ADC_SAR_SEQ_v2_0</v>
-<v>Dual-PSoC-DCO\Dual-PSoC-DCO\ADC_SAR_SEQ_v2_0\ADC_SAR_SEQ_v2_0.pdf</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\ADC_SAR_SEQ_v2_0.pdf</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\and_v1_0</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\and_v1_0\and_v1_0.pdf</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Comp_v2_0</v>
@@ -682,6 +609,8 @@
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\cy_constant_v1_0</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\cy_isr_v1_70</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\cy_pins_v2_20</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\cy_vref_v1_60</v>
@@ -700,6 +629,7 @@
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\not_v1_0\not_v1_0.pdf</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\OpAmp_v1_90</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\OpAmp_v1_90\OpAmp_v1_90.pdf</v>
+<v>Dual-PSoC-DCO\Dual-PSoC-DCO\or_v1_0.pdf</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\PulseConvert_v1_0</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\PulseConvert_v1_0\PulseConvert_v1_0.pdf</v>
 <v>Dual-PSoC-DCO\Dual-PSoC-DCO\Timer_v2_70</v>

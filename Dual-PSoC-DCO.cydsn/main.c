@@ -11,11 +11,47 @@
 */
 #include <project.h>
 #include <math.h>
+#include <stdlib.h>
 
-#define CAP_VALUE 0.027;
-#define VPP_VALUE 2.5;
+#define CAP_VALUE 0.027
+#define VPP_VALUE 2.5
 
 int dac_value;
+uint32_t count;
+
+CY_ISR_PROTO(SIGNCHANGE_PositiveInterrupt_Handler);
+CY_ISR(SIGNCHANGE_PositiveInterrupt_Handler)
+{
+    #ifdef OSC1_SIGNCHANGE_ISR1_INTERRUPT_INTERRUPT_CALLBACK
+        OSC1_SIGNCHANGE_ISR1_Interrupt_InterruptCallback();
+    #endif /* OSC1_SIGNCHANGE_ISR1_INTERRUPT_INTERRUPT_CALLBACK */ 
+
+    /*  Place your Interrupt code here. */
+    /* `#START OSC1_SIGNCHANGE_ISR1_Interrupt` */
+    OSC1_Freq_Timer_Stop();
+    OSC1_Freq_Timer_WriteCounter(count-OSC1_Freq_Timer_ReadCounter());
+   OSC1_Freq_Timer_Start();
+    /* `#END` */
+}
+
+CY_ISR_PROTO(SIGNCHANGE_NegativeInterrupt_Handler);
+CY_ISR(SIGNCHANGE_NegativeInterrupt_Handler)
+{
+    #ifdef OSC1_SIGNCHANGE_ISR2_INTERRUPT_INTERRUPT_CALLBACK
+        OSC1_SIGNCHANGE_ISR2_Interrupt_InterruptCallback();
+    #endif /* OSC1_SIGNCHANGE_ISR2_INTERRUPT_INTERRUPT_CALLBACK */ 
+
+    /*  Place your Interrupt code here. */
+    /* `#START OSC1_SIGNCHANGE_ISR2_Interrupt` */
+    
+    OSC1_Freq_Timer_Stop();
+
+    OSC1_Freq_Timer_WriteCounter(count-OSC1_Freq_Timer_ReadCounter());
+
+   OSC1_Freq_Timer_Start();
+/* `#END` */
+}
+
 
 int main()
 {
@@ -41,6 +77,12 @@ int main()
     OSC1_Saw_Follower_Enable();
     OSC1_Comp_Start();
     OSC1_Comp_Enable();
+    Comp_1_Start();
+    Comp_1_Enable();
+    OSC1_ADC_SAR_Start();
+    OSC1_ADC_SAR_StartConvert();
+    OSC1_SIGNCHANGE_PositiveISR_StartEx(SIGNCHANGE_PositiveInterrupt_Handler);
+    OSC1_SIGNCHANGE_NegativeISR_StartEx(SIGNCHANGE_NegativeInterrupt_Handler);
 //    OSC1_Mux_Init();
 //    OSC1_Mux_Start();
 //    OSC1_Mux_Next();
@@ -60,12 +102,30 @@ int main()
             pinState = 0;
             test_pin_Write(0xff);
         }
-        int result = ADC_DelSig_1_GetResult32();
-//        int frequency = (220*(pow(1.059463094,(12*ADC_DelSig_1_CountsTo_Volts(result)))));
+        int32_t result = (abs(ADC_DelSig_1_GetResult32()));
+        
+        
+        
+        uint32_t frequency = (20*result*(pow(1.059463094,(12*(OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(0)) + OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(1))*2 + OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(2))/5 + OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(3))/5/12)))))/32767;
 //        int frequency = (220*(pow(1.059463094,(12*myFixedValue))));
-        int frequency = (110*(pow(2, 5*result/65535)));
-        int count = 12000000/frequency;
+ //       int frequency = (110*(pow(2, 5*result/65535)));
+        if (frequency > 20000)
+        {
+            frequency = 20000;
+        } else if (frequency < 1)
+        {
+            frequency = 1;
+        }
+        __disable_irq();
+        count = 12000000/frequency;
+        
+        OSC1_Freq_Timer_Stop();
        OSC1_Freq_Timer_WritePeriod(count);
+        if (count < OSC1_Freq_Timer_ReadCounter()) {
+            OSC1_Freq_Timer_WriteCounter(count);
+        }
+        OSC1_Freq_Timer_Start();
+        __enable_irq();
 //       OSC1_Freq_Timer_1_WritePeriod(count*2);
     if (frequency > 3950){
         OSC1_IDAC8_SetRange(OSC1_IDAC8_RANGE_2mA);

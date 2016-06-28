@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
   29:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** 
   30:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** 
   31:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** /****************************************************************************
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 2
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** * Function Name: OSC1_ADC_SAR_Disable()
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
   58:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** 
   59:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c ****     (void) CyDmaChDisable(OSC1_ADC_SAR_finalChan);
   55              		.loc 1 59 0
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 3
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 3
 
 
   56 0020 7078     		ldrb	r0, [r6, #1]	@ zero_extendqisi2
@@ -136,7 +136,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
   66              	.L4:
   67              		.align	2
   68              	.L3:
-  69 0030 77640040 		.word	1073767543
+  69 0030 79640040 		.word	1073767545
   70 0034 00000000 		.word	.LANCHOR0
   71 0038 00000000 		.word	.LANCHOR1
   72              		.cfi_endproc
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
   85              		@ args = 0, pretend = 0, frame = 0
   86              		@ frame_needed = 0, uses_anonymous_args = 0
   87 0000 10B5     		push	{r4, lr}
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 4
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 4
 
 
   88              		.cfi_def_cfa_offset 8
@@ -219,7 +219,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
   96:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c ****         /* Set the priority. */
   97:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c ****         OSC1_ADC_SAR_IRQ_SetPriority((uint8)OSC1_ADC_SAR_INTC_NUMBER);
  112              		.loc 1 97 0
- 113 002c 0020     		movs	r0, #0
+ 113 002c 0220     		movs	r0, #2
  114 002e FFF7FEFF 		bl	OSC1_ADC_SAR_IRQ_SetPriority
  115              	.LVL7:
  116 0032 10BD     		pop	{r4, pc}
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  129              		.thumb_func
  130              		.type	OSC1_ADC_SAR_Enable, %function
  131              	OSC1_ADC_SAR_Enable:
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 5
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 5
 
 
  132              	.LFB2:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  132:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c ****     
  133:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c ****     /* Provides initialization procedure for the TempBuf DMA
  134:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c ****     * Configure this Td as follows:
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 6
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 6
 
 
  135:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c ****     *  - The TD is looping on itself
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  156:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c ****     * Configure this Td as follows:
  157:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c ****     *  - The TD is looping on itself
  158:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c ****     *  - Increment the source and destination address
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 7
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 7
 
 
  159:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c ****     */
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  178:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c ****     (void) CyDmaChEnable(OSC1_ADC_SAR_finalChan, 1u);
  220              		.loc 1 178 0
  221 0080 6078     		ldrb	r0, [r4, #1]	@ zero_extendqisi2
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 8
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 8
 
 
  222 0082 0121     		movs	r1, #1
@@ -458,7 +458,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  190:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c ****         /* Clear a pending interrupt */
  191:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c ****         CyIntClearPending(OSC1_ADC_SAR_INTC_NUMBER);
  245              		.loc 1 191 0
- 246 00ac 0122     		movs	r2, #1
+ 246 00ac 0422     		movs	r2, #4
  247 00ae 064B     		ldr	r3, .L13+20
  248 00b0 1A60     		str	r2, [r3]
  249 00b2 70BD     		pop	{r4, r5, r6, pc}
@@ -468,8 +468,8 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  253 00b4 00000000 		.word	.LANCHOR0
  254 00b8 00000000 		.word	.LANCHOR1
  255 00bc 00000000 		.word	OSC1_ADC_SAR_finalArray
- 256 00c0 97650040 		.word	1073767831
- 257 00c4 77640040 		.word	1073767543
+ 256 00c0 9A640040 		.word	1073767578
+ 257 00c4 79640040 		.word	1073767545
  258 00c8 80E200E0 		.word	-536812928
  259              		.cfi_endproc
  260              	.LFE2:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  263              		.align	2
  264              		.global	OSC1_ADC_SAR_Start
  265              		.thumb
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 9
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 9
 
 
  266              		.thumb_func
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  289              	.L16:
  223:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c ****     }
  224:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 10
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 10
 
 
  225:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c ****     OSC1_ADC_SAR_Enable();
@@ -558,7 +558,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  301              		.align	2
  302              	.L18:
  303 0020 00000000 		.word	.LANCHOR0
- 304 0024 6B640040 		.word	1073767531
+ 304 0024 69650040 		.word	1073767785
  305              		.cfi_endproc
  306              	.LFE3:
  307              		.size	OSC1_ADC_SAR_Start, .-OSC1_ADC_SAR_Start
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  253:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** {
  316              		.loc 1 253 0
  317              		.cfi_startproc
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 11
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 11
 
 
  318              		@ args = 0, pretend = 0, frame = 0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  342              		.loc 1 283 0
  343              		.cfi_startproc
  344              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 12
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 12
 
 
  345              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  318:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c ****     *  No.
  319:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c ****     *
  320:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c ****     *******************************************************************************/
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 13
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 13
 
 
  321:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c ****     void OSC1_ADC_SAR_StopConvert(void)
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  352:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** *
  353:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** * Reentrant:
  354:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** *  No.
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 14
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 14
 
 
  355:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** *
@@ -819,7 +819,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  410              	.L30:
  411 0012 00BF     		.align	2
  412              	.L29:
- 413 0014 6B640040 		.word	1073767531
+ 413 0014 69650040 		.word	1073767785
  414              		.cfi_endproc
  415              	.LFE7:
  416              		.size	OSC1_ADC_SAR_IsEndConversion, .-OSC1_ADC_SAR_IsEndConversion
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  372:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** ********************************************************************************
  373:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** *
  374:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** * Summary:
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 15
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 15
 
 
  375:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** *  Returns the ADC result for channel chan
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  396:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** 
  397:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** /*******************************************************************************
  398:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** * Function Name: OSC1_ADC_SAR_GetAdcResult
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 16
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 16
 
 
  399:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** ********************************************************************************
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  429:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** *  _CountsTo_mVolts() and _CountsTo_Volts() to substract the offset from the
  430:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** *  given reading before calculating the voltage conversion
  431:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** *
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 17
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 17
 
 
  432:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** * Parameters:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  460:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** *  This function does not affect the actual conversion with PSoC5 ES1 silicon.
  461:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** *
  462:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** * Parameters:
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 18
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 18
 
 
  463:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** *  resolution:
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  531              	.LFB12:
  494:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** }
  495:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 19
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 19
 
 
  496:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** 
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  524:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** * Function Name: OSC1_ADC_SAR_SetScaledGain
  525:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** ********************************************************************************
  526:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** *
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 20
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 20
 
 
  527:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** * Summary:
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  557:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** *
  558:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** * Summary:
  559:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** *  Converts the ADC output to mVolts as a 32-bit integer
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 21
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 21
 
 
  560:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** *
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  589:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** *
  590:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** * Return:
  591:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** *  Result in uV
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 22
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 22
 
 
  592:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** *
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  621:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** *
  622:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** * Reentrant:
  623:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** *  No.
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 23
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 23
 
 
  624:.\Generated_Source\PSoC5/OSC1_ADC_SAR.c **** *
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  679              	OSC1_ADC_SAR_initVar:
  680 000c 00000000 		.space	4
  681              		.text
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 24
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 24
 
 
  682              	.Letext0:
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  736 005d 03       		.uleb128 0x3
  737 005e 04       		.byte	0x4
  738 005f 05       		.byte	0x5
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 25
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 25
 
 
  739 0060 696E7400 		.ascii	"int\000"
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  793 00d9 02       		.byte	0x2
  794 00da E201     		.2byte	0x1e2
  795 00dc E0000000 		.4byte	0xe0
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 26
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 26
 
 
  796 00e0 05       		.uleb128 0x5
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  850 0160 12000000 		.4byte	.LVL4
  851 0164 11060000 		.4byte	0x611
  852 0168 85010000 		.4byte	0x185
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 27
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 27
 
 
  853 016c 0B       		.uleb128 0xb
@@ -1618,13 +1618,13 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  907 01b5 32000000 		.4byte	.LVL7
  908 01b9 6A060000 		.4byte	0x66a
  909 01bd 0B       		.uleb128 0xb
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 28
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 28
 
 
  910 01be 01       		.uleb128 0x1
  911 01bf 50       		.byte	0x50
  912 01c0 01       		.uleb128 0x1
- 913 01c1 30       		.byte	0x30
+ 913 01c1 32       		.byte	0x32
  914 01c2 00       		.byte	0
  915 01c3 00       		.byte	0
  916 01c4 08       		.uleb128 0x8
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  964 022d 40000000 		.4byte	.LVL12
  965 0231 BF060000 		.4byte	0x6bf
  966 0235 47020000 		.4byte	0x247
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 29
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 29
 
 
  967 0239 0B       		.uleb128 0xb
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  1021 0297 0A       		.uleb128 0xa
  1022 0298 80000000 		.4byte	.LVL18
  1023 029c F8060000 		.4byte	0x6f8
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 30
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 30
 
 
  1024 02a0 AA020000 		.4byte	0x2aa
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  1078 0318 00000000 		.4byte	.LFB4
  1079 031c 0C000000 		.4byte	.LFE4-.LFB4
  1080 0320 01       		.uleb128 0x1
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 31
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 31
 
 
  1081 0321 9C       		.byte	0x9c
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  1135 03a9 6701     		.2byte	0x167
  1136 03ab 6B000000 		.4byte	0x6b
  1137 03af 01       		.uleb128 0x1
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 32
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 32
 
 
  1138 03b0 53       		.byte	0x53
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  1192 0433 03       		.uleb128 0x3
  1193 0434 F3       		.byte	0xf3
  1194 0435 01       		.uleb128 0x1
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 33
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 33
 
 
  1195 0436 50       		.byte	0x50
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  1249 04ad 08000000 		.4byte	.LFE13-.LFB13
  1250 04b1 01       		.uleb128 0x1
  1251 04b2 9C       		.byte	0x9c
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 34
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 34
 
 
  1252 04b3 D9040000 		.4byte	0x4d9
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  1306 0533 FA000000 		.4byte	.LLST8
  1307 0537 09       		.uleb128 0x9
  1308 0538 06000000 		.4byte	.LVL48
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 35
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 35
 
 
  1309 053c AE070000 		.4byte	0x7ae
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  1363 05b9 15       		.uleb128 0x15
  1364 05ba A7050000 		.4byte	.LASF53
  1365 05be 03       		.byte	0x3
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 36
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 36
 
 
  1366 05bf 5B       		.byte	0x5b
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  1420 063a 06       		.byte	0x6
  1421 063b 1E       		.byte	0x1e
  1422 063c 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 37
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 37
 
 
  1423 0640 59060000 		.4byte	0x659
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  1477 06be 00       		.byte	0
  1478 06bf 17       		.uleb128 0x17
  1479 06c0 ED030000 		.4byte	.LASF64
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 38
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 38
 
 
  1480 06c4 04       		.byte	0x4
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  1534 073c 1B       		.uleb128 0x1b
  1535 073d 47010000 		.4byte	.LASF72
  1536 0741 03       		.byte	0x3
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 39
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 39
 
 
  1537 0742 D1       		.byte	0xd1
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  1591 07b4 40       		.byte	0x40
  1592 07b5 9B000000 		.4byte	0x9b
  1593 07b9 C3070000 		.4byte	0x7c3
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 40
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 40
 
 
  1594 07bd 18       		.uleb128 0x18
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  1648 0028 00       		.byte	0
  1649 0029 04       		.uleb128 0x4
  1650 002a 16       		.uleb128 0x16
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 41
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 41
 
 
  1651 002b 00       		.byte	0
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  1705 0062 19       		.uleb128 0x19
  1706 0063 01       		.uleb128 0x1
  1707 0064 13       		.uleb128 0x13
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 42
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 42
 
 
  1708 0065 00       		.byte	0
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  1762 00a4 00       		.byte	0
  1763 00a5 0E       		.uleb128 0xe
  1764 00a6 34       		.uleb128 0x34
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 43
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 43
 
 
  1765 00a7 00       		.byte	0
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  1819 00de 00       		.byte	0
  1820 00df 00       		.byte	0
  1821 00e0 12       		.uleb128 0x12
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 44
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 44
 
 
  1822 00e1 2E       		.uleb128 0x2e
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  1876 0118 00       		.byte	0
  1877 0119 00       		.byte	0
  1878 011a 15       		.uleb128 0x15
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 45
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 45
 
 
  1879 011b 34       		.uleb128 0x34
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  1933 0151 18       		.uleb128 0x18
  1934 0152 05       		.uleb128 0x5
  1935 0153 00       		.byte	0
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 46
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 46
 
 
  1936 0154 49       		.uleb128 0x49
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  1990 018a 19       		.uleb128 0x19
  1991 018b 3C       		.uleb128 0x3c
  1992 018c 19       		.uleb128 0x19
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 47
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 47
 
 
  1993 018d 00       		.byte	0
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  2047 004a 01       		.uleb128 0x1
  2048 004b 50       		.byte	0x50
  2049 004c 9F       		.byte	0x9f
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 48
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 48
 
 
  2050 004d 00000000 		.4byte	0
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  2104 00cf 50       		.byte	0x50
  2105 00d0 9F       		.byte	0x9f
  2106 00d1 00000000 		.4byte	0
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 49
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 49
 
 
  2107 00d5 00000000 		.4byte	0
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  2161 001c 3C000000 		.4byte	.LFE1-.LFB1
  2162 0020 00000000 		.4byte	.LFB2
  2163 0024 CC000000 		.4byte	.LFE2-.LFB2
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 50
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 50
 
 
  2164 0028 00000000 		.4byte	.LFB3
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  2218 0058 00000000 		.4byte	.LFB11
  2219 005c 08000000 		.4byte	.LFE11
  2220 0060 00000000 		.4byte	.LFB12
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 51
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 51
 
 
  2221 0064 0A000000 		.4byte	.LFE12
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  2250      5F536574 
  2250      4F666673 
  2251              	.LASF66:
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 52
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 52
 
 
  2252 007a 4379446D 		.ascii	"CyDmaChEnable\000"
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  2270      5F537461 
  2271              	.LASF13:
  2272 0165 696E7433 		.ascii	"int32\000"
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 53
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 53
 
 
  2272      3200
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  2294      5F534152 
  2294      5F536574 
  2295              	.LASF75:
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 54
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 54
 
 
  2296 0241 4F534331 		.ascii	"OSC1_ADC_SAR_SAR_SetOffset\000"
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  2314      5F536574 
  2315              	.LASF3:
  2316 031d 73686F72 		.ascii	"short unsigned int\000"
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 55
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 55
 
 
  2316      7420756E 
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  2336      64726573 
  2336      7300
  2337              	.LASF25:
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 56
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 56
 
 
  2338 03ff 4F534331 		.ascii	"OSC1_ADC_SAR_Enable\000"
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  2358      5F476574 
  2358      41646352 
  2359              	.LASF44:
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 57
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 57
 
 
  2360 04c6 4F534331 		.ascii	"OSC1_ADC_SAR_SetScaledGain\000"
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  2381      5F414443 
  2381      5F534152 
  2381      5F534152 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 58
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 58
 
 
  2381      5F736869 
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 1
  2400              	.LASF12:
  2401 06d0 696E7431 		.ascii	"int16\000"
  2401      3600
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccmMkM4M.s 			page 59
+ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccatBUd6.s 			page 59
 
 
  2402              	.LASF65:
