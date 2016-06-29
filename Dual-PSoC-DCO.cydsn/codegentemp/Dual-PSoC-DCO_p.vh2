@@ -1,6 +1,6 @@
 -- Project:   Dual-PSoC-DCO
--- Generated: 06/28/2016 15:35:17
--- PSoC Creator  3.3 CP2
+-- Generated: 06/29/2016 08:03:30
+-- PSoC Creator  3.3 SP2
 
 ENTITY \Dual-PSoC-DCO\ IS
     PORT(
@@ -466,6 +466,7 @@ ARCHITECTURE __DEFAULT__ OF \Dual-PSoC-DCO\ IS
     ATTRIBUTE lib_model OF Net_4616 : LABEL IS "macrocell18";
     ATTRIBUTE lib_model OF Net_4617 : LABEL IS "macrocell19";
     ATTRIBUTE Location OF \OSC1_IDAC8:viDAC8\ : LABEL IS "F(VIDAC,0)";
+    ATTRIBUTE lib_model OF __ONE__ : LABEL IS "macrocell20";
     ATTRIBUTE lib_model OF \OSC1_Freq_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell1";
     ATTRIBUTE lib_model OF \OSC1_Freq_Timer:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell1";
     ATTRIBUTE lib_model OF \OSC1_Freq_Timer:TimerUDB:sT32:timerdp:u0\ : LABEL IS "datapathcell1";
@@ -474,7 +475,6 @@ ARCHITECTURE __DEFAULT__ OF \Dual-PSoC-DCO\ IS
     ATTRIBUTE lib_model OF \OSC1_Freq_Timer:TimerUDB:sT32:timerdp:u3\ : LABEL IS "datapathcell4";
     ATTRIBUTE Location OF \USBMIDI_1:USB\ : LABEL IS "F(USB,0)";
     ATTRIBUTE Location OF \ADC_DelSig_1:DSM\ : LABEL IS "F(DSM,0)";
-    ATTRIBUTE lib_model OF __ONE__ : LABEL IS "macrocell20";
     ATTRIBUTE Location OF \OSC1_Triangle_Follower:ABuf\ : LABEL IS "F(OpAmp,0)";
     ATTRIBUTE Location OF \OSC1_Comp:ctComp\ : LABEL IS "F(Comparator,3)";
     ATTRIBUTE Location OF \OSC1_IDAC8_SAW:viDAC8\ : LABEL IS "F(VIDAC,2)";
@@ -4460,6 +4460,13 @@ BEGIN
             idir => Net_4623,
             ioff => open);
 
+    __ONE__:macrocell
+        GENERIC MAP(
+            eqn_main => "1'b0",
+            clken_mode => 1)
+        PORT MAP(
+            q => __ONE__);
+
     \OSC1_Freq_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\:controlcell
         GENERIC MAP(
             cy_ctrl_mode_0 => "11111111",
@@ -4815,6 +4822,7 @@ BEGIN
             resolution => 16)
         PORT MAP(
             aclock => \ClockBlock.aclk_glb_ff_0__sig\,
+            modbitin_udb => open,
             reset_udb => open,
             reset_dec => \ADC_DelSig_1:mod_reset\,
             extclk_cp_udb => \ADC_DelSig_1:Net_93_local\,
@@ -4851,13 +4859,6 @@ BEGIN
             ext_start => __ONE__,
             modrst => \ADC_DelSig_1:mod_reset\,
             interrupt => Net_1270);
-
-    __ONE__:macrocell
-        GENERIC MAP(
-            eqn_main => "1'b0",
-            clken_mode => 1)
-        PORT MAP(
-            q => __ONE__);
 
     \OSC1_Triangle_Follower:ABuf\:abufcell
         GENERIC MAP(

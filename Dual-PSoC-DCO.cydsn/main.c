@@ -59,6 +59,8 @@ int main()
     int pinState = 0;
     CyGlobalIntEnable; /* Enable global interrupts. */
     volatile int myFixedValue = 1;
+  int32_t newReg;
+  int32_t deltaCount;
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     OSC1_Freq_Timer_Start();
@@ -126,12 +128,22 @@ int main()
         __disable_irq();
         oldCount = count;
         count = 12000000/frequency;
-        
+        deltaCount = (int32_t)count - (int32_t)oldCount;
         OSC1_Freq_Timer_Stop();
-       OSC1_Freq_Timer_WritePeriod(count);
-        if (count < OSC1_Freq_Timer_ReadCounter()) {
-            OSC1_Freq_Timer_WriteCounter(count);
+        newReg = OSC1_Freq_Timer_ReadCounter() + deltaCount;
+        if (newReg < 0)
+        {
+          newReg = 1;
         }
+        else if ((uint32_t)newReg > count)
+        {
+          newReg = count;
+        }
+        OSC1_Freq_Timer_WriteCounter(newReg);
+        OSC1_Freq_Timer_WritePeriod(count);
+//        if (count < OSC1_Freq_Timer_ReadCounter()) {
+//            OSC1_Freq_Timer_WriteCounter(count);
+//        }
         OSC1_Freq_Timer_Start();
         __enable_irq();
 //       OSC1_Freq_Timer_1_WritePeriod(count*2);

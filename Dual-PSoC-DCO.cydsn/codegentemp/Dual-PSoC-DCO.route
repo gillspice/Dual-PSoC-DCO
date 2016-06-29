@@ -3058,8 +3058,6 @@ net \OSC1_ADC_SAR:clock\
 end \OSC1_ADC_SAR:clock\
 net ClockBlock_BUS_CLK
 	term   ":clockblockcell.clk_bus_glb"
-	switch ":clockblockcell.clk_bus_glb==>:ioport15:pin6.in_clock"
-	term   ":ioport15:pin6.in_clock"
 	switch ":clockblockcell.clk_bus_glb==>:udb@[UDB=(2,2)]:clockreset:clk_sc_mux.in_9"
 	switch ":udb@[UDB=(2,2)]:clockreset:clk_sc_mux.sc_clk==>:udb@[UDB=(2,2)]:controlcell.clock"
 	term   ":udb@[UDB=(2,2)]:controlcell.clock"

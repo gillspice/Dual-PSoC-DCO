@@ -1,6 +1,6 @@
 -- ======================================================================
 -- Dual-PSoC-DCO.ctl generated from Dual-PSoC-DCO
--- 06/28/2016 at 15:35
+-- 06/29/2016 at 08:03
 -- This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 -- ======================================================================
 

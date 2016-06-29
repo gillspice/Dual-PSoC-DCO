@@ -2,7 +2,7 @@
 --	Conversion of Dual-PSoC-DCO.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Tue Jun 28 15:35:14 2016
+--	Wed Jun 29 08:03:26 2016
 --
 
 USE cypress.cypress.all;
