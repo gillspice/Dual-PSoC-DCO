@@ -18,6 +18,7 @@
 
 int dac_value;
 uint32_t count;
+uint32_t oldCount;
 
 CY_ISR_PROTO(SIGNCHANGE_PositiveInterrupt_Handler);
 CY_ISR(SIGNCHANGE_PositiveInterrupt_Handler)
@@ -106,7 +107,13 @@ int main()
         
         
         
-        uint32_t frequency = (20*result*(pow(1.059463094,(12*(OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(0)) + OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(1))*2 + OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(2))/5 + OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(3))/5/12)))))/32767;
+        uint32_t frequency = (20*result*(
+            pow(1.059463094,(
+                12*(OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(0)) + 
+                    OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(1))*2 + 
+                    OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(2))/5 + 
+                    OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(3))/5/12))
+            )))/32767;
 //        int frequency = (220*(pow(1.059463094,(12*myFixedValue))));
  //       int frequency = (110*(pow(2, 5*result/65535)));
         if (frequency > 20000)
@@ -117,6 +124,7 @@ int main()
             frequency = 1;
         }
         __disable_irq();
+        oldCount = count;
         count = 12000000/frequency;
         
         OSC1_Freq_Timer_Stop();
