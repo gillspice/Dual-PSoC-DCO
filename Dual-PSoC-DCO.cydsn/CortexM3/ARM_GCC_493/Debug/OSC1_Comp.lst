@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
   30:.\Generated_Source\PSoC5/OSC1_Comp.c **** /* variable to decide whether or not to restore the control register in 
   31:.\Generated_Source\PSoC5/OSC1_Comp.c ****    Enable() API for PSoC5A only */
   32:.\Generated_Source\PSoC5/OSC1_Comp.c **** #if (CY_PSOC5A)
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 2
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 2
 
 
   33:.\Generated_Source\PSoC5/OSC1_Comp.c ****     static uint8 OSC1_Comp_restoreReg = 0u;
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
   87:.\Generated_Source\PSoC5/OSC1_Comp.c **** ********************************************************************************
   88:.\Generated_Source\PSoC5/OSC1_Comp.c **** *
   89:.\Generated_Source\PSoC5/OSC1_Comp.c **** * Summary:
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 3
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 3
 
 
   90:.\Generated_Source\PSoC5/OSC1_Comp.c **** *  Enable the Comparator
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  144:.\Generated_Source\PSoC5/OSC1_Comp.c ****     }   
  145:.\Generated_Source\PSoC5/OSC1_Comp.c **** 
  146:.\Generated_Source\PSoC5/OSC1_Comp.c ****     /* Enable power to comparator */
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 4
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 4
 
 
  147:.\Generated_Source\PSoC5/OSC1_Comp.c ****     OSC1_Comp_Enable();    
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  201:.\Generated_Source\PSoC5/OSC1_Comp.c ****                            (speed & OSC1_Comp_PWR_MODE_MASK);
  202:.\Generated_Source\PSoC5/OSC1_Comp.c **** 
  203:.\Generated_Source\PSoC5/OSC1_Comp.c ****     /* Set trim value for high speed comparator */
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 5
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 5
 
 
  204:.\Generated_Source\PSoC5/OSC1_Comp.c ****     if(speed == OSC1_Comp_HIGHSPEED)
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  258:.\Generated_Source\PSoC5/OSC1_Comp.c **** * Function Name: OSC1_Comp_trimAdjust
  259:.\Generated_Source\PSoC5/OSC1_Comp.c **** ********************************************************************************
  260:.\Generated_Source\PSoC5/OSC1_Comp.c **** *
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 6
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 6
 
 
  261:.\Generated_Source\PSoC5/OSC1_Comp.c **** * Summary:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  293:.\Generated_Source\PSoC5/OSC1_Comp.c ****         if ( cmpState != 0u )
   48              		.loc 1 293 0
   49 0010 5DB1     		cbz	r5, .L3
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 7
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 7
 
 
  294:.\Generated_Source\PSoC5/OSC1_Comp.c ****         {
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
   65              		.loc 1 332 0
   66 002a 0EB9     		cbnz	r6, .L10
  333:.\Generated_Source\PSoC5/OSC1_Comp.c ****     	{
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 8
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 8
 
 
  334:.\Generated_Source\PSoC5/OSC1_Comp.c ****     		trimCntMax = 15u;
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  365:.\Generated_Source\PSoC5/OSC1_Comp.c ****                 OSC1_Comp_TR1 += 1u;
   90              		.loc 1 365 0
   91 0044 0B4A     		ldr	r2, .L12+8
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 9
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 9
 
 
   92 0046 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  100:.\Generated_Source\PSoC5/OSC1_Comp.c ****     OSC1_Comp_PWRMGR |= OSC1_Comp_ACT_PWR_EN;
  137              		.loc 1 100 0 is_stmt 1
  138              		.cfi_startproc
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 10
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 10
 
 
  139              		@ args = 0, pretend = 0, frame = 0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  188              		.cfi_endproc
  189              	.LFE3:
  190              		.size	OSC1_Comp_Stop, .-OSC1_Comp_Stop
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 11
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 11
 
 
  191              		.section	.text.OSC1_Comp_SetSpeed,"ax",%progbits
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  238 0038 DBB2     		uxtb	r3, r3
  239 003a 0132     		adds	r2, r2, #1
  240 003c 1370     		strb	r3, [r2]
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 12
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 12
 
 
  241 003e 7047     		bx	lr
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  289 0026 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
  290 0028 02F0E702 		and	r2, r2, #231
  291 002c 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 13
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 13
 
 
   80:.\Generated_Source\PSoC5/OSC1_Comp.c ****     #endif /* OSC1_Comp_DEFAULT_BYPASS_SYNC == 0u */
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  340              		.cfi_endproc
  341              	.LFE2:
  342              		.size	OSC1_Comp_Start, .-OSC1_Comp_Start
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 14
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 14
 
 
  343              		.section	.text.OSC1_Comp_GetCompare,"ax",%progbits
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  390:.\Generated_Source\PSoC5/OSC1_Comp.c **** * Return:
  391:.\Generated_Source\PSoC5/OSC1_Comp.c **** *  (uint16)  value written in trim register when calibration complete.
  392:.\Generated_Source\PSoC5/OSC1_Comp.c **** *
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 15
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 15
 
 
  393:.\Generated_Source\PSoC5/OSC1_Comp.c **** * Theory: 
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  447:.\Generated_Source\PSoC5/OSC1_Comp.c **** uint16 OSC1_Comp_ZeroCal(void) 
  448:.\Generated_Source\PSoC5/OSC1_Comp.c **** {
  377              		.loc 1 448 0
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 16
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 16
 
 
  378              		.cfi_startproc
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  412              		.loc 1 468 0
  413 0020 A3F52673 		sub	r3, r3, #664
  414 0024 1F78     		ldrb	r7, [r3]	@ zero_extendqisi2
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 17
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 17
 
 
  415 0026 FFB2     		uxtb	r7, r7
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  446              	.L39:
  492:.\Generated_Source\PSoC5/OSC1_Comp.c ****     }
  493:.\Generated_Source\PSoC5/OSC1_Comp.c ****    
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 18
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 18
 
 
  494:.\Generated_Source\PSoC5/OSC1_Comp.c ****     /* Restore Config Register */
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  483              		.thumb
  484              		.thumb_func
  485              		.type	OSC1_Comp_LoadTrim, %function
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 19
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 19
 
 
  486              	OSC1_Comp_LoadTrim:
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  508              		.cfi_endproc
  509              	.LFE8:
  510              		.size	OSC1_Comp_LoadTrim, .-OSC1_Comp_LoadTrim
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 20
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 20
 
 
  511              		.section	.text.OSC1_Comp_PwrDwnOverrideEnable,"ax",%progbits
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  540              		.thumb
  541              		.thumb_func
  542              		.type	OSC1_Comp_PwrDwnOverrideDisable, %function
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 21
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 21
 
 
  543              	OSC1_Comp_PwrDwnOverrideDisable:
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  575              	.Ldebug_info0:
  576 0000 BF020000 		.4byte	0x2bf
  577 0004 0400     		.2byte	0x4
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 22
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 22
 
 
  578 0006 00000000 		.4byte	.Ldebug_abbrev0
@@ -1267,14 +1267,14 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  581 000c 38010000 		.4byte	.LASF35
  582 0010 01       		.byte	0x1
  583 0011 CE000000 		.4byte	.LASF36
- 584 0015 C6010000 		.4byte	.LASF37
+ 584 0015 8F020000 		.4byte	.LASF37
  585 0019 00000000 		.4byte	.Ldebug_ranges0+0
  586 001d 00000000 		.4byte	0
  587 0021 00000000 		.4byte	.Ldebug_line0
  588 0025 02       		.uleb128 0x2
  589 0026 01       		.byte	0x1
  590 0027 06       		.byte	0x6
- 591 0028 E4020000 		.4byte	.LASF0
+ 591 0028 DE020000 		.4byte	.LASF0
  592 002c 02       		.uleb128 0x2
  593 002d 01       		.byte	0x1
  594 002e 08       		.byte	0x8
@@ -1290,7 +1290,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  604 0041 02       		.uleb128 0x2
  605 0042 04       		.byte	0x4
  606 0043 05       		.byte	0x5
- 607 0044 DB020000 		.4byte	.LASF4
+ 607 0044 D5020000 		.4byte	.LASF4
  608 0048 02       		.uleb128 0x2
  609 0049 04       		.byte	0x4
  610 004a 07       		.byte	0x7
@@ -1298,11 +1298,11 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  612 004f 02       		.uleb128 0x2
  613 0050 08       		.byte	0x8
  614 0051 05       		.byte	0x5
- 615 0052 7B020000 		.4byte	.LASF6
+ 615 0052 2F020000 		.4byte	.LASF6
  616 0056 02       		.uleb128 0x2
  617 0057 08       		.byte	0x8
  618 0058 07       		.byte	0x7
- 619 0059 28020000 		.4byte	.LASF7
+ 619 0059 DC010000 		.4byte	.LASF7
  620 005d 03       		.uleb128 0x3
  621 005e 04       		.byte	0x4
  622 005f 05       		.byte	0x5
@@ -1310,7 +1310,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  624 0064 02       		.uleb128 0x2
  625 0065 04       		.byte	0x4
  626 0066 07       		.byte	0x7
- 627 0067 12020000 		.4byte	.LASF8
+ 627 0067 C6010000 		.4byte	.LASF8
  628 006b 04       		.uleb128 0x4
  629 006c C8000000 		.4byte	.LASF9
  630 0070 02       		.byte	0x2
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  632 0073 2C000000 		.4byte	0x2c
  633 0077 04       		.uleb128 0x4
  634 0078 2A010000 		.4byte	.LASF10
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 23
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 23
 
 
  635 007c 02       		.byte	0x2
@@ -1340,7 +1340,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  651 009d 02       		.uleb128 0x2
  652 009e 01       		.byte	0x1
  653 009f 08       		.byte	0x8
- 654 00a0 A2020000 		.4byte	.LASF14
+ 654 00a0 56020000 		.4byte	.LASF14
  655 00a4 04       		.uleb128 0x4
  656 00a5 A9000000 		.4byte	.LASF15
  657 00a9 02       		.byte	0x2
@@ -1351,9 +1351,9 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  662 00b5 02       		.uleb128 0x2
  663 00b6 04       		.byte	0x4
  664 00b7 07       		.byte	0x7
- 665 00b8 67020000 		.4byte	.LASF16
+ 665 00b8 1B020000 		.4byte	.LASF16
  666 00bc 06       		.uleb128 0x6
- 667 00bd A7020000 		.4byte	.LASF38
+ 667 00bd 5B020000 		.4byte	.LASF38
  668 00c1 01       		.byte	0x1
  669 00c2 1A01     		.2byte	0x11a
  670 00c4 00000000 		.4byte	.LFB6
@@ -1374,16 +1374,16 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  685 00ea 6B000000 		.4byte	0x6b
  686 00ee 21000000 		.4byte	.LLST1
  687 00f2 08       		.uleb128 0x8
- 688 00f3 70020000 		.4byte	.LASF18
+ 688 00f3 24020000 		.4byte	.LASF18
  689 00f7 01       		.byte	0x1
  690 00f8 1C01     		.2byte	0x11c
  691 00fa 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 24
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 24
 
 
  692 00fe 4B000000 		.4byte	.LLST2
  693 0102 08       		.uleb128 0x8
- 694 0103 1F020000 		.4byte	.LASF19
+ 694 0103 D3010000 		.4byte	.LASF19
  695 0107 01       		.byte	0x1
  696 0108 1D01     		.2byte	0x11d
  697 010a 6B000000 		.4byte	0x6b
@@ -1407,7 +1407,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  715 0131 01       		.uleb128 0x1
  716 0132 9C       		.byte	0x9c
  717 0133 0B       		.uleb128 0xb
- 718 0134 89020000 		.4byte	.LASF21
+ 718 0134 3D020000 		.4byte	.LASF21
  719 0138 01       		.byte	0x1
  720 0139 A5       		.byte	0xa5
  721 013a 00000000 		.4byte	.LFB3
@@ -1424,7 +1424,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  732 0154 9C       		.byte	0x9c
  733 0155 67010000 		.4byte	0x167
  734 0159 0D       		.uleb128 0xd
- 735 015a 61020000 		.4byte	.LASF23
+ 735 015a 15020000 		.4byte	.LASF23
  736 015e 01       		.byte	0x1
  737 015f C5       		.byte	0xc5
  738 0160 6B000000 		.4byte	0x6b
@@ -1432,13 +1432,13 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  740 0165 50       		.byte	0x50
  741 0166 00       		.byte	0
  742 0167 0C       		.uleb128 0xc
- 743 0168 F0020000 		.4byte	.LASF25
+ 743 0168 EA020000 		.4byte	.LASF25
  744 016c 01       		.byte	0x1
  745 016d 33       		.byte	0x33
  746 016e 00000000 		.4byte	.LFB0
  747 0172 3C000000 		.4byte	.LFE0-.LFB0
  748 0176 01       		.uleb128 0x1
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 25
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 25
 
 
  749 0177 9C       		.byte	0x9c
@@ -1454,7 +1454,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  759 018a 00       		.byte	0
  760 018b 00       		.byte	0
  761 018c 0C       		.uleb128 0xc
- 762 018d 3F020000 		.4byte	.LASF26
+ 762 018d F3010000 		.4byte	.LASF26
  763 0191 01       		.byte	0x1
  764 0192 88       		.byte	0x88
  765 0193 00000000 		.4byte	.LFB2
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  803 01f4 21000000 		.4byte	.LASF28
  804 01f8 01       		.byte	0x1
  805 01f9 C201     		.2byte	0x1c2
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 26
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 26
 
 
  806 01fb 6B000000 		.4byte	0x6b
@@ -1558,14 +1558,14 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  860 0270 00000000 		.4byte	.LASF32
  861 0274 01       		.byte	0x1
  862 0275 1102     		.2byte	0x211
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 27
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 27
 
 
  863 0277 77000000 		.4byte	0x77
  864 027b CC000000 		.4byte	.LLST8
  865 027f 00       		.byte	0
  866 0280 13       		.uleb128 0x13
- 867 0281 BC020000 		.4byte	.LASF33
+ 867 0281 70020000 		.4byte	.LASF33
  868 0285 01       		.byte	0x1
  869 0286 3502     		.2byte	0x235
  870 0288 00000000 		.4byte	.LFB9
@@ -1581,7 +1581,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  880 02a2 01       		.uleb128 0x1
  881 02a3 9C       		.byte	0x9c
  882 02a4 14       		.uleb128 0x14
- 883 02a5 4F020000 		.4byte	.LASF41
+ 883 02a5 03020000 		.4byte	.LASF41
  884 02a9 01       		.byte	0x1
  885 02aa 14       		.byte	0x14
  886 02ab 6B000000 		.4byte	0x6b
@@ -1589,7 +1589,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  888 02b0 03       		.byte	0x3
  889 02b1 00000000 		.4byte	OSC1_Comp_initVar
  890 02b5 15       		.uleb128 0x15
- 891 02b6 98020000 		.4byte	.LASF42
+ 891 02b6 4C020000 		.4byte	.LASF42
  892 02ba 03       		.byte	0x3
  893 02bb 78       		.byte	0x78
  894 02bc 16       		.uleb128 0x16
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  917 0011 00       		.byte	0
  918 0012 00       		.byte	0
  919 0013 02       		.uleb128 0x2
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 28
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 28
 
 
  920 0014 24       		.uleb128 0x24
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  974 004a 12       		.uleb128 0x12
  975 004b 06       		.uleb128 0x6
  976 004c 40       		.uleb128 0x40
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 29
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 29
 
 
  977 004d 18       		.uleb128 0x18
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  1031 0089 00       		.byte	0
  1032 008a 0B       		.uleb128 0xb
  1033 008b 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 30
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 30
 
 
  1034 008c 00       		.byte	0
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  1088 00c4 0B       		.uleb128 0xb
  1089 00c5 49       		.uleb128 0x49
  1090 00c6 13       		.uleb128 0x13
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 31
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 31
 
 
  1091 00c7 02       		.uleb128 0x2
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  1145 0100 01       		.uleb128 0x1
  1146 0101 12       		.uleb128 0x12
  1147 0102 06       		.uleb128 0x6
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 32
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 32
 
 
  1148 0103 40       		.uleb128 0x40
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  1202 013d 05       		.uleb128 0x5
  1203 013e 27       		.uleb128 0x27
  1204 013f 19       		.uleb128 0x19
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 33
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 33
 
 
  1205 0140 11       		.uleb128 0x11
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  1259              	.LLST0:
  1260 0000 00000000 		.4byte	.LVL0
  1261 0004 36000000 		.4byte	.LVL3
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 34
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 34
 
 
  1262 0008 0100     		.2byte	0x1
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  1316 0093 00000000 		.4byte	0
  1317              	.LLST6:
  1318 0097 14000000 		.4byte	.LVL14
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 35
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 35
 
 
  1319 009b 7A000000 		.4byte	.LVL19
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  1373 004c 90000000 		.4byte	.LFE7-.LFB7
  1374 0050 00000000 		.4byte	.LFB8
  1375 0054 14000000 		.4byte	.LFE8-.LFB8
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 36
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 36
 
 
  1376 0058 00000000 		.4byte	.LFB9
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  1419              	.LASF22:
  1420 0028 6E696262 		.ascii	"nibble\000"
  1420      6C6500
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 37
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 37
 
 
  1421              	.LASF31:
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  1446 00ce 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\OSC1_Comp.c\000"
  1446      6E657261 
  1446      7465645F 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 38
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 38
 
 
  1446      536F7572 
@@ -2264,99 +2264,99 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 1
  1462      74696F6E 
  1462      2D736563 
  1462      74696F6E 
- 1463              	.LASF37:
- 1464 01c6 433A5C55 		.ascii	"C:\\Users\\214016586\\Documents\\PSoC Creator\\Dual"
- 1464      73657273 
- 1464      5C323134 
- 1464      30313635 
- 1464      38365C44 
- 1465 01f4 2D50536F 		.ascii	"-PSoC-DCO\\Dual-PSoC-DCO.cydsn\000"
- 1465      432D4443 
- 1465      4F5C4475 
- 1465      616C2D50 
- 1465      536F432D 
- 1466              	.LASF8:
- 1467 0212 756E7369 		.ascii	"unsigned int\000"
- 1467      676E6564 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 39
+ 1463              	.LASF8:
+ 1464 01c6 756E7369 		.ascii	"unsigned int\000"
+ 1464      676E6564 
+ 1464      20696E74 
+ 1464      00
+ 1465              	.LASF19:
+ 1466 01d3 636D7053 		.ascii	"cmpState\000"
+ 1466      74617465 
+ 1466      00
+ 1467              	.LASF7:
+ 1468 01dc 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1468      206C6F6E 
+ 1468      6720756E 
+ 1468      7369676E 
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 39
 
 
- 1467      20696E74 
- 1467      00
- 1468              	.LASF19:
- 1469 021f 636D7053 		.ascii	"cmpState\000"
- 1469      74617465 
- 1469      00
- 1470              	.LASF7:
- 1471 0228 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1471      206C6F6E 
- 1471      6720756E 
- 1471      7369676E 
- 1471      65642069 
- 1472              	.LASF26:
- 1473 023f 4F534331 		.ascii	"OSC1_Comp_Start\000"
- 1473      5F436F6D 
- 1473      705F5374 
- 1473      61727400 
- 1474              	.LASF41:
- 1475 024f 4F534331 		.ascii	"OSC1_Comp_initVar\000"
- 1475      5F436F6D 
- 1475      705F696E 
- 1475      69745661 
- 1475      7200
- 1476              	.LASF23:
- 1477 0261 73706565 		.ascii	"speed\000"
- 1477      6400
- 1478              	.LASF16:
- 1479 0267 73697A65 		.ascii	"sizetype\000"
- 1479      74797065 
- 1479      00
- 1480              	.LASF18:
- 1481 0270 7472696D 		.ascii	"trimCntMax\000"
- 1481      436E744D 
- 1481      617800
- 1482              	.LASF6:
- 1483 027b 6C6F6E67 		.ascii	"long long int\000"
- 1483      206C6F6E 
- 1483      6720696E 
- 1483      7400
- 1484              	.LASF21:
- 1485 0289 4F534331 		.ascii	"OSC1_Comp_Stop\000"
- 1485      5F436F6D 
- 1485      705F5374 
- 1485      6F7000
- 1486              	.LASF42:
- 1487 0298 43794465 		.ascii	"CyDelayUs\000"
- 1487      6C617955 
- 1487      7300
- 1488              	.LASF14:
- 1489 02a2 63686172 		.ascii	"char\000"
- 1489      00
- 1490              	.LASF38:
- 1491 02a7 4F534331 		.ascii	"OSC1_Comp_trimAdjust\000"
- 1491      5F436F6D 
- 1491      705F7472 
- 1491      696D4164 
- 1491      6A757374 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccBRmEbu.s 			page 40
+ 1468      65642069 
+ 1469              	.LASF26:
+ 1470 01f3 4F534331 		.ascii	"OSC1_Comp_Start\000"
+ 1470      5F436F6D 
+ 1470      705F5374 
+ 1470      61727400 
+ 1471              	.LASF41:
+ 1472 0203 4F534331 		.ascii	"OSC1_Comp_initVar\000"
+ 1472      5F436F6D 
+ 1472      705F696E 
+ 1472      69745661 
+ 1472      7200
+ 1473              	.LASF23:
+ 1474 0215 73706565 		.ascii	"speed\000"
+ 1474      6400
+ 1475              	.LASF16:
+ 1476 021b 73697A65 		.ascii	"sizetype\000"
+ 1476      74797065 
+ 1476      00
+ 1477              	.LASF18:
+ 1478 0224 7472696D 		.ascii	"trimCntMax\000"
+ 1478      436E744D 
+ 1478      617800
+ 1479              	.LASF6:
+ 1480 022f 6C6F6E67 		.ascii	"long long int\000"
+ 1480      206C6F6E 
+ 1480      6720696E 
+ 1480      7400
+ 1481              	.LASF21:
+ 1482 023d 4F534331 		.ascii	"OSC1_Comp_Stop\000"
+ 1482      5F436F6D 
+ 1482      705F5374 
+ 1482      6F7000
+ 1483              	.LASF42:
+ 1484 024c 43794465 		.ascii	"CyDelayUs\000"
+ 1484      6C617955 
+ 1484      7300
+ 1485              	.LASF14:
+ 1486 0256 63686172 		.ascii	"char\000"
+ 1486      00
+ 1487              	.LASF38:
+ 1488 025b 4F534331 		.ascii	"OSC1_Comp_trimAdjust\000"
+ 1488      5F436F6D 
+ 1488      705F7472 
+ 1488      696D4164 
+ 1488      6A757374 
+ 1489              	.LASF33:
+ 1490 0270 4F534331 		.ascii	"OSC1_Comp_PwrDwnOverrideEnable\000"
+ 1490      5F436F6D 
+ 1490      705F5077 
+ 1490      7244776E 
+ 1490      4F766572 
+ 1491              	.LASF37:
+ 1492 028f 433A5C55 		.ascii	"C:\\Users\\Rob\\Documents\\personal\\git\\Dual-PSoC"
+ 1492      73657273 
+ 1492      5C526F62 
+ 1492      5C446F63 
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccjSgx4R.s 			page 40
 
 
- 1492              	.LASF33:
- 1493 02bc 4F534331 		.ascii	"OSC1_Comp_PwrDwnOverrideEnable\000"
- 1493      5F436F6D 
- 1493      705F5077 
- 1493      7244776E 
- 1493      4F766572 
+ 1492      756D656E 
+ 1493 02bc 2D44434F 		.ascii	"-DCO\\Dual-PSoC-DCO.cydsn\000"
+ 1493      5C447561 
+ 1493      6C2D5053 
+ 1493      6F432D44 
+ 1493      434F2E63 
  1494              	.LASF4:
- 1495 02db 6C6F6E67 		.ascii	"long int\000"
+ 1495 02d5 6C6F6E67 		.ascii	"long int\000"
  1495      20696E74 
  1495      00
  1496              	.LASF0:
- 1497 02e4 7369676E 		.ascii	"signed char\000"
+ 1497 02de 7369676E 		.ascii	"signed char\000"
  1497      65642063 
  1497      68617200 
  1498              	.LASF25:
- 1499 02f0 4F534331 		.ascii	"OSC1_Comp_Init\000"
+ 1499 02ea 4F534331 		.ascii	"OSC1_Comp_Init\000"
  1499      5F436F6D 
  1499      705F496E 
  1499      697400

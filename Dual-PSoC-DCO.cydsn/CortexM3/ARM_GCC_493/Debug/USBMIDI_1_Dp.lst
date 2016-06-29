@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 1
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccZu0LI1.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 1
   29:.\Generated_Source\PSoC5/USBMIDI_1_Dp.c **** * \brief Writes the value to the physical port (data output register), masking
   30:.\Generated_Source\PSoC5/USBMIDI_1_Dp.c **** *  and shifting the bits appropriately. 
   31:.\Generated_Source\PSoC5/USBMIDI_1_Dp.c **** *
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 2
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccZu0LI1.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/USBMIDI_1_Dp.c **** * The data output register controls the signal applied to the physical pin in 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 1
   52              		.section	.text.USBMIDI_1_Dp_SetDriveMode,"ax",%progbits
   53              		.align	2
   54              		.global	USBMIDI_1_Dp_SetDriveMode
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 3
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccZu0LI1.s 			page 3
 
 
   55              		.thumb
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 1
   77              	.L5:
   78 0014 7E500040 		.word	1073762430
   79              		.cfi_endproc
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 4
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccZu0LI1.s 			page 4
 
 
   80              	.LFE1:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 1
  110              		.global	USBMIDI_1_Dp_ReadDataReg
  111              		.thumb
  112              		.thumb_func
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 5
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccZu0LI1.s 			page 5
 
 
  113              		.type	USBMIDI_1_Dp_ReadDataReg, %function
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 1
  139              		.type	USBMIDI_1_Dp_SetInterruptMode, %function
  140              	USBMIDI_1_Dp_SetInterruptMode:
  141              	.LFB4:
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 6
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccZu0LI1.s 			page 6
 
 
  145:.\Generated_Source\PSoC5/USBMIDI_1_Dp.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 1
  151 0004 80B2     		uxth	r0, r0
  152 0006 10B1     		cbz	r0, .L13
  190:.\Generated_Source\PSoC5/USBMIDI_1_Dp.c **** 		{ 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 7
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccZu0LI1.s 			page 7
 
 
  191:.\Generated_Source\PSoC5/USBMIDI_1_Dp.c **** 			 USBMIDI_1_Dp_0_INTTYPE_REG = (uint8)mode; 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 1
  218:.\Generated_Source\PSoC5/USBMIDI_1_Dp.c ****         return (USBMIDI_1_Dp_INTSTAT & USBMIDI_1_Dp_MASK) >> USBMIDI_1_Dp_SHIFT;
  180              		.loc 1 218 0
  181 0000 024B     		ldr	r3, .L18
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 8
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccZu0LI1.s 			page 8
 
 
  182 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
@@ -443,48 +443,48 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 1
  200 0006 00000000 		.4byte	.Ldebug_abbrev0
  201 000a 04       		.byte	0x4
  202 000b 01       		.uleb128 0x1
- 203 000c DC000000 		.4byte	.LASF24
+ 203 000c 22010000 		.4byte	.LASF24
  204 0010 01       		.byte	0x1
- 205 0011 09020000 		.4byte	.LASF25
- 206 0015 6A010000 		.4byte	.LASF26
+ 205 0011 03020000 		.4byte	.LASF25
+ 206 0015 57000000 		.4byte	.LASF26
  207 0019 00000000 		.4byte	.Ldebug_ranges0+0
  208 001d 00000000 		.4byte	0
  209 0021 00000000 		.4byte	.Ldebug_line0
  210 0025 02       		.uleb128 0x2
  211 0026 01       		.byte	0x1
  212 0027 06       		.byte	0x6
- 213 0028 4F020000 		.4byte	.LASF0
+ 213 0028 49020000 		.4byte	.LASF0
  214 002c 02       		.uleb128 0x2
  215 002d 01       		.byte	0x1
  216 002e 08       		.byte	0x8
- 217 002f 5D000000 		.4byte	.LASF1
+ 217 002f A3000000 		.4byte	.LASF1
  218 0033 02       		.uleb128 0x2
  219 0034 02       		.byte	0x2
  220 0035 05       		.byte	0x5
- 221 0036 31020000 		.4byte	.LASF2
+ 221 0036 2B020000 		.4byte	.LASF2
  222 003a 02       		.uleb128 0x2
  223 003b 02       		.byte	0x2
  224 003c 07       		.byte	0x7
- 225 003d A0000000 		.4byte	.LASF3
+ 225 003d E6000000 		.4byte	.LASF3
  226 0041 02       		.uleb128 0x2
  227 0042 04       		.byte	0x4
  228 0043 05       		.byte	0x5
- 229 0044 41020000 		.4byte	.LASF4
+ 229 0044 3B020000 		.4byte	.LASF4
  230 0048 02       		.uleb128 0x2
  231 0049 04       		.byte	0x4
  232 004a 07       		.byte	0x7
- 233 004b 8E000000 		.4byte	.LASF5
+ 233 004b D4000000 		.4byte	.LASF5
  234 004f 02       		.uleb128 0x2
  235 0050 08       		.byte	0x8
  236 0051 05       		.byte	0x5
- 237 0052 FB010000 		.4byte	.LASF6
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 9
+ 237 0052 F5010000 		.4byte	.LASF6
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccZu0LI1.s 			page 9
 
 
  238 0056 02       		.uleb128 0x2
  239 0057 08       		.byte	0x8
  240 0058 07       		.byte	0x7
- 241 0059 C3010000 		.4byte	.LASF7
+ 241 0059 BD010000 		.4byte	.LASF7
  242 005d 03       		.uleb128 0x3
  243 005e 04       		.byte	0x4
  244 005f 05       		.byte	0x5
@@ -492,31 +492,31 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 1
  246 0064 02       		.uleb128 0x2
  247 0065 04       		.byte	0x4
  248 0066 07       		.byte	0x7
- 249 0067 B6010000 		.4byte	.LASF8
+ 249 0067 B0010000 		.4byte	.LASF8
  250 006b 04       		.uleb128 0x4
- 251 006c 3B020000 		.4byte	.LASF9
+ 251 006c 35020000 		.4byte	.LASF9
  252 0070 02       		.byte	0x2
  253 0071 3801     		.2byte	0x138
  254 0073 2C000000 		.4byte	0x2c
  255 0077 04       		.uleb128 0x4
- 256 0078 CC000000 		.4byte	.LASF10
+ 256 0078 12010000 		.4byte	.LASF10
  257 007c 02       		.byte	0x2
  258 007d 3901     		.2byte	0x139
  259 007f 3A000000 		.4byte	0x3a
  260 0083 02       		.uleb128 0x2
  261 0084 04       		.byte	0x4
  262 0085 04       		.byte	0x4
- 263 0086 57000000 		.4byte	.LASF11
+ 263 0086 9D000000 		.4byte	.LASF11
  264 008a 02       		.uleb128 0x2
  265 008b 08       		.byte	0x8
  266 008c 04       		.byte	0x4
- 267 008d B3000000 		.4byte	.LASF12
+ 267 008d F9000000 		.4byte	.LASF12
  268 0091 02       		.uleb128 0x2
  269 0092 01       		.byte	0x1
  270 0093 08       		.byte	0x8
- 271 0094 4A020000 		.4byte	.LASF13
+ 271 0094 44020000 		.4byte	.LASF13
  272 0098 04       		.uleb128 0x4
- 273 0099 89000000 		.4byte	.LASF14
+ 273 0099 CF000000 		.4byte	.LASF14
  274 009d 02       		.byte	0x2
  275 009e E201     		.2byte	0x1e2
  276 00a0 A4000000 		.4byte	0xa4
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 1
  292 00c5 6B000000 		.4byte	0x6b
  293 00c9 00000000 		.4byte	.LLST0
  294 00cd 08       		.uleb128 0x8
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 10
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccZu0LI1.s 			page 10
 
 
  295 00ce 33000000 		.4byte	.LASF27
@@ -558,14 +558,14 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 1
  309 00eb 9C       		.byte	0x9c
  310 00ec 00010000 		.4byte	0x100
  311 00f0 07       		.uleb128 0x7
- 312 00f1 F6010000 		.4byte	.LASF18
+ 312 00f1 F0010000 		.4byte	.LASF18
  313 00f5 01       		.byte	0x1
  314 00f6 5A       		.byte	0x5a
  315 00f7 6B000000 		.4byte	0x6b
  316 00fb 21000000 		.4byte	.LLST1
  317 00ff 00       		.byte	0
  318 0100 09       		.uleb128 0x9
- 319 0101 BA000000 		.4byte	.LASF19
+ 319 0101 00010000 		.4byte	.LASF19
  320 0105 01       		.byte	0x1
  321 0106 71       		.byte	0x71
  322 0107 6B000000 		.4byte	0x6b
@@ -583,7 +583,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 1
  334 0128 01       		.uleb128 0x1
  335 0129 9C       		.byte	0x9c
  336 012a 06       		.uleb128 0x6
- 337 012b 6B000000 		.4byte	.LASF21
+ 337 012b B1000000 		.4byte	.LASF21
  338 012f 01       		.byte	0x1
  339 0130 BB       		.byte	0xbb
  340 0131 00000000 		.4byte	.LFB4
@@ -592,23 +592,23 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 1
  343 013a 9C       		.byte	0x9c
  344 013b 5E010000 		.4byte	0x15e
  345 013f 07       		.uleb128 0x7
- 346 0140 D3000000 		.4byte	.LASF22
+ 346 0140 19010000 		.4byte	.LASF22
  347 0144 01       		.byte	0x1
  348 0145 BB       		.byte	0xbb
  349 0146 77000000 		.4byte	0x77
  350 014a 42000000 		.4byte	.LLST2
  351 014e 07       		.uleb128 0x7
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 11
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccZu0LI1.s 			page 11
 
 
- 352 014f F6010000 		.4byte	.LASF18
+ 352 014f F0010000 		.4byte	.LASF18
  353 0153 01       		.byte	0x1
  354 0154 BB       		.byte	0xbb
  355 0155 77000000 		.4byte	0x77
  356 0159 63000000 		.4byte	.LLST3
  357 015d 00       		.byte	0
  358 015e 09       		.uleb128 0x9
- 359 015f DA010000 		.4byte	.LASF23
+ 359 015f D4010000 		.4byte	.LASF23
  360 0163 01       		.byte	0x1
  361 0164 D8       		.byte	0xd8
  362 0165 6B000000 		.4byte	0x6b
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 1
  406 0024 0B       		.uleb128 0xb
  407 0025 03       		.uleb128 0x3
  408 0026 08       		.uleb128 0x8
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 12
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccZu0LI1.s 			page 12
 
 
  409 0027 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 1
  463 005e 3B       		.uleb128 0x3b
  464 005f 0B       		.uleb128 0xb
  465 0060 49       		.uleb128 0x49
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 13
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccZu0LI1.s 			page 13
 
 
  466 0061 13       		.uleb128 0x13
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 1
  520 000f 18000000 		.4byte	.LFE0
  521 0013 0400     		.2byte	0x4
  522 0015 F3       		.byte	0xf3
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 14
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccZu0LI1.s 			page 14
 
 
  523 0016 01       		.uleb128 0x1
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 1
  577 000e 0000     		.2byte	0
  578 0010 00000000 		.4byte	.LFB0
  579 0014 18000000 		.4byte	.LFE0-.LFB0
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 15
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccZu0LI1.s 			page 15
 
 
  580 0018 00000000 		.4byte	.LFB1
@@ -898,137 +898,137 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 1
  619              	.LASF20:
  620 003e 5553424D 		.ascii	"USBMIDI_1_Dp_ReadDataReg\000"
  620      4944495F 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 16
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccZu0LI1.s 			page 16
 
 
  620      315F4470 
  620      5F526561 
  620      64446174 
- 621              	.LASF11:
- 622 0057 666C6F61 		.ascii	"float\000"
- 622      7400
- 623              	.LASF1:
- 624 005d 756E7369 		.ascii	"unsigned char\000"
- 624      676E6564 
- 624      20636861 
- 624      7200
- 625              	.LASF21:
- 626 006b 5553424D 		.ascii	"USBMIDI_1_Dp_SetInterruptMode\000"
- 626      4944495F 
- 626      315F4470 
- 626      5F536574 
- 626      496E7465 
- 627              	.LASF14:
- 628 0089 72656738 		.ascii	"reg8\000"
- 628      00
- 629              	.LASF5:
- 630 008e 6C6F6E67 		.ascii	"long unsigned int\000"
- 630      20756E73 
- 630      69676E65 
- 630      6420696E 
- 630      7400
- 631              	.LASF3:
- 632 00a0 73686F72 		.ascii	"short unsigned int\000"
- 632      7420756E 
- 632      7369676E 
- 632      65642069 
- 632      6E7400
- 633              	.LASF12:
- 634 00b3 646F7562 		.ascii	"double\000"
- 634      6C6500
- 635              	.LASF19:
- 636 00ba 5553424D 		.ascii	"USBMIDI_1_Dp_Read\000"
- 636      4944495F 
- 636      315F4470 
- 636      5F526561 
- 636      6400
- 637              	.LASF10:
- 638 00cc 75696E74 		.ascii	"uint16\000"
- 638      313600
- 639              	.LASF22:
- 640 00d3 706F7369 		.ascii	"position\000"
- 640      74696F6E 
- 640      00
- 641              	.LASF24:
- 642 00dc 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 642      4320342E 
- 642      392E3320 
- 642      32303135 
- 642      30333033 
- 643 010f 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 643      20726576 
- 643      6973696F 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 17
+ 621              	.LASF26:
+ 622 0057 433A5C55 		.ascii	"C:\\Users\\Rob\\Documents\\personal\\git\\Dual-PSoC"
+ 622      73657273 
+ 622      5C526F62 
+ 622      5C446F63 
+ 622      756D656E 
+ 623 0084 2D44434F 		.ascii	"-DCO\\Dual-PSoC-DCO.cydsn\000"
+ 623      5C447561 
+ 623      6C2D5053 
+ 623      6F432D44 
+ 623      434F2E63 
+ 624              	.LASF11:
+ 625 009d 666C6F61 		.ascii	"float\000"
+ 625      7400
+ 626              	.LASF1:
+ 627 00a3 756E7369 		.ascii	"unsigned char\000"
+ 627      676E6564 
+ 627      20636861 
+ 627      7200
+ 628              	.LASF21:
+ 629 00b1 5553424D 		.ascii	"USBMIDI_1_Dp_SetInterruptMode\000"
+ 629      4944495F 
+ 629      315F4470 
+ 629      5F536574 
+ 629      496E7465 
+ 630              	.LASF14:
+ 631 00cf 72656738 		.ascii	"reg8\000"
+ 631      00
+ 632              	.LASF5:
+ 633 00d4 6C6F6E67 		.ascii	"long unsigned int\000"
+ 633      20756E73 
+ 633      69676E65 
+ 633      6420696E 
+ 633      7400
+ 634              	.LASF3:
+ 635 00e6 73686F72 		.ascii	"short unsigned int\000"
+ 635      7420756E 
+ 635      7369676E 
+ 635      65642069 
+ 635      6E7400
+ 636              	.LASF12:
+ 637 00f9 646F7562 		.ascii	"double\000"
+ 637      6C6500
+ 638              	.LASF19:
+ 639 0100 5553424D 		.ascii	"USBMIDI_1_Dp_Read\000"
+ 639      4944495F 
+ 639      315F4470 
+ 639      5F526561 
+ 639      6400
+ 640              	.LASF10:
+ 641 0112 75696E74 		.ascii	"uint16\000"
+ 641      313600
+ 642              	.LASF22:
+ 643 0119 706F7369 		.ascii	"position\000"
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccZu0LI1.s 			page 17
 
 
- 643      6E203232 
- 643      31323230 
- 644 0142 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 644      66756E63 
- 644      74696F6E 
- 644      2D736563 
- 644      74696F6E 
- 645              	.LASF26:
- 646 016a 433A5C55 		.ascii	"C:\\Users\\214016586\\Documents\\PSoC Creator\\Dual"
- 646      73657273 
- 646      5C323134 
- 646      30313635 
- 646      38365C44 
- 647 0198 2D50536F 		.ascii	"-PSoC-DCO\\Dual-PSoC-DCO.cydsn\000"
- 647      432D4443 
- 647      4F5C4475 
- 647      616C2D50 
- 647      536F432D 
+ 643      74696F6E 
+ 643      00
+ 644              	.LASF24:
+ 645 0122 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 645      4320342E 
+ 645      392E3320 
+ 645      32303135 
+ 645      30333033 
+ 646 0155 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 646      20726576 
+ 646      6973696F 
+ 646      6E203232 
+ 646      31323230 
+ 647 0188 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 647      66756E63 
+ 647      74696F6E 
+ 647      2D736563 
+ 647      74696F6E 
  648              	.LASF8:
- 649 01b6 756E7369 		.ascii	"unsigned int\000"
+ 649 01b0 756E7369 		.ascii	"unsigned int\000"
  649      676E6564 
  649      20696E74 
  649      00
  650              	.LASF7:
- 651 01c3 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 651 01bd 6C6F6E67 		.ascii	"long long unsigned int\000"
  651      206C6F6E 
  651      6720756E 
  651      7369676E 
  651      65642069 
  652              	.LASF23:
- 653 01da 5553424D 		.ascii	"USBMIDI_1_Dp_ClearInterrupt\000"
+ 653 01d4 5553424D 		.ascii	"USBMIDI_1_Dp_ClearInterrupt\000"
  653      4944495F 
  653      315F4470 
  653      5F436C65 
  653      6172496E 
  654              	.LASF18:
- 655 01f6 6D6F6465 		.ascii	"mode\000"
+ 655 01f0 6D6F6465 		.ascii	"mode\000"
  655      00
  656              	.LASF6:
- 657 01fb 6C6F6E67 		.ascii	"long long int\000"
+ 657 01f5 6C6F6E67 		.ascii	"long long int\000"
  657      206C6F6E 
  657      6720696E 
  657      7400
  658              	.LASF25:
- 659 0209 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\USBMIDI_1_Dp.c\000"
+ 659 0203 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\USBMIDI_1_Dp.c\000"
  659      6E657261 
  659      7465645F 
  659      536F7572 
  659      63655C50 
  660              	.LASF2:
- 661 0231 73686F72 		.ascii	"short int\000"
+ 661 022b 73686F72 		.ascii	"short int\000"
  661      7420696E 
  661      7400
  662              	.LASF9:
- 663 023b 75696E74 		.ascii	"uint8\000"
+ 663 0235 75696E74 		.ascii	"uint8\000"
  663      3800
  664              	.LASF4:
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccTpi0AB.s 			page 18
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccZu0LI1.s 			page 18
 
 
- 665 0241 6C6F6E67 		.ascii	"long int\000"
+ 665 023b 6C6F6E67 		.ascii	"long int\000"
  665      20696E74 
  665      00
  666              	.LASF13:
- 667 024a 63686172 		.ascii	"char\000"
+ 667 0244 63686172 		.ascii	"char\000"
  667      00
  668              	.LASF0:
- 669 024f 7369676E 		.ascii	"signed char\000"
+ 669 0249 7369676E 		.ascii	"signed char\000"
  669      65642063 
  669      68617200 
  670              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

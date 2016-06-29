@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 1
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccMH2zIu.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 1
   29:.\Generated_Source\PSoC5/OSC1_Triangle_Follower_PM.c **** * 
   30:.\Generated_Source\PSoC5/OSC1_Triangle_Follower_PM.c **** * Parameters:
   31:.\Generated_Source\PSoC5/OSC1_Triangle_Follower_PM.c **** *  void
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 2
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccMH2zIu.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/OSC1_Triangle_Follower_PM.c **** * 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 1
   54              		.align	2
   55              		.global	OSC1_Triangle_Follower_Sleep
   56              		.thumb
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 3
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccMH2zIu.s 			page 3
 
 
   57              		.thumb_func
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 1
   79              		.loc 1 90 0
   80 0012 FFF7FEFF 		bl	OSC1_Triangle_Follower_Stop
   81              	.LVL0:
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 4
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccMH2zIu.s 			page 4
 
 
   82 0016 08BD     		pop	{r3, pc}
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 1
  122:.\Generated_Source\PSoC5/OSC1_Triangle_Follower_PM.c **** {
  105              		.loc 1 122 0
  106              		.cfi_startproc
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 5
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccMH2zIu.s 			page 5
 
 
  107              		@ args = 0, pretend = 0, frame = 0
@@ -289,40 +289,40 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 1
  145 0006 00000000 		.4byte	.Ldebug_abbrev0
  146 000a 04       		.byte	0x4
  147 000b 01       		.uleb128 0x1
- 148 000c D5000000 		.4byte	.LASF22
+ 148 000c 1B010000 		.4byte	.LASF22
  149 0010 01       		.byte	0x1
  150 0011 71000000 		.4byte	.LASF23
- 151 0015 CE010000 		.4byte	.LASF24
+ 151 0015 A6000000 		.4byte	.LASF24
  152 0019 00000000 		.4byte	.Ldebug_ranges0+0
  153 001d 00000000 		.4byte	0
  154 0021 00000000 		.4byte	.Ldebug_line0
  155 0025 02       		.uleb128 0x2
  156 0026 01       		.byte	0x1
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 6
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccMH2zIu.s 			page 6
 
 
  157 0027 06       		.byte	0x6
- 158 0028 7D020000 		.4byte	.LASF0
+ 158 0028 77020000 		.4byte	.LASF0
  159 002c 02       		.uleb128 0x2
  160 002d 01       		.byte	0x1
  161 002e 08       		.byte	0x8
- 162 002f 9D010000 		.4byte	.LASF1
+ 162 002f E3010000 		.4byte	.LASF1
  163 0033 02       		.uleb128 0x2
  164 0034 02       		.byte	0x2
  165 0035 05       		.byte	0x5
- 166 0036 8F020000 		.4byte	.LASF2
+ 166 0036 89020000 		.4byte	.LASF2
  167 003a 02       		.uleb128 0x2
  168 003b 02       		.byte	0x2
  169 003c 07       		.byte	0x7
- 170 003d 6A020000 		.4byte	.LASF3
+ 170 003d 64020000 		.4byte	.LASF3
  171 0041 02       		.uleb128 0x2
  172 0042 04       		.byte	0x4
  173 0043 05       		.byte	0x5
- 174 0044 1A020000 		.4byte	.LASF4
+ 174 0044 14020000 		.4byte	.LASF4
  175 0048 02       		.uleb128 0x2
  176 0049 04       		.byte	0x4
  177 004a 07       		.byte	0x7
- 178 004b AC000000 		.4byte	.LASF5
+ 178 004b F2000000 		.4byte	.LASF5
  179 004f 02       		.uleb128 0x2
  180 0050 08       		.byte	0x8
  181 0051 05       		.byte	0x5
@@ -330,7 +330,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 1
  183 0056 02       		.uleb128 0x2
  184 0057 08       		.byte	0x8
  185 0058 07       		.byte	0x7
- 186 0059 BE000000 		.4byte	.LASF7
+ 186 0059 04010000 		.4byte	.LASF7
  187 005d 03       		.uleb128 0x3
  188 005e 04       		.byte	0x4
  189 005f 05       		.byte	0x5
@@ -340,25 +340,25 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 1
  193 0066 07       		.byte	0x7
  194 0067 1A000000 		.4byte	.LASF8
  195 006b 04       		.uleb128 0x4
- 196 006c A6000000 		.4byte	.LASF12
+ 196 006c EC000000 		.4byte	.LASF12
  197 0070 02       		.byte	0x2
  198 0071 3801     		.2byte	0x138
  199 0073 2C000000 		.4byte	0x2c
  200 0077 02       		.uleb128 0x2
  201 0078 04       		.byte	0x4
  202 0079 04       		.byte	0x4
- 203 007a 89020000 		.4byte	.LASF9
+ 203 007a 83020000 		.4byte	.LASF9
  204 007e 02       		.uleb128 0x2
  205 007f 08       		.byte	0x8
  206 0080 04       		.byte	0x4
- 207 0081 41020000 		.4byte	.LASF10
+ 207 0081 3B020000 		.4byte	.LASF10
  208 0085 02       		.uleb128 0x2
  209 0086 01       		.byte	0x1
  210 0087 08       		.byte	0x8
- 211 0088 C9010000 		.4byte	.LASF11
+ 211 0088 0F020000 		.4byte	.LASF11
  212 008c 04       		.uleb128 0x4
- 213 008d 99020000 		.4byte	.LASF13
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 7
+ 213 008d 93020000 		.4byte	.LASF13
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccMH2zIu.s 			page 7
 
 
  214 0091 02       		.byte	0x2
@@ -369,7 +369,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 1
  219 009d 02       		.uleb128 0x2
  220 009e 04       		.byte	0x4
  221 009f 07       		.byte	0x7
- 222 00a0 BB020000 		.4byte	.LASF14
+ 222 00a0 B5020000 		.4byte	.LASF14
  223 00a4 06       		.uleb128 0x6
  224 00a5 01       		.byte	0x1
  225 00a6 03       		.byte	0x3
@@ -388,7 +388,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 1
  238 00bf 29       		.byte	0x29
  239 00c0 A4000000 		.4byte	0xa4
  240 00c4 09       		.uleb128 0x9
- 241 00c5 48020000 		.4byte	.LASF16
+ 241 00c5 42020000 		.4byte	.LASF16
  242 00c9 01       		.byte	0x1
  243 00ca 25       		.byte	0x25
  244 00cb 00000000 		.4byte	.LFB0
@@ -404,7 +404,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 1
  254 00e4 01       		.uleb128 0x1
  255 00e5 9C       		.byte	0x9c
  256 00e6 0A       		.uleb128 0xa
- 257 00e7 9E020000 		.4byte	.LASF18
+ 257 00e7 98020000 		.4byte	.LASF18
  258 00eb 01       		.byte	0x1
  259 00ec 52       		.byte	0x52
  260 00ed 00000000 		.4byte	.LFB2
@@ -417,8 +417,8 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 1
  267 0100 35010000 		.4byte	0x135
  268 0104 00       		.byte	0
  269 0105 0A       		.uleb128 0xa
- 270 0106 7F010000 		.4byte	.LASF19
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 8
+ 270 0106 C5010000 		.4byte	.LASF19
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccMH2zIu.s 			page 8
 
 
  271 010a 01       		.byte	0x1
@@ -433,7 +433,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 1
  280 011f 3C010000 		.4byte	0x13c
  281 0123 00       		.byte	0
  282 0124 0C       		.uleb128 0xc
- 283 0125 23020000 		.4byte	.LASF26
+ 283 0125 1D020000 		.4byte	.LASF26
  284 0129 01       		.byte	0x1
  285 012a 14       		.byte	0x14
  286 012b B9000000 		.4byte	0xb9
@@ -441,11 +441,11 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 1
  288 0130 03       		.byte	0x3
  289 0131 00000000 		.4byte	OSC1_Triangle_Follower_backup
  290 0135 0D       		.uleb128 0xd
- 291 0136 63010000 		.4byte	.LASF20
+ 291 0136 A9010000 		.4byte	.LASF20
  292 013a 03       		.byte	0x3
  293 013b 34       		.byte	0x34
  294 013c 0D       		.uleb128 0xd
- 295 013d AB010000 		.4byte	.LASF21
+ 295 013d F1010000 		.4byte	.LASF21
  296 0141 03       		.byte	0x3
  297 0142 3B       		.byte	0x3b
  298 0143 00       		.byte	0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 1
  325 0018 3E       		.uleb128 0x3e
  326 0019 0B       		.uleb128 0xb
  327 001a 03       		.uleb128 0x3
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 9
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccMH2zIu.s 			page 9
 
 
  328 001b 0E       		.uleb128 0xe
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 1
  382 0051 3B       		.uleb128 0x3b
  383 0052 0B       		.uleb128 0xb
  384 0053 49       		.uleb128 0x49
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 10
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccMH2zIu.s 			page 10
 
 
  385 0054 13       		.uleb128 0x13
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 1
  439 008b 11       		.uleb128 0x11
  440 008c 01       		.uleb128 0x1
  441 008d 12       		.uleb128 0x12
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 11
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccMH2zIu.s 			page 11
 
 
  442 008e 06       		.uleb128 0x6
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 1
  496 0006 00000000 		.4byte	.Ldebug_info0
  497 000a 04       		.byte	0x4
  498 000b 00       		.byte	0
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 12
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccMH2zIu.s 			page 12
 
 
  499 000c 0000     		.2byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 1
  535      616E676C 
  535      655F466F 
  535      6C6C6F77 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 13
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccMH2zIu.s 			page 13
 
 
  536              	.LASF23:
@@ -729,127 +729,127 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 1
  537      63655C50 
  538 00a1 504D2E63 		.ascii	"PM.c\000"
  538      00
- 539              	.LASF12:
- 540 00a6 75696E74 		.ascii	"uint8\000"
- 540      3800
- 541              	.LASF5:
- 542 00ac 6C6F6E67 		.ascii	"long unsigned int\000"
- 542      20756E73 
- 542      69676E65 
- 542      6420696E 
- 542      7400
- 543              	.LASF7:
- 544 00be 6C6F6E67 		.ascii	"long long unsigned int\000"
- 544      206C6F6E 
- 544      6720756E 
- 544      7369676E 
- 544      65642069 
- 545              	.LASF22:
- 546 00d5 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 546      4320342E 
- 546      392E3320 
- 546      32303135 
- 546      30333033 
- 547 0108 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 547      20726576 
- 547      6973696F 
- 547      6E203232 
- 547      31323230 
- 548 013b 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 548      66756E63 
- 548      74696F6E 
- 548      2D736563 
- 548      74696F6E 
- 549              	.LASF20:
- 550 0163 4F534331 		.ascii	"OSC1_Triangle_Follower_Stop\000"
- 550      5F547269 
- 550      616E676C 
- 550      655F466F 
- 550      6C6C6F77 
- 551              	.LASF19:
- 552 017f 4F534331 		.ascii	"OSC1_Triangle_Follower_Wakeup\000"
- 552      5F547269 
- 552      616E676C 
- 552      655F466F 
- 552      6C6C6F77 
- 553              	.LASF1:
- 554 019d 756E7369 		.ascii	"unsigned char\000"
- 554      676E6564 
- 554      20636861 
- 554      7200
- 555              	.LASF21:
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 14
+ 539              	.LASF24:
+ 540 00a6 433A5C55 		.ascii	"C:\\Users\\Rob\\Documents\\personal\\git\\Dual-PSoC"
+ 540      73657273 
+ 540      5C526F62 
+ 540      5C446F63 
+ 540      756D656E 
+ 541 00d3 2D44434F 		.ascii	"-DCO\\Dual-PSoC-DCO.cydsn\000"
+ 541      5C447561 
+ 541      6C2D5053 
+ 541      6F432D44 
+ 541      434F2E63 
+ 542              	.LASF12:
+ 543 00ec 75696E74 		.ascii	"uint8\000"
+ 543      3800
+ 544              	.LASF5:
+ 545 00f2 6C6F6E67 		.ascii	"long unsigned int\000"
+ 545      20756E73 
+ 545      69676E65 
+ 545      6420696E 
+ 545      7400
+ 546              	.LASF7:
+ 547 0104 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 547      206C6F6E 
+ 547      6720756E 
+ 547      7369676E 
+ 547      65642069 
+ 548              	.LASF22:
+ 549 011b 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 549      4320342E 
+ 549      392E3320 
+ 549      32303135 
+ 549      30333033 
+ 550 014e 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 550      20726576 
+ 550      6973696F 
+ 550      6E203232 
+ 550      31323230 
+ 551 0181 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 551      66756E63 
+ 551      74696F6E 
+ 551      2D736563 
+ 551      74696F6E 
+ 552              	.LASF20:
+ 553 01a9 4F534331 		.ascii	"OSC1_Triangle_Follower_Stop\000"
+ 553      5F547269 
+ 553      616E676C 
+ 553      655F466F 
+ 553      6C6C6F77 
+ 554              	.LASF19:
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccMH2zIu.s 			page 14
 
 
- 556 01ab 4F534331 		.ascii	"OSC1_Triangle_Follower_Enable\000"
- 556      5F547269 
- 556      616E676C 
- 556      655F466F 
- 556      6C6C6F77 
- 557              	.LASF11:
- 558 01c9 63686172 		.ascii	"char\000"
- 558      00
- 559              	.LASF24:
- 560 01ce 433A5C55 		.ascii	"C:\\Users\\214016586\\Documents\\PSoC Creator\\Dual"
- 560      73657273 
- 560      5C323134 
- 560      30313635 
- 560      38365C44 
- 561 01fc 2D50536F 		.ascii	"-PSoC-DCO\\Dual-PSoC-DCO.cydsn\000"
- 561      432D4443 
- 561      4F5C4475 
- 561      616C2D50 
- 561      536F432D 
+ 555 01c5 4F534331 		.ascii	"OSC1_Triangle_Follower_Wakeup\000"
+ 555      5F547269 
+ 555      616E676C 
+ 555      655F466F 
+ 555      6C6C6F77 
+ 556              	.LASF1:
+ 557 01e3 756E7369 		.ascii	"unsigned char\000"
+ 557      676E6564 
+ 557      20636861 
+ 557      7200
+ 558              	.LASF21:
+ 559 01f1 4F534331 		.ascii	"OSC1_Triangle_Follower_Enable\000"
+ 559      5F547269 
+ 559      616E676C 
+ 559      655F466F 
+ 559      6C6C6F77 
+ 560              	.LASF11:
+ 561 020f 63686172 		.ascii	"char\000"
+ 561      00
  562              	.LASF4:
- 563 021a 6C6F6E67 		.ascii	"long int\000"
+ 563 0214 6C6F6E67 		.ascii	"long int\000"
  563      20696E74 
  563      00
  564              	.LASF26:
- 565 0223 4F534331 		.ascii	"OSC1_Triangle_Follower_backup\000"
+ 565 021d 4F534331 		.ascii	"OSC1_Triangle_Follower_backup\000"
  565      5F547269 
  565      616E676C 
  565      655F466F 
  565      6C6C6F77 
  566              	.LASF10:
- 567 0241 646F7562 		.ascii	"double\000"
+ 567 023b 646F7562 		.ascii	"double\000"
  567      6C6500
  568              	.LASF16:
- 569 0248 4F534331 		.ascii	"OSC1_Triangle_Follower_SaveConfig\000"
+ 569 0242 4F534331 		.ascii	"OSC1_Triangle_Follower_SaveConfig\000"
  569      5F547269 
  569      616E676C 
  569      655F466F 
  569      6C6C6F77 
  570              	.LASF3:
- 571 026a 73686F72 		.ascii	"short unsigned int\000"
+ 571 0264 73686F72 		.ascii	"short unsigned int\000"
  571      7420756E 
  571      7369676E 
  571      65642069 
  571      6E7400
  572              	.LASF0:
- 573 027d 7369676E 		.ascii	"signed char\000"
+ 573 0277 7369676E 		.ascii	"signed char\000"
  573      65642063 
  573      68617200 
  574              	.LASF9:
- 575 0289 666C6F61 		.ascii	"float\000"
+ 575 0283 666C6F61 		.ascii	"float\000"
  575      7400
  576              	.LASF2:
- 577 028f 73686F72 		.ascii	"short int\000"
+ 577 0289 73686F72 		.ascii	"short int\000"
  577      7420696E 
  577      7400
  578              	.LASF13:
- 579 0299 72656738 		.ascii	"reg8\000"
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\cczWE7Hb.s 			page 15
+ 579 0293 72656738 		.ascii	"reg8\000"
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\ccMH2zIu.s 			page 15
 
 
  579      00
  580              	.LASF18:
- 581 029e 4F534331 		.ascii	"OSC1_Triangle_Follower_Sleep\000"
+ 581 0298 4F534331 		.ascii	"OSC1_Triangle_Follower_Sleep\000"
  581      5F547269 
  581      616E676C 
  581      655F466F 
  581      6C6C6F77 
  582              	.LASF14:
- 583 02bb 73697A65 		.ascii	"sizetype\000"
+ 583 02b5 73697A65 		.ascii	"sizetype\000"
  583      74797065 
  583      00
  584              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

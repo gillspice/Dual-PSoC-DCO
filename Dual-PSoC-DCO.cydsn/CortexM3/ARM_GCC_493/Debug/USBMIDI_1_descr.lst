@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cciLbgnI.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
   55 0029 000000   		.space	3
   56 002c 00000000 		.word	USBMIDI_1_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
   57 0030 00       		.byte	0
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 2
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cciLbgnI.s 			page 2
 
 
   58 0031 000000   		.space	3
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  112 006e 65       		.byte	101
  113 006f 00       		.byte	0
  114 0070 73       		.byte	115
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 3
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cciLbgnI.s 			page 3
 
 
  115 0071 00       		.byte	0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  169 00a7 00       		.byte	0
  170 00a8 44       		.byte	68
  171 00a9 00       		.byte	0
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 4
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cciLbgnI.s 			page 4
 
 
  172 00aa 49       		.byte	73
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  226 00e0 6E       		.byte	110
  227 00e1 00       		.byte	0
  228 00e2 67       		.byte	103
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 5
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cciLbgnI.s 			page 5
 
 
  229 00e3 00       		.byte	0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  283 0118 02       		.byte	2
  284 0119 01       		.byte	1
  285 011a 01       		.byte	1
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 6
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cciLbgnI.s 			page 6
 
 
  286 011b 80       		.byte	-128
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  340 0151 02       		.byte	2
  341 0152 01       		.byte	1
  342 0153 06       		.byte	6
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 7
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cciLbgnI.s 			page 7
 
 
  343 0154 09       		.byte	9
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  397 0189 00       		.byte	0
  398 018a 01       		.byte	1
  399 018b 02       		.byte	2
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 8
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cciLbgnI.s 			page 8
 
 
  400 018c 80       		.byte	-128
@@ -435,23 +435,23 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  411 0006 00000000 		.4byte	.Ldebug_abbrev0
  412 000a 04       		.byte	0x4
  413 000b 01       		.uleb128 0x1
- 414 000c 36010000 		.4byte	.LASF34
+ 414 000c 7C010000 		.4byte	.LASF34
  415 0010 01       		.byte	0x1
- 416 0011 E4000000 		.4byte	.LASF35
- 417 0015 C4010000 		.4byte	.LASF36
+ 416 0011 2A010000 		.4byte	.LASF35
+ 417 0015 63000000 		.4byte	.LASF36
  418 0019 00000000 		.4byte	.Ldebug_line0
  419 001d 02       		.uleb128 0x2
  420 001e 01       		.byte	0x1
  421 001f 06       		.byte	0x6
- 422 0020 38030000 		.4byte	.LASF0
+ 422 0020 32030000 		.4byte	.LASF0
  423 0024 02       		.uleb128 0x2
  424 0025 01       		.byte	0x1
  425 0026 08       		.byte	0x8
- 426 0027 74000000 		.4byte	.LASF1
+ 426 0027 BA000000 		.4byte	.LASF1
  427 002b 02       		.uleb128 0x2
  428 002c 02       		.byte	0x2
  429 002d 05       		.byte	0x5
- 430 002e 05030000 		.4byte	.LASF2
+ 430 002e FF020000 		.4byte	.LASF2
  431 0032 02       		.uleb128 0x2
  432 0033 02       		.byte	0x2
  433 0034 07       		.byte	0x7
@@ -459,75 +459,75 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  435 0039 02       		.uleb128 0x2
  436 003a 04       		.byte	0x4
  437 003b 05       		.byte	0x5
- 438 003c 2F030000 		.4byte	.LASF4
+ 438 003c 29030000 		.4byte	.LASF4
  439 0040 02       		.uleb128 0x2
  440 0041 04       		.byte	0x4
  441 0042 07       		.byte	0x7
- 442 0043 A1000000 		.4byte	.LASF5
+ 442 0043 E7000000 		.4byte	.LASF5
  443 0047 02       		.uleb128 0x2
  444 0048 08       		.byte	0x8
  445 0049 05       		.byte	0x5
- 446 004a 75020000 		.4byte	.LASF6
+ 446 004a 6F020000 		.4byte	.LASF6
  447 004e 02       		.uleb128 0x2
  448 004f 08       		.byte	0x8
  449 0050 07       		.byte	0x7
- 450 0051 1D020000 		.4byte	.LASF7
+ 450 0051 17020000 		.4byte	.LASF7
  451 0055 03       		.uleb128 0x3
  452 0056 04       		.byte	0x4
  453 0057 05       		.byte	0x5
  454 0058 696E7400 		.ascii	"int\000"
  455 005c 02       		.uleb128 0x2
  456 005d 04       		.byte	0x4
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 9
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cciLbgnI.s 			page 9
 
 
  457 005e 07       		.byte	0x7
- 458 005f 10020000 		.4byte	.LASF8
+ 458 005f 0A020000 		.4byte	.LASF8
  459 0063 04       		.uleb128 0x4
- 460 0064 0F030000 		.4byte	.LASF9
+ 460 0064 09030000 		.4byte	.LASF9
  461 0068 01       		.byte	0x1
  462 0069 3801     		.2byte	0x138
  463 006b 24000000 		.4byte	0x24
  464 006f 04       		.uleb128 0x4
- 465 0070 DD000000 		.4byte	.LASF10
+ 465 0070 23010000 		.4byte	.LASF10
  466 0074 01       		.byte	0x1
  467 0075 3901     		.2byte	0x139
  468 0077 32000000 		.4byte	0x32
  469 007b 02       		.uleb128 0x2
  470 007c 04       		.byte	0x4
  471 007d 04       		.byte	0x4
- 472 007e 63000000 		.4byte	.LASF11
+ 472 007e A9000000 		.4byte	.LASF11
  473 0082 02       		.uleb128 0x2
  474 0083 08       		.byte	0x8
  475 0084 04       		.byte	0x4
- 476 0085 D6000000 		.4byte	.LASF12
+ 476 0085 1C010000 		.4byte	.LASF12
  477 0089 02       		.uleb128 0x2
  478 008a 01       		.byte	0x1
  479 008b 08       		.byte	0x8
- 480 008c AA020000 		.4byte	.LASF13
+ 480 008c A4020000 		.4byte	.LASF13
  481 0090 02       		.uleb128 0x2
  482 0091 04       		.byte	0x4
  483 0092 07       		.byte	0x7
- 484 0093 6C020000 		.4byte	.LASF14
+ 484 0093 66020000 		.4byte	.LASF14
  485 0097 05       		.uleb128 0x5
  486 0098 08       		.byte	0x8
  487 0099 02       		.byte	0x2
  488 009a 9A       		.byte	0x9a
  489 009b E8000000 		.4byte	0xe8
  490 009f 06       		.uleb128 0x6
- 491 00a0 25030000 		.4byte	.LASF15
+ 491 00a0 1F030000 		.4byte	.LASF15
  492 00a4 02       		.byte	0x2
  493 00a5 9C       		.byte	0x9c
  494 00a6 63000000 		.4byte	0x63
  495 00aa 00       		.byte	0
  496 00ab 06       		.uleb128 0x6
- 497 00ac 69000000 		.4byte	.LASF16
+ 497 00ac AF000000 		.4byte	.LASF16
  498 00b0 02       		.byte	0x2
  499 00b1 9D       		.byte	0x9d
  500 00b2 63000000 		.4byte	0x63
  501 00b6 01       		.byte	0x1
  502 00b7 06       		.uleb128 0x6
- 503 00b8 B3000000 		.4byte	.LASF17
+ 503 00b8 F9000000 		.4byte	.LASF17
  504 00bc 02       		.byte	0x2
  505 00bd 9E       		.byte	0x9e
  506 00be 63000000 		.4byte	0x63
@@ -538,24 +538,24 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  511 00c9 9F       		.byte	0x9f
  512 00ca 63000000 		.4byte	0x63
  513 00ce 03       		.byte	0x3
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 10
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cciLbgnI.s 			page 10
 
 
  514 00cf 06       		.uleb128 0x6
- 515 00d0 AF020000 		.4byte	.LASF19
+ 515 00d0 A9020000 		.4byte	.LASF19
  516 00d4 02       		.byte	0x2
  517 00d5 A0       		.byte	0xa0
  518 00d6 6F000000 		.4byte	0x6f
  519 00da 04       		.byte	0x4
  520 00db 06       		.uleb128 0x6
- 521 00dc 6D030000 		.4byte	.LASF20
+ 521 00dc 67030000 		.4byte	.LASF20
  522 00e0 02       		.byte	0x2
  523 00e1 A1       		.byte	0xa1
  524 00e2 63000000 		.4byte	0x63
  525 00e6 06       		.byte	0x6
  526 00e7 00       		.byte	0
  527 00e8 07       		.uleb128 0x7
- 528 00e9 B8000000 		.4byte	.LASF21
+ 528 00e9 FE000000 		.4byte	.LASF21
  529 00ed 02       		.byte	0x2
  530 00ee A2       		.byte	0xa2
  531 00ef 97000000 		.4byte	0x97
@@ -571,7 +571,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  541 0100 63000000 		.4byte	0x63
  542 0104 00       		.byte	0
  543 0105 06       		.uleb128 0x6
- 544 0106 34020000 		.4byte	.LASF22
+ 544 0106 2E020000 		.4byte	.LASF22
  545 010a 02       		.byte	0x2
  546 010b B4       		.byte	0xb4
  547 010c 12010000 		.4byte	0x112
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  568 0139 03       		.byte	0x3
  569 013a 24       		.byte	0x24
  570 013b 45010000 		.4byte	0x145
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 11
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cciLbgnI.s 			page 11
 
 
  571 013f 05       		.uleb128 0x5
@@ -614,7 +614,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  581 0158 64       		.byte	0x64
  582 0159 00       		.byte	0
  583 015a 0D       		.uleb128 0xd
- 584 015b 83020000 		.4byte	.LASF25
+ 584 015b 7D020000 		.4byte	.LASF25
  585 015f 03       		.byte	0x3
  586 0160 37       		.byte	0x37
  587 0161 6B010000 		.4byte	0x16b
@@ -631,7 +631,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  598 017e 01       		.byte	0x1
  599 017f 00       		.byte	0
  600 0180 0F       		.uleb128 0xf
- 601 0181 BA020000 		.4byte	.LASF26
+ 601 0181 B4020000 		.4byte	.LASF26
  602 0185 03       		.byte	0x3
  603 0186 0D01     		.2byte	0x10d
  604 0188 92010000 		.4byte	0x192
@@ -648,7 +648,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  615 01a5 01       		.byte	0x1
  616 01a6 00       		.byte	0
  617 01a7 0F       		.uleb128 0xf
- 618 01a8 3B020000 		.4byte	.LASF27
+ 618 01a8 35020000 		.4byte	.LASF27
  619 01ac 03       		.byte	0x3
  620 01ad 1201     		.2byte	0x112
  621 01af B9010000 		.4byte	0x1b9
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  625 01b9 0E       		.uleb128 0xe
  626 01ba 97010000 		.4byte	0x197
  627 01be 0B       		.uleb128 0xb
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 12
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cciLbgnI.s 			page 12
 
 
  628 01bf 19010000 		.4byte	0x119
@@ -668,7 +668,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  632 01cc 04       		.byte	0x4
  633 01cd 00       		.byte	0
  634 01ce 0F       		.uleb128 0xf
- 635 01cf 0F010000 		.4byte	.LASF28
+ 635 01cf 55010000 		.4byte	.LASF28
  636 01d3 03       		.byte	0x3
  637 01d4 1A01     		.2byte	0x11a
  638 01d6 E0010000 		.4byte	0x1e0
@@ -685,7 +685,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  649 01f3 02       		.byte	0x2
  650 01f4 00       		.byte	0
  651 01f5 0F       		.uleb128 0xf
- 652 01f6 ED020000 		.4byte	.LASF29
+ 652 01f6 E7020000 		.4byte	.LASF29
  653 01fa 03       		.byte	0x3
  654 01fb 2501     		.2byte	0x125
  655 01fd 07020000 		.4byte	0x207
@@ -702,7 +702,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  666 021a 00       		.byte	0
  667 021b 00       		.byte	0
  668 021c 0F       		.uleb128 0xf
- 669 021d 15030000 		.4byte	.LASF30
+ 669 021d 0F030000 		.4byte	.LASF30
  670 0221 03       		.byte	0x3
  671 0222 2D01     		.2byte	0x12d
  672 0224 2E020000 		.4byte	0x22e
@@ -712,13 +712,13 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  676 022e 0E       		.uleb128 0xe
  677 022f 0C020000 		.4byte	0x20c
  678 0233 0D       		.uleb128 0xd
- 679 0234 82000000 		.4byte	.LASF31
+ 679 0234 C8000000 		.4byte	.LASF31
  680 0238 03       		.byte	0x3
  681 0239 FE       		.byte	0xfe
  682 023a 44020000 		.4byte	0x244
  683 023e 05       		.uleb128 0x5
  684 023f 03       		.byte	0x3
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 13
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cciLbgnI.s 			page 13
 
 
  685 0240 00000000 		.4byte	USBMIDI_1_SN_STRING_DESCRIPTOR
@@ -749,7 +749,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  710 027d 21       		.byte	0x21
  711 027e 00       		.byte	0
  712 027f 0F       		.uleb128 0xf
- 713 0280 44030000 		.4byte	.LASF33
+ 713 0280 3E030000 		.4byte	.LASF33
  714 0284 03       		.byte	0x3
  715 0285 5B01     		.2byte	0x15b
  716 0287 6F020000 		.4byte	0x26f
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  739 0010 24       		.uleb128 0x24
  740 0011 00       		.byte	0
  741 0012 0B       		.uleb128 0xb
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 14
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cciLbgnI.s 			page 14
 
 
  742 0013 0B       		.uleb128 0xb
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  796 0049 13       		.uleb128 0x13
  797 004a 38       		.uleb128 0x38
  798 004b 0B       		.uleb128 0xb
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 15
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cciLbgnI.s 			page 15
 
 
  799 004c 00       		.byte	0
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  853 0082 21       		.uleb128 0x21
  854 0083 00       		.byte	0
  855 0084 49       		.uleb128 0x49
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 16
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cciLbgnI.s 			page 16
 
 
  856 0085 13       		.uleb128 0x13
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  910 000e 0000     		.2byte	0
  911 0010 00000000 		.4byte	0
  912 0014 00000000 		.4byte	0
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 17
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cciLbgnI.s 			page 17
 
 
  913              		.section	.debug_line,"",%progbits
@@ -995,178 +995,178 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 1
  925      315F5354 
  925      52494E47 
  925      5F444553 
- 926              	.LASF11:
- 927 0063 666C6F61 		.ascii	"float\000"
- 927      7400
- 928              	.LASF16:
- 929 0069 616C7453 		.ascii	"altSetting\000"
- 929      65747469 
- 929      6E6700
- 930              	.LASF1:
- 931 0074 756E7369 		.ascii	"unsigned char\000"
- 931      676E6564 
- 931      20636861 
- 931      7200
- 932              	.LASF31:
- 933 0082 5553424D 		.ascii	"USBMIDI_1_SN_STRING_DESCRIPTOR\000"
- 933      4944495F 
- 933      315F534E 
- 933      5F535452 
- 933      494E475F 
- 934              	.LASF5:
- 935 00a1 6C6F6E67 		.ascii	"long unsigned int\000"
- 935      20756E73 
- 935      69676E65 
- 935      6420696E 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 18
+ 926              	.LASF36:
+ 927 0063 433A5C55 		.ascii	"C:\\Users\\Rob\\Documents\\personal\\git\\Dual-PSoC"
+ 927      73657273 
+ 927      5C526F62 
+ 927      5C446F63 
+ 927      756D656E 
+ 928 0090 2D44434F 		.ascii	"-DCO\\Dual-PSoC-DCO.cydsn\000"
+ 928      5C447561 
+ 928      6C2D5053 
+ 928      6F432D44 
+ 928      434F2E63 
+ 929              	.LASF11:
+ 930 00a9 666C6F61 		.ascii	"float\000"
+ 930      7400
+ 931              	.LASF16:
+ 932 00af 616C7453 		.ascii	"altSetting\000"
+ 932      65747469 
+ 932      6E6700
+ 933              	.LASF1:
+ 934 00ba 756E7369 		.ascii	"unsigned char\000"
+ 934      676E6564 
+ 934      20636861 
+ 934      7200
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cciLbgnI.s 			page 18
 
 
- 935      7400
- 936              	.LASF17:
- 937 00b3 61646472 		.ascii	"addr\000"
- 937      00
- 938              	.LASF21:
- 939 00b8 545F5553 		.ascii	"T_USBMIDI_1_EP_SETTINGS_BLOCK\000"
- 939      424D4944 
- 939      495F315F 
- 939      45505F53 
- 939      45545449 
- 940              	.LASF12:
- 941 00d6 646F7562 		.ascii	"double\000"
- 941      6C6500
- 942              	.LASF10:
- 943 00dd 75696E74 		.ascii	"uint16\000"
- 943      313600
- 944              	.LASF35:
- 945 00e4 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\USBMIDI_1_descr.c\000"
- 945      6E657261 
- 945      7465645F 
- 945      536F7572 
- 945      63655C50 
- 946              	.LASF28:
- 947 010f 5553424D 		.ascii	"USBMIDI_1_DEVICE0_CONFIGURATION0_TABLE\000"
- 947      4944495F 
- 947      315F4445 
- 947      56494345 
- 947      305F434F 
- 948              	.LASF34:
- 949 0136 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 949      4320342E 
- 949      392E3320 
- 949      32303135 
- 949      30333033 
- 950 0169 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 950      20726576 
- 950      6973696F 
- 950      6E203232 
- 950      31323230 
- 951 019c 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 951      66756E63 
- 951      74696F6E 
- 951      2D736563 
- 951      74696F6E 
- 952              	.LASF36:
- 953 01c4 433A5C55 		.ascii	"C:\\Users\\214016586\\Documents\\PSoC Creator\\Dual"
- 953      73657273 
- 953      5C323134 
- 953      30313635 
- 953      38365C44 
- 954 01f2 2D50536F 		.ascii	"-PSoC-DCO\\Dual-PSoC-DCO.cydsn\000"
- 954      432D4443 
- 954      4F5C4475 
- 954      616C2D50 
- 954      536F432D 
+ 935              	.LASF31:
+ 936 00c8 5553424D 		.ascii	"USBMIDI_1_SN_STRING_DESCRIPTOR\000"
+ 936      4944495F 
+ 936      315F534E 
+ 936      5F535452 
+ 936      494E475F 
+ 937              	.LASF5:
+ 938 00e7 6C6F6E67 		.ascii	"long unsigned int\000"
+ 938      20756E73 
+ 938      69676E65 
+ 938      6420696E 
+ 938      7400
+ 939              	.LASF17:
+ 940 00f9 61646472 		.ascii	"addr\000"
+ 940      00
+ 941              	.LASF21:
+ 942 00fe 545F5553 		.ascii	"T_USBMIDI_1_EP_SETTINGS_BLOCK\000"
+ 942      424D4944 
+ 942      495F315F 
+ 942      45505F53 
+ 942      45545449 
+ 943              	.LASF12:
+ 944 011c 646F7562 		.ascii	"double\000"
+ 944      6C6500
+ 945              	.LASF10:
+ 946 0123 75696E74 		.ascii	"uint16\000"
+ 946      313600
+ 947              	.LASF35:
+ 948 012a 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\USBMIDI_1_descr.c\000"
+ 948      6E657261 
+ 948      7465645F 
+ 948      536F7572 
+ 948      63655C50 
+ 949              	.LASF28:
+ 950 0155 5553424D 		.ascii	"USBMIDI_1_DEVICE0_CONFIGURATION0_TABLE\000"
+ 950      4944495F 
+ 950      315F4445 
+ 950      56494345 
+ 950      305F434F 
+ 951              	.LASF34:
+ 952 017c 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 952      4320342E 
+ 952      392E3320 
+ 952      32303135 
+ 952      30333033 
+ 953 01af 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 953      20726576 
+ 953      6973696F 
+ 953      6E203232 
+ 953      31323230 
+ 954 01e2 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 954      66756E63 
+ 954      74696F6E 
+ 954      2D736563 
+ 954      74696F6E 
  955              	.LASF8:
- 956 0210 756E7369 		.ascii	"unsigned int\000"
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 19
+ 956 020a 756E7369 		.ascii	"unsigned int\000"
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cciLbgnI.s 			page 19
 
 
  956      676E6564 
  956      20696E74 
  956      00
  957              	.LASF7:
- 958 021d 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 958 0217 6C6F6E67 		.ascii	"long long unsigned int\000"
  958      206C6F6E 
  958      6720756E 
  958      7369676E 
  958      65642069 
  959              	.LASF22:
- 960 0234 705F6C69 		.ascii	"p_list\000"
+ 960 022e 705F6C69 		.ascii	"p_list\000"
  960      737400
  961              	.LASF27:
- 962 023b 5553424D 		.ascii	"USBMIDI_1_DEVICE0_CONFIGURATION0_INTERFACE_CLASS\000"
+ 962 0235 5553424D 		.ascii	"USBMIDI_1_DEVICE0_CONFIGURATION0_INTERFACE_CLASS\000"
  962      4944495F 
  962      315F4445 
  962      56494345 
  962      305F434F 
  963              	.LASF14:
- 964 026c 73697A65 		.ascii	"sizetype\000"
+ 964 0266 73697A65 		.ascii	"sizetype\000"
  964      74797065 
  964      00
  965              	.LASF6:
- 966 0275 6C6F6E67 		.ascii	"long long int\000"
+ 966 026f 6C6F6E67 		.ascii	"long long int\000"
  966      206C6F6E 
  966      6720696E 
  966      7400
  967              	.LASF25:
- 968 0283 5553424D 		.ascii	"USBMIDI_1_DEVICE0_CONFIGURATION0_DESCR\000"
+ 968 027d 5553424D 		.ascii	"USBMIDI_1_DEVICE0_CONFIGURATION0_DESCR\000"
  968      4944495F 
  968      315F4445 
  968      56494345 
  968      305F434F 
  969              	.LASF13:
- 970 02aa 63686172 		.ascii	"char\000"
+ 970 02a4 63686172 		.ascii	"char\000"
  970      00
  971              	.LASF19:
- 972 02af 62756666 		.ascii	"bufferSize\000"
+ 972 02a9 62756666 		.ascii	"bufferSize\000"
  972      65725369 
  972      7A6500
  973              	.LASF26:
- 974 02ba 5553424D 		.ascii	"USBMIDI_1_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE\000"
+ 974 02b4 5553424D 		.ascii	"USBMIDI_1_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE\000"
  974      4944495F 
  974      315F4445 
  974      56494345 
  974      305F434F 
  975              	.LASF29:
- 976 02ed 5553424D 		.ascii	"USBMIDI_1_DEVICE0_TABLE\000"
+ 976 02e7 5553424D 		.ascii	"USBMIDI_1_DEVICE0_TABLE\000"
  976      4944495F 
  976      315F4445 
  976      56494345 
  976      305F5441 
  977              	.LASF2:
- 978 0305 73686F72 		.ascii	"short int\000"
+ 978 02ff 73686F72 		.ascii	"short int\000"
  978      7420696E 
  978      7400
  979              	.LASF9:
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccDvVEu8.s 			page 20
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cciLbgnI.s 			page 20
 
 
- 980 030f 75696E74 		.ascii	"uint8\000"
+ 980 0309 75696E74 		.ascii	"uint8\000"
  980      3800
  981              	.LASF30:
- 982 0315 5553424D 		.ascii	"USBMIDI_1_TABLE\000"
+ 982 030f 5553424D 		.ascii	"USBMIDI_1_TABLE\000"
  982      4944495F 
  982      315F5441 
  982      424C4500 
  983              	.LASF15:
- 984 0325 696E7465 		.ascii	"interface\000"
+ 984 031f 696E7465 		.ascii	"interface\000"
  984      72666163 
  984      6500
  985              	.LASF4:
- 986 032f 6C6F6E67 		.ascii	"long int\000"
+ 986 0329 6C6F6E67 		.ascii	"long int\000"
  986      20696E74 
  986      00
  987              	.LASF0:
- 988 0338 7369676E 		.ascii	"signed char\000"
+ 988 0332 7369676E 		.ascii	"signed char\000"
  988      65642063 
  988      68617200 
  989              	.LASF33:
- 990 0344 5553424D 		.ascii	"USBMIDI_1_idSerialNumberStringDescriptor\000"
+ 990 033e 5553424D 		.ascii	"USBMIDI_1_idSerialNumberStringDescriptor\000"
  990      4944495F 
  990      315F6964 
  990      53657269 
  990      616C4E75 
  991              	.LASF20:
- 992 036d 624D6973 		.ascii	"bMisc\000"
+ 992 0367 624D6973 		.ascii	"bMisc\000"
  992      6300
  993              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

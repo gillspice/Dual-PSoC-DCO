@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 1
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cc3cwr39.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 1
   29:.\Generated_Source\PSoC5/OSC1_ADC_SAR_PM.c **** * Summary:
   30:.\Generated_Source\PSoC5/OSC1_ADC_SAR_PM.c **** *  Stops the ADC operation and saves the configuration registers and component
   31:.\Generated_Source\PSoC5/OSC1_ADC_SAR_PM.c **** *  enable state. Should be called just prior to entering sleep
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 2
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cc3cwr39.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/OSC1_ADC_SAR_PM.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 1
   54:.\Generated_Source\PSoC5/OSC1_ADC_SAR_PM.c ****     #endif   /* OSC1_ADC_SAR_CLOCK_SOURCE == OSC1_ADC_SAR_CLOCK_INTERNAL */
   55:.\Generated_Source\PSoC5/OSC1_ADC_SAR_PM.c **** }
   56:.\Generated_Source\PSoC5/OSC1_ADC_SAR_PM.c **** 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 3
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cc3cwr39.s 			page 3
 
 
   57:.\Generated_Source\PSoC5/OSC1_ADC_SAR_PM.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 1
   90:.\Generated_Source\PSoC5/OSC1_ADC_SAR_PM.c ****     
   91:.\Generated_Source\PSoC5/OSC1_ADC_SAR_PM.c ****     OSC1_ADC_SAR_Enable();
   80              		.loc 1 91 0
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 4
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cc3cwr39.s 			page 4
 
 
   81 0014 FFF7FEFF 		bl	OSC1_ADC_SAR_Enable
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 1
  122:.\Generated_Source\PSoC5/OSC1_ADC_SAR_PM.c **** {
  105              		.loc 1 122 0
  106              		.cfi_startproc
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 5
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cc3cwr39.s 			page 5
 
 
  107              		@ args = 0, pretend = 0, frame = 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 1
  135              		.file 4 ".\\Generated_Source\\PSoC5\\OSC1_ADC_SAR.h"
  136              		.file 5 ".\\Generated_Source\\PSoC5\\OSC1_ADC_SAR_IntClock.h"
  137              		.file 6 ".\\Generated_Source\\PSoC5\\CyLib.h"
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 6
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cc3cwr39.s 			page 6
 
 
  138              		.section	.debug_info,"",%progbits
@@ -308,45 +308,45 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 1
  142 0006 00000000 		.4byte	.Ldebug_abbrev0
  143 000a 04       		.byte	0x4
  144 000b 01       		.uleb128 0x1
- 145 000c 9A010000 		.4byte	.LASF29
+ 145 000c 94010000 		.4byte	.LASF29
  146 0010 01       		.byte	0x1
- 147 0011 28020000 		.4byte	.LASF30
- 148 0015 2A010000 		.4byte	.LASF31
+ 147 0011 22020000 		.4byte	.LASF30
+ 148 0015 00000000 		.4byte	.LASF31
  149 0019 00000000 		.4byte	.Ldebug_ranges0+0
  150 001d 00000000 		.4byte	0
  151 0021 00000000 		.4byte	.Ldebug_line0
  152 0025 02       		.uleb128 0x2
  153 0026 01       		.byte	0x1
  154 0027 06       		.byte	0x6
- 155 0028 A4020000 		.4byte	.LASF0
+ 155 0028 9E020000 		.4byte	.LASF0
  156 002c 02       		.uleb128 0x2
  157 002d 01       		.byte	0x1
  158 002e 08       		.byte	0x8
- 159 002f 91000000 		.4byte	.LASF1
+ 159 002f D7000000 		.4byte	.LASF1
  160 0033 02       		.uleb128 0x2
  161 0034 02       		.byte	0x2
  162 0035 05       		.byte	0x5
- 163 0036 91020000 		.4byte	.LASF2
+ 163 0036 8B020000 		.4byte	.LASF2
  164 003a 02       		.uleb128 0x2
  165 003b 02       		.byte	0x2
  166 003c 07       		.byte	0x7
- 167 003d 29000000 		.4byte	.LASF3
+ 167 003d 6F000000 		.4byte	.LASF3
  168 0041 02       		.uleb128 0x2
  169 0042 04       		.byte	0x4
  170 0043 05       		.byte	0x5
- 171 0044 9B020000 		.4byte	.LASF4
+ 171 0044 95020000 		.4byte	.LASF4
  172 0048 02       		.uleb128 0x2
  173 0049 04       		.byte	0x4
  174 004a 07       		.byte	0x7
- 175 004b BD000000 		.4byte	.LASF5
+ 175 004b 03010000 		.4byte	.LASF5
  176 004f 02       		.uleb128 0x2
  177 0050 08       		.byte	0x8
  178 0051 05       		.byte	0x5
- 179 0052 61020000 		.4byte	.LASF6
+ 179 0052 5B020000 		.4byte	.LASF6
  180 0056 02       		.uleb128 0x2
  181 0057 08       		.byte	0x8
  182 0058 07       		.byte	0x7
- 183 0059 83010000 		.4byte	.LASF7
+ 183 0059 7D010000 		.4byte	.LASF7
  184 005d 03       		.uleb128 0x3
  185 005e 04       		.byte	0x4
  186 005f 05       		.byte	0x5
@@ -354,34 +354,34 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 1
  188 0064 02       		.uleb128 0x2
  189 0065 04       		.byte	0x4
  190 0066 07       		.byte	0x7
- 191 0067 76010000 		.4byte	.LASF8
+ 191 0067 70010000 		.4byte	.LASF8
  192 006b 04       		.uleb128 0x4
- 193 006c CF000000 		.4byte	.LASF9
+ 193 006c 15010000 		.4byte	.LASF9
  194 0070 02       		.byte	0x2
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 7
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cc3cwr39.s 			page 7
 
 
  195 0071 3801     		.2byte	0x138
  196 0073 2C000000 		.4byte	0x2c
  197 0077 04       		.uleb128 0x4
- 198 0078 0F010000 		.4byte	.LASF10
+ 198 0078 55010000 		.4byte	.LASF10
  199 007c 02       		.byte	0x2
  200 007d 3901     		.2byte	0x139
  201 007f 3A000000 		.4byte	0x3a
  202 0083 02       		.uleb128 0x2
  203 0084 04       		.byte	0x4
  204 0085 04       		.byte	0x4
- 205 0086 73000000 		.4byte	.LASF11
+ 205 0086 B9000000 		.4byte	.LASF11
  206 008a 02       		.uleb128 0x2
  207 008b 08       		.byte	0x8
  208 008c 04       		.byte	0x4
- 209 008d 08010000 		.4byte	.LASF12
+ 209 008d 4E010000 		.4byte	.LASF12
  210 0091 02       		.uleb128 0x2
  211 0092 01       		.byte	0x1
  212 0093 08       		.byte	0x8
- 213 0094 79020000 		.4byte	.LASF13
+ 213 0094 73020000 		.4byte	.LASF13
  214 0098 04       		.uleb128 0x4
- 215 0099 53020000 		.4byte	.LASF14
+ 215 0099 4D020000 		.4byte	.LASF14
  216 009d 02       		.byte	0x2
  217 009e E201     		.2byte	0x1e2
  218 00a0 A4000000 		.4byte	0xa4
@@ -390,9 +390,9 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 1
  221 00a9 02       		.uleb128 0x2
  222 00aa 04       		.byte	0x4
  223 00ab 07       		.byte	0x7
- 224 00ac 58020000 		.4byte	.LASF15
+ 224 00ac 52020000 		.4byte	.LASF15
  225 00b0 06       		.uleb128 0x6
- 226 00b1 7E020000 		.4byte	.LASF16
+ 226 00b1 78020000 		.4byte	.LASF16
  227 00b5 01       		.byte	0x1
  228 00b6 2E       		.byte	0x2e
  229 00b7 00000000 		.4byte	.LFB0
@@ -414,11 +414,11 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 1
  245 00e5 77010000 		.4byte	0x177
  246 00e9 00       		.byte	0
  247 00ea 06       		.uleb128 0x6
- 248 00eb 15000000 		.4byte	.LASF17
+ 248 00eb 5B000000 		.4byte	.LASF17
  249 00ef 01       		.byte	0x1
  250 00f0 4F       		.byte	0x4f
  251 00f1 00000000 		.4byte	.LFB1
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 8
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cc3cwr39.s 			page 8
 
 
  252 00f5 28000000 		.4byte	.LFE1-.LFB1
@@ -452,7 +452,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 1
  280 013b AB010000 		.4byte	0x1ab
  281 013f 00       		.byte	0
  282 0140 0A       		.uleb128 0xa
- 283 0141 79000000 		.4byte	.LASF18
+ 283 0141 BF000000 		.4byte	.LASF18
  284 0145 01       		.byte	0x1
  285 0146 79       		.byte	0x79
  286 0147 00000000 		.4byte	.LFB2
@@ -460,7 +460,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 1
  288 014f 01       		.uleb128 0x1
  289 0150 9C       		.byte	0x9c
  290 0151 0A       		.uleb128 0xa
- 291 0152 D5000000 		.4byte	.LASF19
+ 291 0152 1B010000 		.4byte	.LASF19
  292 0156 01       		.byte	0x1
  293 0157 93       		.byte	0x93
  294 0158 00000000 		.4byte	.LFB3
@@ -468,38 +468,38 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 1
  296 0160 01       		.uleb128 0x1
  297 0161 9C       		.byte	0x9c
  298 0162 0B       		.uleb128 0xb
- 299 0163 C7020000 		.4byte	.LASF20
+ 299 0163 C1020000 		.4byte	.LASF20
  300 0167 03       		.byte	0x3
  301 0168 35       		.byte	0x35
  302 0169 0B       		.uleb128 0xb
- 303 016a B0020000 		.4byte	.LASF21
+ 303 016a AA020000 		.4byte	.LASF21
  304 016e 03       		.byte	0x3
  305 016f 48       		.byte	0x48
  306 0170 0B       		.uleb128 0xb
- 307 0171 00000000 		.4byte	.LASF22
+ 307 0171 46000000 		.4byte	.LASF22
  308 0175 04       		.byte	0x4
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 9
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cc3cwr39.s 			page 9
 
 
  309 0176 30       		.byte	0x30
  310 0177 0B       		.uleb128 0xb
- 311 0178 58000000 		.4byte	.LASF23
+ 311 0178 9E000000 		.4byte	.LASF23
  312 017c 05       		.byte	0x5
  313 017d 28       		.byte	0x28
  314 017e 0B       		.uleb128 0xb
- 315 017f F0000000 		.4byte	.LASF24
+ 315 017f 36010000 		.4byte	.LASF24
  316 0183 03       		.byte	0x3
  317 0184 49       		.byte	0x49
  318 0185 0B       		.uleb128 0xb
- 319 0186 DD020000 		.4byte	.LASF25
+ 319 0186 D7020000 		.4byte	.LASF25
  320 018a 03       		.byte	0x3
  321 018b 44       		.byte	0x44
  322 018c 0B       		.uleb128 0xb
- 323 018d 3C000000 		.4byte	.LASF26
+ 323 018d 82000000 		.4byte	.LASF26
  324 0191 05       		.byte	0x5
  325 0192 27       		.byte	0x27
  326 0193 0C       		.uleb128 0xc
- 327 0194 6F020000 		.4byte	.LASF32
+ 327 0194 69020000 		.4byte	.LASF32
  328 0198 06       		.byte	0x6
  329 0199 78       		.byte	0x78
  330 019a A4010000 		.4byte	0x1a4
@@ -507,11 +507,11 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 1
  332 019f 77000000 		.4byte	0x77
  333 01a3 00       		.byte	0
  334 01a4 0B       		.uleb128 0xb
- 335 01a5 16010000 		.4byte	.LASF27
+ 335 01a5 5C010000 		.4byte	.LASF27
  336 01a9 04       		.byte	0x4
  337 01aa 2F       		.byte	0x2f
  338 01ab 0B       		.uleb128 0xb
- 339 01ac 9F000000 		.4byte	.LASF28
+ 339 01ac E5000000 		.4byte	.LASF28
  340 01b0 03       		.byte	0x3
  341 01b1 D1       		.byte	0xd1
  342 01b2 00       		.byte	0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 1
  363 0012 00       		.byte	0
  364 0013 02       		.uleb128 0x2
  365 0014 24       		.uleb128 0x24
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 10
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cc3cwr39.s 			page 10
 
 
  366 0015 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 1
  420 004b 01       		.uleb128 0x1
  421 004c 12       		.uleb128 0x12
  422 004d 06       		.uleb128 0x6
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 11
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cc3cwr39.s 			page 11
 
 
  423 004e 40       		.uleb128 0x40
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 1
  477 008c 40       		.uleb128 0x40
  478 008d 18       		.uleb128 0x18
  479 008e 9742     		.uleb128 0x2117
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 12
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cc3cwr39.s 			page 12
 
 
  480 0090 19       		.uleb128 0x19
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 1
  534 000e 0000     		.2byte	0
  535 0010 00000000 		.4byte	.LFB0
  536 0014 14000000 		.4byte	.LFE0-.LFB0
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 13
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cc3cwr39.s 			page 13
 
 
  537 0018 00000000 		.4byte	.LFB1
@@ -748,193 +748,193 @@ ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 1
  559      00000201 
  559      FB0E0D00 
  559      01010101 
- 560              	.LASF22:
- 561 0000 4F534331 		.ascii	"OSC1_ADC_SAR_Disable\000"
- 561      5F414443 
- 561      5F534152 
- 561      5F446973 
- 561      61626C65 
- 562              	.LASF17:
- 563 0015 4F534331 		.ascii	"OSC1_ADC_SAR_Wakeup\000"
- 563      5F414443 
- 563      5F534152 
- 563      5F57616B 
- 563      65757000 
- 564              	.LASF3:
- 565 0029 73686F72 		.ascii	"short unsigned int\000"
- 565      7420756E 
- 565      7369676E 
- 565      65642069 
- 565      6E7400
- 566              	.LASF26:
- 567 003c 4F534331 		.ascii	"OSC1_ADC_SAR_IntClock_Start\000"
- 567      5F414443 
- 567      5F534152 
- 567      5F496E74 
- 567      436C6F63 
- 568              	.LASF23:
- 569 0058 4F534331 		.ascii	"OSC1_ADC_SAR_IntClock_Stop\000"
- 569      5F414443 
- 569      5F534152 
- 569      5F496E74 
- 569      436C6F63 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 14
+ 560              	.LASF31:
+ 561 0000 433A5C55 		.ascii	"C:\\Users\\Rob\\Documents\\personal\\git\\Dual-PSoC"
+ 561      73657273 
+ 561      5C526F62 
+ 561      5C446F63 
+ 561      756D656E 
+ 562 002d 2D44434F 		.ascii	"-DCO\\Dual-PSoC-DCO.cydsn\000"
+ 562      5C447561 
+ 562      6C2D5053 
+ 562      6F432D44 
+ 562      434F2E63 
+ 563              	.LASF22:
+ 564 0046 4F534331 		.ascii	"OSC1_ADC_SAR_Disable\000"
+ 564      5F414443 
+ 564      5F534152 
+ 564      5F446973 
+ 564      61626C65 
+ 565              	.LASF17:
+ 566 005b 4F534331 		.ascii	"OSC1_ADC_SAR_Wakeup\000"
+ 566      5F414443 
+ 566      5F534152 
+ 566      5F57616B 
+ 566      65757000 
+ 567              	.LASF3:
+ 568 006f 73686F72 		.ascii	"short unsigned int\000"
+ 568      7420756E 
+ 568      7369676E 
+ 568      65642069 
+ 568      6E7400
+ 569              	.LASF26:
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cc3cwr39.s 			page 14
 
 
- 570              	.LASF11:
- 571 0073 666C6F61 		.ascii	"float\000"
- 571      7400
- 572              	.LASF18:
- 573 0079 4F534331 		.ascii	"OSC1_ADC_SAR_SaveConfig\000"
- 573      5F414443 
- 573      5F534152 
- 573      5F536176 
- 573      65436F6E 
- 574              	.LASF1:
- 575 0091 756E7369 		.ascii	"unsigned char\000"
- 575      676E6564 
- 575      20636861 
- 575      7200
- 576              	.LASF28:
- 577 009f 4F534331 		.ascii	"OSC1_ADC_SAR_SAR_StartConvert\000"
- 577      5F414443 
- 577      5F534152 
- 577      5F534152 
- 577      5F537461 
- 578              	.LASF5:
- 579 00bd 6C6F6E67 		.ascii	"long unsigned int\000"
- 579      20756E73 
- 579      69676E65 
- 579      6420696E 
- 579      7400
- 580              	.LASF9:
- 581 00cf 75696E74 		.ascii	"uint8\000"
- 581      3800
- 582              	.LASF19:
- 583 00d5 4F534331 		.ascii	"OSC1_ADC_SAR_RestoreConfig\000"
- 583      5F414443 
- 583      5F534152 
- 583      5F526573 
- 583      746F7265 
- 584              	.LASF24:
- 585 00f0 4F534331 		.ascii	"OSC1_ADC_SAR_SAR_Wakeup\000"
- 585      5F414443 
- 585      5F534152 
- 585      5F534152 
- 585      5F57616B 
- 586              	.LASF12:
- 587 0108 646F7562 		.ascii	"double\000"
- 587      6C6500
- 588              	.LASF10:
- 589 010f 75696E74 		.ascii	"uint16\000"
- 589      313600
- 590              	.LASF27:
- 591 0116 4F534331 		.ascii	"OSC1_ADC_SAR_Enable\000"
- 591      5F414443 
- 591      5F534152 
- 591      5F456E61 
- 591      626C6500 
- 592              	.LASF31:
- 593 012a 433A5C55 		.ascii	"C:\\Users\\214016586\\Documents\\PSoC Creator\\Dual"
- 593      73657273 
- 593      5C323134 
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 15
+ 570 0082 4F534331 		.ascii	"OSC1_ADC_SAR_IntClock_Start\000"
+ 570      5F414443 
+ 570      5F534152 
+ 570      5F496E74 
+ 570      436C6F63 
+ 571              	.LASF23:
+ 572 009e 4F534331 		.ascii	"OSC1_ADC_SAR_IntClock_Stop\000"
+ 572      5F414443 
+ 572      5F534152 
+ 572      5F496E74 
+ 572      436C6F63 
+ 573              	.LASF11:
+ 574 00b9 666C6F61 		.ascii	"float\000"
+ 574      7400
+ 575              	.LASF18:
+ 576 00bf 4F534331 		.ascii	"OSC1_ADC_SAR_SaveConfig\000"
+ 576      5F414443 
+ 576      5F534152 
+ 576      5F536176 
+ 576      65436F6E 
+ 577              	.LASF1:
+ 578 00d7 756E7369 		.ascii	"unsigned char\000"
+ 578      676E6564 
+ 578      20636861 
+ 578      7200
+ 579              	.LASF28:
+ 580 00e5 4F534331 		.ascii	"OSC1_ADC_SAR_SAR_StartConvert\000"
+ 580      5F414443 
+ 580      5F534152 
+ 580      5F534152 
+ 580      5F537461 
+ 581              	.LASF5:
+ 582 0103 6C6F6E67 		.ascii	"long unsigned int\000"
+ 582      20756E73 
+ 582      69676E65 
+ 582      6420696E 
+ 582      7400
+ 583              	.LASF9:
+ 584 0115 75696E74 		.ascii	"uint8\000"
+ 584      3800
+ 585              	.LASF19:
+ 586 011b 4F534331 		.ascii	"OSC1_ADC_SAR_RestoreConfig\000"
+ 586      5F414443 
+ 586      5F534152 
+ 586      5F526573 
+ 586      746F7265 
+ 587              	.LASF24:
+ 588 0136 4F534331 		.ascii	"OSC1_ADC_SAR_SAR_Wakeup\000"
+ 588      5F414443 
+ 588      5F534152 
+ 588      5F534152 
+ 588      5F57616B 
+ 589              	.LASF12:
+ 590 014e 646F7562 		.ascii	"double\000"
+ 590      6C6500
+ 591              	.LASF10:
+ 592 0155 75696E74 		.ascii	"uint16\000"
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cc3cwr39.s 			page 15
 
 
- 593      30313635 
- 593      38365C44 
- 594 0158 2D50536F 		.ascii	"-PSoC-DCO\\Dual-PSoC-DCO.cydsn\000"
- 594      432D4443 
- 594      4F5C4475 
- 594      616C2D50 
- 594      536F432D 
+ 592      313600
+ 593              	.LASF27:
+ 594 015c 4F534331 		.ascii	"OSC1_ADC_SAR_Enable\000"
+ 594      5F414443 
+ 594      5F534152 
+ 594      5F456E61 
+ 594      626C6500 
  595              	.LASF8:
- 596 0176 756E7369 		.ascii	"unsigned int\000"
+ 596 0170 756E7369 		.ascii	"unsigned int\000"
  596      676E6564 
  596      20696E74 
  596      00
  597              	.LASF7:
- 598 0183 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 598 017d 6C6F6E67 		.ascii	"long long unsigned int\000"
  598      206C6F6E 
  598      6720756E 
  598      7369676E 
  598      65642069 
  599              	.LASF29:
- 600 019a 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 600 0194 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  600      4320342E 
  600      392E3320 
  600      32303135 
  600      30333033 
- 601 01cd 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 601 01c7 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
  601      20726576 
  601      6973696F 
  601      6E203232 
  601      31323230 
- 602 0200 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 602 01fa 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
  602      66756E63 
  602      74696F6E 
  602      2D736563 
  602      74696F6E 
  603              	.LASF30:
- 604 0228 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\OSC1_ADC_SAR_PM.c\000"
+ 604 0222 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\OSC1_ADC_SAR_PM.c\000"
  604      6E657261 
  604      7465645F 
  604      536F7572 
  604      63655C50 
  605              	.LASF14:
- 606 0253 72656738 		.ascii	"reg8\000"
+ 606 024d 72656738 		.ascii	"reg8\000"
  606      00
  607              	.LASF15:
- 608 0258 73697A65 		.ascii	"sizetype\000"
+ 608 0252 73697A65 		.ascii	"sizetype\000"
  608      74797065 
  608      00
  609              	.LASF6:
- 610 0261 6C6F6E67 		.ascii	"long long int\000"
+ 610 025b 6C6F6E67 		.ascii	"long long int\000"
  610      206C6F6E 
  610      6720696E 
  610      7400
  611              	.LASF32:
- 612 026f 43794465 		.ascii	"CyDelayUs\000"
+ 612 0269 43794465 		.ascii	"CyDelayUs\000"
  612      6C617955 
  612      7300
  613              	.LASF13:
-ARM GAS  C:\Users\214016~1\AppData\Local\Temp\ccVohblk.s 			page 16
+ARM GAS  C:\Users\Rob\AppData\Local\Temp\cc3cwr39.s 			page 16
 
 
- 614 0279 63686172 		.ascii	"char\000"
+ 614 0273 63686172 		.ascii	"char\000"
  614      00
  615              	.LASF16:
- 616 027e 4F534331 		.ascii	"OSC1_ADC_SAR_Sleep\000"
+ 616 0278 4F534331 		.ascii	"OSC1_ADC_SAR_Sleep\000"
  616      5F414443 
  616      5F534152 
  616      5F536C65 
  616      657000
  617              	.LASF2:
- 618 0291 73686F72 		.ascii	"short int\000"
+ 618 028b 73686F72 		.ascii	"short int\000"
  618      7420696E 
  618      7400
  619              	.LASF4:
- 620 029b 6C6F6E67 		.ascii	"long int\000"
+ 620 0295 6C6F6E67 		.ascii	"long int\000"
  620      20696E74 
  620      00
  621              	.LASF0:
- 622 02a4 7369676E 		.ascii	"signed char\000"
+ 622 029e 7369676E 		.ascii	"signed char\000"
  622      65642063 
  622      68617200 
  623              	.LASF21:
- 624 02b0 4F534331 		.ascii	"OSC1_ADC_SAR_SAR_Sleep\000"
+ 624 02aa 4F534331 		.ascii	"OSC1_ADC_SAR_SAR_Sleep\000"
  624      5F414443 
  624      5F534152 
  624      5F534152 
  624      5F536C65 
  625              	.LASF20:
- 626 02c7 4F534331 		.ascii	"OSC1_ADC_SAR_SAR_Stop\000"
+ 626 02c1 4F534331 		.ascii	"OSC1_ADC_SAR_SAR_Stop\000"
  626      5F414443 
  626      5F534152 
  626      5F534152 
  626      5F53746F 
  627              	.LASF25:
- 628 02dd 4F534331 		.ascii	"OSC1_ADC_SAR_SAR_Enable\000"
+ 628 02d7 4F534331 		.ascii	"OSC1_ADC_SAR_SAR_Enable\000"
  628      5F414443 
  628      5F534152 
  628      5F534152 
