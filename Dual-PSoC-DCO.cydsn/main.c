@@ -30,7 +30,7 @@ CY_ISR(SIGNCHANGE_PositiveInterrupt_Handler)
     /*  Place your Interrupt code here. */
     /* `#START OSC1_SIGNCHANGE_ISR1_Interrupt` */
     OSC1_Freq_Timer_Stop();
-    OSC1_Freq_Timer_WriteCounter(count-OSC1_Freq_Timer_ReadCounter());
+   OSC1_Freq_Timer_WriteCounter(count-OSC1_Freq_Timer_ReadCounter());
    OSC1_Freq_Timer_Start();
     /* `#END` */
 }
@@ -80,8 +80,8 @@ int main()
     OSC1_Saw_Follower_Enable();
     OSC1_Comp_Start();
     OSC1_Comp_Enable();
-    Comp_1_Start();
-    Comp_1_Enable();
+//    Comp_1_Start();
+//    Comp_1_Enable();
     OSC1_ADC_SAR_Start();
     OSC1_ADC_SAR_StartConvert();
     OSC1_SIGNCHANGE_PositiveISR_StartEx(SIGNCHANGE_PositiveInterrupt_Handler);
@@ -92,6 +92,9 @@ int main()
 //    OSC1_ISR_Start();
 //    OSC1_Inverter_Start();
 //    OSC1_Inverter_Enable();
+    SW_Sign_Change_Write(0);
+    
+    int32_t result;
     
     for(;;)
     {
@@ -105,7 +108,17 @@ int main()
             pinState = 0;
             test_pin_Write(0xff);
         }
-        int32_t result = (abs(ADC_DelSig_1_GetResult32()));
+        result = ADC_DelSig_1_GetResult32();
+        if (result < 0)
+        {
+            SW_Sign_Change_Write(0);
+        }
+        else
+        {
+            SW_Sign_Change_Write(1);
+        }            
+            
+        result = abs(result);
         
         
         
