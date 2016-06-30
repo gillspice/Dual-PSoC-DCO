@@ -12,6 +12,7 @@
 #include <project.h>
 #include <math.h>
 #include <stdlib.h>
+#include "countToFrequencyLookup.h"
 
 #define CAP_VALUE 0.027
 #define VPP_VALUE 2.5
@@ -143,8 +144,9 @@ int main()
 //                    OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(3))/5/12))
 //            )))/32767;
         
-        cvVolts = OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(adcCvInputChannel));
-        frequency = (20.0*result*pow(1.059463094,12*cvVolts))/32767;
+//        cvVolts = OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(adcCvInputChannel));
+//        frequency = (20.0*result*pow(1.059463094,12*cvVolts))/32767;
+        frequency = result * countToFrequencyLookup[OSC1_ADC_SAR_GetResult16(adcCvInputChannel)];
 //        int frequency = (220*(pow(1.059463094,(12*myFixedValue))));
  //       int frequency = (110*(pow(2, 5*result/65535)));
         if (frequency > 20000)
