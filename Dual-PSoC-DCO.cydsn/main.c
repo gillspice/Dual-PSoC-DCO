@@ -12,6 +12,7 @@
 #include <project.h>
 #include <math.h>
 #include <stdlib.h>
+#include "countToFrequencyLookup.h"
 
 #define CAP_VALUE 0.027
 #define VPP_VALUE 2.5
@@ -19,6 +20,16 @@
 int dac_value;
 uint32_t count;
 uint32_t oldCount;
+uint8_t oldSign = 1;
+uint8_t newSign;
+
+enum adcChannels
+{
+  adcCvInputChannel = 0,
+  adcRangeInputChannel,
+  adcCoarseInputChannel,
+  adcFineInputChannel
+};
 
 CY_ISR_PROTO(SIGNCHANGE_PositiveInterrupt_Handler);
 CY_ISR(SIGNCHANGE_PositiveInterrupt_Handler)
@@ -84,8 +95,8 @@ int main()
 //    Comp_1_Enable();
     OSC1_ADC_SAR_Start();
     OSC1_ADC_SAR_StartConvert();
-    OSC1_SIGNCHANGE_PositiveISR_StartEx(SIGNCHANGE_PositiveInterrupt_Handler);
-    OSC1_SIGNCHANGE_NegativeISR_StartEx(SIGNCHANGE_NegativeInterrupt_Handler);
+//    OSC1_SIGNCHANGE_PositiveISR_StartEx(SIGNCHANGE_PositiveInterrupt_Handler);
+//    OSC1_SIGNCHANGE_NegativeISR_StartEx(SIGNCHANGE_NegativeInterrupt_Handler);
 //    OSC1_Mux_Init();
 //    OSC1_Mux_Start();
 //    OSC1_Mux_Next();
@@ -95,6 +106,8 @@ int main()
     SW_Sign_Change_Write(0);
     
     int32_t result;
+    uint32_t frequency;
+    float cvVolts;
     
     for(;;)
     {
@@ -108,27 +121,32 @@ int main()
             pinState = 0;
             test_pin_Write(0xff);
         }
+        
         result = ADC_DelSig_1_GetResult32();
         if (result < 0)
         {
+          newSign = 0;
             SW_Sign_Change_Write(0);
         }
         else
         {
+          newSign = 1;
             SW_Sign_Change_Write(1);
-        }            
-            
+        }                        
         result = abs(result);
         
         
+//        frequency = (20*result*(
+//            pow(1.059463094,(
+//                12*(OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(0)) + 
+//                    OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(1))*2 + 
+//                    OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(2))/5 + 
+//                    OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(3))/5/12))
+//            )))/32767;
         
-        uint32_t frequency = (20*result*(
-            pow(1.059463094,(
-                12*(OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(0)) + 
-                    OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(1))*2 + 
-                    OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(2))/5 + 
-                    OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(3))/5/12))
-            )))/32767;
+//        cvVolts = OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(adcCvInputChannel));
+//        frequency = (20.0*result*pow(1.059463094,12*cvVolts))/32767;
+        frequency = result * countToFrequencyLookup[OSC1_ADC_SAR_GetResult16(adcCvInputChannel)];
 //        int frequency = (220*(pow(1.059463094,(12*myFixedValue))));
  //       int frequency = (110*(pow(2, 5*result/65535)));
         if (frequency > 20000)
@@ -150,7 +168,12 @@ int main()
         }
         else if ((uint32_t)newReg > count)
         {
-          newReg = count;
+          newReg = count-1;
+        }
+        if (newSign != oldSign)
+        {
+          oldSign = newSign;
+          newReg = count-newReg;
         }
         OSC1_Freq_Timer_WriteCounter(newReg);
         OSC1_Freq_Timer_WritePeriod(count);
