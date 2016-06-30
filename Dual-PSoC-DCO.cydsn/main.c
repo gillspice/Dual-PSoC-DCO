@@ -83,7 +83,7 @@ int main()
     OSC1_IDAC8_SAW_SetValue(255);
     ADC_DelSig_1_Start();
     ADC_DelSig_1_StartConvert();
-    OSC1_Freq_Timer_WritePeriod(36000);
+    OSC1_Freq_Timer_WritePeriod(2400);
 //    OSC1_Freq_Timer_1_WritePeriod(36000);
     OSC1_Triangle_Follower_Start();
     OSC1_Triangle_Follower_Enable();
@@ -146,7 +146,8 @@ int main()
         
 //        cvVolts = OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(adcCvInputChannel));
 //        frequency = (20.0*result*pow(1.059463094,12*cvVolts))/32767;
-        frequency = result * countToFrequencyLookup[OSC1_ADC_SAR_GetResult16(adcCvInputChannel)];
+        frequency = result * countToFrequencyLookup[OSC1_ADC_SAR_GetResult16(adcCvInputChannel)]/32767;
+//        frequency = countToFrequencyLookup[OSC1_ADC_SAR_GetResult16(adcCvInputChannel)];
 //        int frequency = (220*(pow(1.059463094,(12*myFixedValue))));
  //       int frequency = (110*(pow(2, 5*result/65535)));
         if (frequency > 20000)
@@ -156,11 +157,9 @@ int main()
         {
             frequency = 1;
         }
-        __disable_irq();
         oldCount = count;
         count = 12000000/frequency;
         deltaCount = (int32_t)count - (int32_t)oldCount;
-        OSC1_Freq_Timer_Stop();
         newReg = OSC1_Freq_Timer_ReadCounter() + deltaCount;
         if (newReg < 0)
         {
@@ -175,13 +174,10 @@ int main()
           oldSign = newSign;
           newReg = count-newReg;
         }
+        OSC1_Freq_Timer_Stop();
         OSC1_Freq_Timer_WriteCounter(newReg);
         OSC1_Freq_Timer_WritePeriod(count);
-//        if (count < OSC1_Freq_Timer_ReadCounter()) {
-//            OSC1_Freq_Timer_WriteCounter(count);
-//        }
         OSC1_Freq_Timer_Start();
-        __enable_irq();
 //       OSC1_Freq_Timer_1_WritePeriod(count*2);
     if (frequency > 3950){
         OSC1_IDAC8_SetRange(OSC1_IDAC8_RANGE_2mA);

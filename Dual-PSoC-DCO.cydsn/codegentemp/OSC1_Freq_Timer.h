@@ -168,7 +168,7 @@ void OSC1_Freq_Timer_Wakeup(void)        ;
 *    Initialial Parameter Constants
 ***************************************/
 
-#define OSC1_Freq_Timer_INIT_PERIOD             35999u
+#define OSC1_Freq_Timer_INIT_PERIOD             2399u
 #define OSC1_Freq_Timer_INIT_CAPTURE_MODE       ((uint8)((uint8)1u << OSC1_Freq_Timer_CTRL_CAP_MODE_SHIFT))
 #define OSC1_Freq_Timer_INIT_TRIGGER_MODE       ((uint8)((uint8)0u << OSC1_Freq_Timer_CTRL_TRIG_MODE_SHIFT))
 #if (OSC1_Freq_Timer_UsingFixedFunction)

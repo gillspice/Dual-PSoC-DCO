@@ -183,11 +183,6 @@
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\Pin_1_aliases.h" value="NONE;Pin_1" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\Pin_1.c" value="ARM_C_FILE;Pin_1" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\Pin_1.h" value="NONE;Pin_1" />
-  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\Clock_3.c" value="ARM_C_FILE;Clock_3" />
-  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\Clock_3.h" value="NONE;Clock_3" />
-  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_LFO_SW_aliases.h" value="NONE;OSC1_LFO_SW" />
-  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_LFO_SW.c" value="ARM_C_FILE;OSC1_LFO_SW" />
-  <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\OSC1_LFO_SW.h" value="NONE;OSC1_LFO_SW" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\test_pin_aliases.h" value="NONE;test_pin" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\test_pin.c" value="ARM_C_FILE;test_pin" />
   <file name="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn\codegentemp\test_pin.h" value="NONE;test_pin" />

@@ -37,6 +37,8 @@
       <Folder BuildType="BUILD" Path="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn">
         <Files Root="C:\Users\214016586\Documents\PSoC Creator\Dual-PSoC-DCO\Dual-PSoC-DCO.cydsn">
           <File BuildType="BUILD" Toolchain="">.\main.c</File>
+          <File BuildType="BUILD" Toolchain="">.\countToFrequencyLookup.c</File>
+          <File BuildType="BUILD" Toolchain="">.\countToFrequencyLookup.h</File>
           <File BuildType="BUILD" Toolchain="">.\cyapicallbacks.h</File>
         </Files>
       </Folder>
@@ -245,8 +247,6 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_CV_IN_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_CV_IN.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_CV_IN.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock_3.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock_3.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Coarse_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Coarse.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_Coarse.h</File>
@@ -272,9 +272,6 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_ADC_SAR_FinalBuf_dma.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_ADC_SAR_IRQ.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_ADC_SAR_IRQ.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_LFO_SW_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_LFO_SW.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OSC1_LFO_SW.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\test_pin_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\test_pin.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\test_pin.h</File>
