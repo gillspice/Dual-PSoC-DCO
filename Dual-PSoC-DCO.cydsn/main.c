@@ -12,16 +12,24 @@
 #include <project.h>
 #include <math.h>
 #include <stdlib.h>
+#define CALCULATE_USING_PERIOD
+#ifdef CALCULATE_USING_PERIOD
+  #include "periodLUT.h"
+#else  
 #include "countToFrequencyLookup.h"
+#endif
+//#define SCALE_FM_INPUT
 
-#define CAP_VALUE 0.027
-#define VPP_VALUE 2.5
-
-int dac_value;
+uint8_t dac_value;
 uint32_t count;
 uint32_t oldCount;
 uint8_t oldSign = 1;
 uint8_t newSign;
+
+#define C_TRI_UF 0.01
+#define I_MAX_1_UA 32.0
+#define I_MAX_2_UA 255.0
+#define V_PP 3.0
 
 enum adcChannels
 {
@@ -31,51 +39,22 @@ enum adcChannels
   adcFineInputChannel
 };
 
-CY_ISR_PROTO(SIGNCHANGE_PositiveInterrupt_Handler);
-CY_ISR(SIGNCHANGE_PositiveInterrupt_Handler)
-{
-    #ifdef OSC1_SIGNCHANGE_ISR1_INTERRUPT_INTERRUPT_CALLBACK
-        OSC1_SIGNCHANGE_ISR1_Interrupt_InterruptCallback();
-    #endif /* OSC1_SIGNCHANGE_ISR1_INTERRUPT_INTERRUPT_CALLBACK */ 
-
-    /*  Place your Interrupt code here. */
-    /* `#START OSC1_SIGNCHANGE_ISR1_Interrupt` */
-    OSC1_Freq_Timer_Stop();
-   OSC1_Freq_Timer_WriteCounter(count-OSC1_Freq_Timer_ReadCounter());
-   OSC1_Freq_Timer_Start();
-    /* `#END` */
-}
-
-CY_ISR_PROTO(SIGNCHANGE_NegativeInterrupt_Handler);
-CY_ISR(SIGNCHANGE_NegativeInterrupt_Handler)
-{
-    #ifdef OSC1_SIGNCHANGE_ISR2_INTERRUPT_INTERRUPT_CALLBACK
-        OSC1_SIGNCHANGE_ISR2_Interrupt_InterruptCallback();
-    #endif /* OSC1_SIGNCHANGE_ISR2_INTERRUPT_INTERRUPT_CALLBACK */ 
-
-    /*  Place your Interrupt code here. */
-    /* `#START OSC1_SIGNCHANGE_ISR2_Interrupt` */
-    
-    OSC1_Freq_Timer_Stop();
-
-    OSC1_Freq_Timer_WriteCounter(count-OSC1_Freq_Timer_ReadCounter());
-
-   OSC1_Freq_Timer_Start();
-/* `#END` */
-}
-
-
 int main()
 {
     int pinState = 0;
     CyGlobalIntEnable; /* Enable global interrupts. */
-    volatile int myFixedValue = 1;
   int32_t newReg;
   int32_t deltaCount;
+  
+  float freq_break_1 = I_MAX_1_UA / (C_TRI_UF * V_PP);
+  float freq_break_2 = I_MAX_2_UA / (C_TRI_UF * V_PP);
+#ifdef CALCULATE_USING_PERIOD
+  uint32_t period_break_1 = 12000000 / freq_break_1 / 8;
+  uint32_t period_break_2 = 12000000 / freq_break_2 / 8;
+#endif
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     OSC1_Freq_Timer_Start();
-//    OSC1_Freq_Timer_1_Start();
     OSC1_IDAC8_Start();
     Clock_1_Start();
     OSC1_IDAC8_SetValue(255);
@@ -84,30 +63,29 @@ int main()
     ADC_DelSig_1_Start();
     ADC_DelSig_1_StartConvert();
     OSC1_Freq_Timer_WritePeriod(2400);
-//    OSC1_Freq_Timer_1_WritePeriod(36000);
     OSC1_Triangle_Follower_Start();
     OSC1_Triangle_Follower_Enable();
     OSC1_Saw_Follower_Start();
     OSC1_Saw_Follower_Enable();
     OSC1_Comp_Start();
     OSC1_Comp_Enable();
-//    Comp_1_Start();
-//    Comp_1_Enable();
     OSC1_ADC_SAR_Start();
     OSC1_ADC_SAR_StartConvert();
-//    OSC1_SIGNCHANGE_PositiveISR_StartEx(SIGNCHANGE_PositiveInterrupt_Handler);
-//    OSC1_SIGNCHANGE_NegativeISR_StartEx(SIGNCHANGE_NegativeInterrupt_Handler);
 //    OSC1_Mux_Init();
 //    OSC1_Mux_Start();
 //    OSC1_Mux_Next();
 //    OSC1_ISR_Start();
 //    OSC1_Inverter_Start();
 //    OSC1_Inverter_Enable();
-    SW_Sign_Change_Write(0);
+    
+    FM_Sign_Compare_Start();
+    FM_Sign_Compare_Enable();
     
     int32_t result;
-    uint32_t frequency;
-    float cvVolts;
+#ifndef CALCULATE_USING_PERIOD
+    float frequency;
+#endif
+    uint32_t cvAdcValue;
     
     for(;;)
     {
@@ -122,19 +100,14 @@ int main()
             test_pin_Write(0xff);
         }
         
-        result = ADC_DelSig_1_GetResult32();
-        if (result < 0)
-        {
-          newSign = 0;
-            SW_Sign_Change_Write(0);
-        }
-        else
-        {
-          newSign = 1;
-            SW_Sign_Change_Write(1);
-        }                        
-        result = abs(result);
+        #ifdef SCALE_FM_INPUT
+        result = abs(ADC_DelSig_1_GetResult32()+32767);
+        #else
+        result = abs(ADC_DelSig_1_GetResult32());
+        #endif
         
+        // detect no FM input and clamp to midpoint
+        if (result < 100) result = 32767;
         
 //        frequency = (20*result*(
 //            pow(1.059463094,(
@@ -143,13 +116,20 @@ int main()
 //                    OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(2))/5 + 
 //                    OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(3))/5/12))
 //            )))/32767;
+        cvAdcValue = OSC1_ADC_SAR_GetResult16(adcCvInputChannel);
+        cvAdcValue = cvAdcValue + 2*4096/5;
+//        if (cvAdcValue > 8191) cvAdcValue = 8191;
+        cvAdcValue &= 0x1fff;
         
-//        cvVolts = OSC1_ADC_SAR_CountsTo_Volts(OSC1_ADC_SAR_GetResult16(adcCvInputChannel));
-//        frequency = (20.0*result*pow(1.059463094,12*cvVolts))/32767;
-        frequency = result * countToFrequencyLookup[OSC1_ADC_SAR_GetResult16(adcCvInputChannel)]/32767;
+        oldCount = count;
+        
+#ifdef CALCULATE_USING_PERIOD
+        count = countToPeriodLookup[cvAdcValue]/result;
+#else
+        frequency = result * countToFrequencyLookup[cvAdcValue]/32767;
+//        frequency = countToFrequencyLookup[cvAdcValue];
 //        frequency = countToFrequencyLookup[OSC1_ADC_SAR_GetResult16(adcCvInputChannel)];
-//        int frequency = (220*(pow(1.059463094,(12*myFixedValue))));
- //       int frequency = (110*(pow(2, 5*result/65535)));
+
         if (frequency > 20000)
         {
             frequency = 20000;
@@ -157,52 +137,64 @@ int main()
         {
             frequency = 1;
         }
-        oldCount = count;
+        
         count = 12000000/frequency;
+        count /= 8;
+#endif
+
+//        count = 3409; // 440hz value for testing
+        
         deltaCount = (int32_t)count - (int32_t)oldCount;
         newReg = OSC1_Freq_Timer_ReadCounter() + deltaCount;
+        OSC1_Freq_Timer_WritePeriod(count);
         if (newReg < 0)
         {
           newReg = 1;
+        OSC1_Freq_Timer_WriteCounter(newReg);
         }
         else if ((uint32_t)newReg > count)
         {
           newReg = count-1;
-        }
-        if (newSign != oldSign)
-        {
-          oldSign = newSign;
-          newReg = count-newReg;
-        }
-        OSC1_Freq_Timer_Stop();
         OSC1_Freq_Timer_WriteCounter(newReg);
-        OSC1_Freq_Timer_WritePeriod(count);
-        OSC1_Freq_Timer_Start();
-//       OSC1_Freq_Timer_1_WritePeriod(count*2);
-    if (frequency > 3950){
+        }
+        
+//        OSC1_Freq_Timer_Stop();
+//        OSC1_Freq_Timer_Start();
+        
+#ifndef CALCULATE_USING_PERIOD
+    if (frequency > freq_break_2){
         OSC1_IDAC8_SetRange(OSC1_IDAC8_RANGE_2mA);
         OSC1_IDAC8_SAW_SetRange(OSC1_IDAC8_SAW_RANGE_2mA);
-        dac_value = frequency / 32 ;
+        dac_value = frequency * C_TRI_UF * V_PP / 8;
     }
-    else if (frequency > 493){
+    else if (frequency > freq_break_1){
         OSC1_IDAC8_SetRange(OSC1_IDAC8_RANGE_255uA);
         OSC1_IDAC8_SAW_SetRange(OSC1_IDAC8_SAW_RANGE_255uA);
-        dac_value = frequency /4 ;}
-    else {
+        dac_value = frequency * C_TRI_UF * V_PP;
+    } else {
         OSC1_IDAC8_SetRange(OSC1_IDAC8_RANGE_32uA);
         OSC1_IDAC8_SAW_SetRange(OSC1_IDAC8_SAW_RANGE_32uA);
-        dac_value = frequency * 2;
-     }   
-        
-   //    dac_value=(frequency/8);
-    OSC1_IDAC8_SetValue(dac_value/4);
-    OSC1_IDAC8_SAW_SetValue(dac_value/4);
-  //      CyDelay(1000); /* Place your application code here. */
-    //   Freq_Timer_WritePeriod(36000);
-   //    IDAC8_1_SetValue(127);
-//       CyDelay(5000);
-//       Freq_Timer_WritePeriod(18000);
-   //    IDAC8_1_SetValue(255);
+        dac_value = frequency * C_TRI_UF * V_PP * 8;
+    }   
+#else
+    if (count < period_break_2){
+        OSC1_IDAC8_SetRange(OSC1_IDAC8_RANGE_2mA);
+        OSC1_IDAC8_SAW_SetRange(OSC1_IDAC8_SAW_RANGE_2mA);
+        dac_value = (45000/8) / count;
+    }
+    else if (count < period_break_1){
+        OSC1_IDAC8_SetRange(OSC1_IDAC8_RANGE_255uA);
+        OSC1_IDAC8_SAW_SetRange(OSC1_IDAC8_SAW_RANGE_255uA);
+        dac_value = 45000 / count;
+    } else {
+        OSC1_IDAC8_SetRange(OSC1_IDAC8_RANGE_32uA);
+        OSC1_IDAC8_SAW_SetRange(OSC1_IDAC8_SAW_RANGE_32uA);
+        dac_value = (45000 * 8) / count;
+    }   
+#endif
+
+    OSC1_IDAC8_SetValue(dac_value);
+    OSC1_IDAC8_SAW_SetValue(dac_value);
     }
 }
 

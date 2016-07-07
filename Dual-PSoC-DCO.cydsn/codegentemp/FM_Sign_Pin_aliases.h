@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Pin_1.h  
+* File Name: FM_Sign_Pin.h  
 * Version 2.20
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_Pin_1_ALIASES_H) /* Pins Pin_1_ALIASES_H */
-#define CY_PINS_Pin_1_ALIASES_H
+#if !defined(CY_PINS_FM_Sign_Pin_ALIASES_H) /* Pins FM_Sign_Pin_ALIASES_H */
+#define CY_PINS_FM_Sign_Pin_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -25,12 +25,12 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define Pin_1_0			(Pin_1__0__PC)
-#define Pin_1_0_INTR	((uint16)((uint16)0x0001u << Pin_1__0__SHIFT))
+#define FM_Sign_Pin_0			(FM_Sign_Pin__0__PC)
+#define FM_Sign_Pin_0_INTR	((uint16)((uint16)0x0001u << FM_Sign_Pin__0__SHIFT))
 
-#define Pin_1_INTR_ALL	 ((uint16)(Pin_1_0_INTR))
+#define FM_Sign_Pin_INTR_ALL	 ((uint16)(FM_Sign_Pin_0_INTR))
 
-#endif /* End Pins Pin_1_ALIASES_H */
+#endif /* End Pins FM_Sign_Pin_ALIASES_H */
 
 
 /* [] END OF FILE */
